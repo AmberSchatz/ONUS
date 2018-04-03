@@ -26,21 +26,27 @@ class Container extends React.Component {
     render() {
         return (
             <div>
-                <TopBar />
 
-                <div className="container" >
+                <div>
                     <Switch>
-                        <Route exact path="/" render={() => <Home title="Welcome" />} />
-                        <Route path="/about" render={() => <About title="About" />} />
-                        <Route path="/blog" render={() => <Blog title="Blog" />} />
-                        <Route path="/sign_in" render={() => <SignIn title="Sign In" />} />
-                        <Route path="/sign_up" render={() => <SignUP title="Sign Up" />} />
+                        <Route exact path="/" render={() => <TopBar />} />
                     </Switch>
-                    <Switch>
-                        <Route path="/user_main" render={() => < UserMainPage />} />
-                        <Route path="/user_settings" render={() => < SettingsPage />} />
-                    </Switch>
+
+                    <div className="container" >
+                        <Switch>
+                            {/* <Route exact path="/" render={() => <Home title="Welcome" />} /> */}
+                            <Route path="/about" render={() => <About title="About" />} />
+                            <Route path="/blog" render={() => <Blog title="Blog" />} />
+                            <Route path="/sign_in" render={() => <SignIn title="Sign In" />} />
+                            <Route path="/sign_up" render={() => <SignUP title="Sign Up" />} />
+                        </Switch>
+
+                    </div>
                 </div>
+                <Switch>
+                    <Route path="/user_main" render={() => < UserMainPage />} />
+                    <Route path="/user_settings" render={() => < SettingsPage />} />
+                </Switch>
             </div>
 
         )

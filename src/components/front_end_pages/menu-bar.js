@@ -15,7 +15,7 @@ class MenuBar extends React.Component {
             <div  >
                 <nav className="nav-primary"  >
                     <div className="container-fluid"  >
-                        <div className="navbar-header" style={{ paddingRight: 700 }}  >
+                        <div className="navbar-header" style={{ paddingRight: 150 }}  >
                             <a className="navbar-brand" href="#" id="menu-item">Onus</a>
                         </div>
                         <ul className="nav navbar-nav">
@@ -24,18 +24,8 @@ class MenuBar extends React.Component {
                             <li><a href="/blog" id="menu-item" >Blog</a></li>
                             <li><a href="/sign_in" id="menu-item" >Sign In</a></li>
                             <li><a href="/sign_up" id="menu-item" >Sign Up</a></li>
-                            {/* <li>
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                                        <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">HTML</a></li>
-                                        <li><a href="#">CSS</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                    </ul>
-                                </div>
-
-                            </li> */}
+                            <li><a href="/user_main" id="menu-item" >User Page</a></li>
+                            <li><a href="/user_settings" id="menu-item" >Settings</a></li>
                         </ul>
                     </div>
                 </nav>

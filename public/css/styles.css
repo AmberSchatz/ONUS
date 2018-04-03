@@ -8,3 +8,10 @@
     font-size: 65px;
     color: white;
 }
+#user-image {
+    width: 200px;
+    height: 200px;
+}
+#edit-btn {
+    padding: 10px 20px;
+}
