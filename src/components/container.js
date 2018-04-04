@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link, Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Connect } from 'react-redux';
 
 import Center from 'react-center';
 
@@ -18,6 +18,10 @@ import SignUP from './front_end_pages/sign-up';
 import UserMainPage from './user_front_end_pages/user-main-page';
 import SettingsPage from './user_front_end_pages/settings-page';
 
+import UserSidebarMenu from './user_front_end_pages/user-sidebar-menu';
+import JournalDirectory from './user_front_end_pages/journal-directory';
+import PlannerDirectory from './user_front_end_pages/planner-directory';
+
 // USER FRONT END PAGES IMPORTS END //
 
 
@@ -26,7 +30,7 @@ class Container extends React.Component {
     render() {
         return (
             <div>
-                <TopBar />
+                {/* <TopBar />
 
                 <div className="container" >
                     <Switch>
@@ -40,7 +44,16 @@ class Container extends React.Component {
                         <Route path="/user_main" render={() => < UserMainPage />} />
                         <Route path="/user_settings" render={() => < SettingsPage />} />
                     </Switch>
+                </div> */}
+
+                <UserSidebarMenu />
+                <div className="col-md-12">
+                    <UserMainPage />
+                    <JournalDirectory />
+                    {/* <PlannerDirectory /> */}
                 </div>
+
+
             </div>
 
         )

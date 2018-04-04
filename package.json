@@ -9,9 +9,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
     "float": "^1.0.2",
     "react": "^16.2.0",
     "react-center": "^1.1.1",
+    "react-chartjs-2": "^2.7.0",
     "react-dom": "^16.2.0",
     "react-popup": "^0.9.2",
     "react-redux": "^5.0.7",

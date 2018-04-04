@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Center from 'react-center';
 
 
@@ -11,7 +10,7 @@ class UserMainPage extends React.Component {
     render() {
         return (
            <div>
-
+             
            </div>
         )
     }

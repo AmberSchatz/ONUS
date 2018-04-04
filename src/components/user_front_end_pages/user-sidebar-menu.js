@@ -25,22 +25,22 @@ class UserSidebarMenu extends Component {
 
     render() {
         return (
-            <div class="sidenav">
+            <div className="sidenav">
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
                 <a href="#">Home</a>
                 <a href="#">Settings</a>
-                <button class="dropdown-btn" onClick={this.dropdownClick}>Dropdown
-                <i class="fa fa-caret-down"></i>
+                <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
+                <i className="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-container">
-                    <a href="#">View Entry</a>
+                <div className="dropdown-container">
+                    <a href="#">View Directory</a>
                     <a href="#">Make New Entry</a>                   
                 </div>
-                <button class="dropdown-btn" onClick={this.dropdownClick}>Planner
-                <i class="fa fa-caret-down"></i>
+                <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
+                <i className="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-container">
+                <div className="dropdown-container">
                     <a href="#">Todo List</a>
                     <a href="#">Add New Planner</a>
                 </div>
