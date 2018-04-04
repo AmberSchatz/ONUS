@@ -28,8 +28,8 @@ class UserSideBarMenu extends Component {
             <div className="sidenav">
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
-                <a href="#">Home</a>
-                <a href="#">Settings</a>
+                <a href="/user">Home</a>
+                <a href="/user/user_settings">Settings</a>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
                 </button>

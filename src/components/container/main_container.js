@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route, HashRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Center from 'react-center';
@@ -14,12 +14,18 @@ class MainContainer extends React.Component {
         return (
             <div>
 
-                <HashRouter basename="/onus" >
+                <Container />
+                {/* <SecondContainer /> */}
+
+                {/* <HashRouter basename="/onus" >
+
+
                     <Switch>
-                        <Route path="/home" component={<Container />} />
-                        <Route path="/user" render={() => < SecondContainer />} />
+                        <Route path="/onus" component={<Container />} />
+                        <Route path="/user" component={< SecondContainer />} />
                     </Switch>
-                </HashRouter>
+
+                </HashRouter> */}
 
             </div>
         )

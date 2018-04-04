@@ -4,8 +4,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, HashRouter , Link, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import Container from './components/container/container';
-import SecondContainer from './components/container/second_container';
+import MainContainer from './components/container/main_container';
 import { store } from './components/redux/store/index';
 
 
@@ -14,10 +13,7 @@ const app = document.getElementById('app');
 
 ReactDOM.render((<Provider store={store} >
     <BrowserRouter>
-        <Switch>
-            {/* <Route  path="/" render={() => < Container />} /> */}
-            <Route exact  path="/user" render={() => < SecondContainer />} />
-        </Switch>
+       <MainContainer />
     </BrowserRouter>
 </Provider>), app)
 

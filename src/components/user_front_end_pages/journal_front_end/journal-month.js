@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import BoxLink from './box-link';
-import BoxLinkSmall from './box-link-sm';
-import Title from './title';
-import Header from './header';
-import DataDashboard from './data-dashboard';
+import BoxLink from '../box-link';
+import BoxLinkSmall from '../box-link-sm';
+import Title from '../title';
+import Header from '../header';
+import DataDashboard from '../data-dashboard';
 
 
-class JournalWeek extends Component {
+class JournalMonth extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -16,17 +16,16 @@ class JournalWeek extends Component {
             <div className="row">
                 <div className="col-md-12">
                     <Header />
-                    <p>Week of: date</p>
-                    
                 </div>
                 <div className="row">
+                <div className="col-md-12"> 
                     <BoxLink />
                     <BoxLink />
                     <BoxLink />
                     <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
+                </div>
+                    
+
                 </div>
 
                 CHART COMPONENTS NEEDED HERE
@@ -34,6 +33,7 @@ class JournalWeek extends Component {
                 <div className="">
                 <DataDashboard/>
                 </div>
+                
                 </div>
 
             </div>
@@ -41,4 +41,4 @@ class JournalWeek extends Component {
     }
 }
 
-export default JournalWeek;
+export default JournalMonth;

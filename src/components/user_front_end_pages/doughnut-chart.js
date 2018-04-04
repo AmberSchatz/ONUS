@@ -29,6 +29,7 @@ class DoughnutChart extends Component {
                         ]
                     }
                 ]
+                
             }
 
         }

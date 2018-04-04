@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import BoxLink from './box-link';
-import BoxLinkSmall from './box-link-sm';
-import Title from './title';
-import Header from './header';
+import BoxLink from '../box-link';
+import BoxLinkSmall from '../box-link-sm';
+import Title from '../title';
+import Header from '../header';
 
 
 class PlannerToDo extends Component {
