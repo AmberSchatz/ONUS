@@ -13,12 +13,12 @@ const app = document.getElementById('app');
 
 
 ReactDOM.render((<Provider store={store} >
-    <HashRouter basename="/onus" >
+    <BrowserRouter>
         <Switch>
-            <Route  path="/home" component={<Container />} />
-            <Route  path="/user" render={() => < SecondContainer />} />
+            {/* <Route  path="/" render={() => < Container />} /> */}
+            <Route exact  path="/user" render={() => < SecondContainer />} />
         </Switch>
-    </HashRouter>
+    </BrowserRouter>
 </Provider>), app)
 
 
