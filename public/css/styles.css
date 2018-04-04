@@ -1,17 +1,96 @@
 #menu-item {
     font-family: 'Dancing Script', cursive;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
 }
+
 #center-text {
     font-family: 'Dancing Script', cursive;
-    font-size: 65px;
+    font-size: 95px;
     color: white;
 }
+
 #user-image {
     width: 200px;
     height: 200px;
 }
+
 #edit-btn {
     padding: 10px 20px;
 }
+
+#front-pageText {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 60px;
+}
+
+
+#blog-text {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 30px;
+}
+
+
+
+/* sidebar menu css */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+  
+  .active {
+    background-color:rgba(105, 132, 141, 255);
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  #placeholderImg{
+    width: 100px;
+    height: 100px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }

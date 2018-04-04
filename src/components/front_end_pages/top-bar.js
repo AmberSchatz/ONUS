@@ -10,12 +10,14 @@ class TopBar extends React.Component {
         super(props)
     }
 
-
+    pageName() {
+        
+    }
 
     render() {
         return (
 
-            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 620 }}>
+            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 700 }}>
                 <Center>
                     <MenuBar />
                 </Center>
@@ -23,7 +25,7 @@ class TopBar extends React.Component {
                     <div style={{ marginTop: 140 }}>
                         <h1 id="center-text">{this.props.title}Welcome</h1>
                         <Center>
-                            <div style={{ marginBottom: -500 }} >
+                            <div style={{ paddingTop: 240 }} >
                                 <img src="https://image.flaticon.com/icons/svg/24/24567.svg" alt="down-arrow" style={{ height: '60px', width: '60px' }} />
                             </div>
                         </Center>

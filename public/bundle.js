@@ -432,18 +432,6 @@ module.exports = invariant;
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(e,r){ true?module.exports=r(__webpack_require__(0)):"function"==typeof define&&define.amd?define(["react"],r):"object"==typeof exports?exports.ReactCenter=r(require("react")):e.ReactCenter=r(e.React)}(this,function(e){return function(e){function r(t){if(i[t])return i[t].exports;var n=i[t]={exports:{},id:t,loaded:!1};return e[t].call(n.exports,n,n.exports,r),n.loaded=!0,n.exports}var i={};return r.m=e,r.c=i,r.p="",r(0)}([function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}var n=i(2),o=t(n);e.exports=o["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){return e.charAt(0).toUpperCase()+e.slice(1)},e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r){var i={};for(var t in e)r.indexOf(t)>=0||Object.prototype.hasOwnProperty.call(e,t)&&(i[t]=e[t]);return i}Object.defineProperty(r,"__esModule",{value:!0});var o=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e},a=i(20),s=t(a),l=i(5),u=t(l);r["default"]=function(e){var r=e.style,i=e.prefixer,t=void 0===i?new u["default"]:i,a=e.children,l=n(e,["style","prefixer","children"]),f={alignContent:"center",alignItems:"center",boxSizing:"border-box",display:"flex",flexDirection:"row",flexWrap:"nowrap",justifyContent:"center"};return s["default"].createElement("div",o({style:o({},t.prefix(f),r)},l),a)}},function(e,r,i){var t,n;/*!
-	  * Bowser - a browser detector
-	  * https://github.com/ded/bowser
-	  * MIT License | (c) Dustin Diaz 2015
-	  */
-!function(o,a){"undefined"!=typeof e&&e.exports?e.exports=a():(t=a,n="function"==typeof t?t.call(r,i,r,e):t,!(void 0!==n&&(e.exports=n)))}("bowser",function(){function e(e){function i(r){var i=e.match(r);return i&&i.length>1&&i[1]||""}function t(r){var i=e.match(r);return i&&i.length>1&&i[2]||""}var n,o=i(/(ipod|iphone|ipad)/i).toLowerCase(),a=/like android/i.test(e),s=!a&&/android/i.test(e),l=/CrOS/.test(e),u=i(/edge\/(\d+(\.\d+)?)/i),f=i(/version\/(\d+(\.\d+)?)/i),m=/tablet/i.test(e),c=!m&&/[^-]mobi/i.test(e);/opera|opr/i.test(e)?n={name:"Opera",opera:r,version:f||i(/(?:opera|opr)[\s\/](\d+(\.\d+)?)/i)}:/yabrowser/i.test(e)?n={name:"Yandex Browser",yandexbrowser:r,version:f||i(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)}:/windows phone/i.test(e)?(n={name:"Windows Phone",windowsphone:r},u?(n.msedge=r,n.version=u):(n.msie=r,n.version=i(/iemobile\/(\d+(\.\d+)?)/i))):/msie|trident/i.test(e)?n={name:"Internet Explorer",msie:r,version:i(/(?:msie |rv:)(\d+(\.\d+)?)/i)}:l?n={name:"Chrome",chromeBook:r,chrome:r,version:i(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:/chrome.+? edge/i.test(e)?n={name:"Microsoft Edge",msedge:r,version:u}:/chrome|crios|crmo/i.test(e)?n={name:"Chrome",chrome:r,version:i(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:o?(n={name:"iphone"==o?"iPhone":"ipad"==o?"iPad":"iPod"},f&&(n.version=f)):/sailfish/i.test(e)?n={name:"Sailfish",sailfish:r,version:i(/sailfish\s?browser\/(\d+(\.\d+)?)/i)}:/seamonkey\//i.test(e)?n={name:"SeaMonkey",seamonkey:r,version:i(/seamonkey\/(\d+(\.\d+)?)/i)}:/firefox|iceweasel/i.test(e)?(n={name:"Firefox",firefox:r,version:i(/(?:firefox|iceweasel)[ \/](\d+(\.\d+)?)/i)},/\((mobile|tablet);[^\)]*rv:[\d\.]+\)/i.test(e)&&(n.firefoxos=r)):/silk/i.test(e)?n={name:"Amazon Silk",silk:r,version:i(/silk\/(\d+(\.\d+)?)/i)}:s?n={name:"Android",version:f}:/phantom/i.test(e)?n={name:"PhantomJS",phantom:r,version:i(/phantomjs\/(\d+(\.\d+)?)/i)}:/blackberry|\bbb\d+/i.test(e)||/rim\stablet/i.test(e)?n={name:"BlackBerry",blackberry:r,version:f||i(/blackberry[\d]+\/(\d+(\.\d+)?)/i)}:/(web|hpw)os/i.test(e)?(n={name:"WebOS",webos:r,version:f||i(/w(?:eb)?osbrowser\/(\d+(\.\d+)?)/i)},/touchpad\//i.test(e)&&(n.touchpad=r)):n=/bada/i.test(e)?{name:"Bada",bada:r,version:i(/dolfin\/(\d+(\.\d+)?)/i)}:/tizen/i.test(e)?{name:"Tizen",tizen:r,version:i(/(?:tizen\s?)?browser\/(\d+(\.\d+)?)/i)||f}:/safari/i.test(e)?{name:"Safari",safari:r,version:f}:{name:i(/^(.*)\/(.*) /),version:t(/^(.*)\/(.*) /)},!n.msedge&&/(apple)?webkit/i.test(e)?(n.name=n.name||"Webkit",n.webkit=r,!n.version&&f&&(n.version=f)):!n.opera&&/gecko\//i.test(e)&&(n.name=n.name||"Gecko",n.gecko=r,n.version=n.version||i(/gecko\/(\d+(\.\d+)?)/i)),n.msedge||!s&&!n.silk?o&&(n[o]=r,n.ios=r):n.android=r;var d="";n.windowsphone?d=i(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i):o?(d=i(/os (\d+([_\s]\d+)*) like mac os x/i),d=d.replace(/[_\s]/g,".")):s?d=i(/android[ \/-](\d+(\.\d+)*)/i):n.webos?d=i(/(?:web|hpw)os\/(\d+(\.\d+)*)/i):n.blackberry?d=i(/rim\stablet\sos\s(\d+(\.\d+)*)/i):n.bada?d=i(/bada\/(\d+(\.\d+)*)/i):n.tizen&&(d=i(/tizen[\/\s](\d+(\.\d+)*)/i)),d&&(n.osversion=d);var p=d.split(".")[0];return m||"ipad"==o||s&&(3==p||4==p&&!c)||n.silk?n.tablet=r:(c||"iphone"==o||"ipod"==o||s||n.blackberry||n.webos||n.bada)&&(n.mobile=r),n.msedge||n.msie&&n.version>=10||n.yandexbrowser&&n.version>=15||n.chrome&&n.version>=20||n.firefox&&n.version>=20||n.safari&&n.version>=6||n.opera&&n.version>=10||n.ios&&n.osversion&&n.osversion.split(".")[0]>=6||n.blackberry&&n.version>=10.1?n.a=r:n.msie&&n.version<10||n.chrome&&n.version<20||n.firefox&&n.version<20||n.safari&&n.version<6||n.opera&&n.version<10||n.ios&&n.osversion&&n.osversion.split(".")[0]<6?n.c=r:n.x=r,n}var r=!0,i=e("undefined"!=typeof navigator?navigator.userAgent:"");return i.test=function(e){for(var r=0;r<e.length;++r){var t=e[r];if("string"==typeof t&&t in i)return!0}return!1},i._detect=e,i})},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(r,"__esModule",{value:!0});var n=i(7),o=t(n),a=i(8),s=t(a),l=i(9),u=t(l),f=i(13),m=t(f),c=i(12),d=t(c),p=i(14),b=t(p),g=i(10),x=t(g),k=i(11),h=t(k);r["default"]=[o["default"],s["default"],m["default"],d["default"],b["default"],x["default"],h["default"],u["default"]],e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function o(e,r){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(r,"__esModule",{value:!0});var a=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e},s=function(){function e(e,r){for(var i=0;i<r.length;i++){var t=r[i];t.enumerable=t.enumerable||!1,t.configurable=!0,"value"in t&&(t.writable=!0),Object.defineProperty(e,t.key,t)}}return function(r,i,t){return i&&e(r.prototype,i),t&&e(r,t),r}}(),l=i(17),u=t(l),f=i(18),m=t(f),c=i(1),d=t(c),p=i(15),b=t(p),g=i(19),x=t(g),k=i(6),h=t(k),v=i(4),y=t(v),w=["phantom"],S=function(){function e(){var r=this,i=arguments.length<=0||void 0===arguments[0]?{}:arguments[0];o(this,e);var t="undefined"!=typeof navigator?navigator.userAgent:void 0;if(this._userAgent=i.userAgent||t,this._keepUnprefixed=i.keepUnprefixed||!1,this._browserInfo=(0,u["default"])(this._userAgent),!this._browserInfo||!this._browserInfo.prefix)return this._hasPropsRequiringPrefix=!1,(0,x["default"])("Either the global navigator was undefined or an invalid userAgent was provided.","Using a valid userAgent? Please let us know and create an issue at https://github.com/rofrischmann/inline-style-prefixer/issues"),!1;this.cssPrefix=this._browserInfo.prefix.css,this.jsPrefix=this._browserInfo.prefix.inline,this.prefixedKeyframes=(0,m["default"])(this._browserInfo);var s=this._browserInfo.browser&&h["default"][this._browserInfo.browser];return s?(this._requiresPrefix=Object.keys(s).filter(function(e){return s[e]>=r._browserInfo.version}).reduce(function(e,r){return a({},e,n({},r,!0))},{}),void(this._hasPropsRequiringPrefix=Object.keys(this._requiresPrefix).length>0)):(w.forEach(function(e){r._browserInfo[e]&&(r._isWhitelisted=!0)}),this._hasPropsRequiringPrefix=!1,this._isWhitelisted?!0:((0,x["default"])("Your userAgent seems to be not supported by inline-style-prefixer. Feel free to open an issue."),!1))}return s(e,[{key:"prefix",value:function(e){var r=this;return this._hasPropsRequiringPrefix?(e=(0,b["default"])({},e),Object.keys(e).forEach(function(i){var t=e[i];t instanceof Object?e[i]=r.prefix(t):(r._requiresPrefix[i]&&(e[r.jsPrefix+(0,d["default"])(i)]=t,r._keepUnprefixed||delete e[i]),y["default"].forEach(function(n){var o=n({property:i,value:t,styles:e,browserInfo:r._browserInfo,prefix:{js:r.jsPrefix,css:r.cssPrefix,keyframes:r.prefixedKeyframes},keepUnprefixed:r._keepUnprefixed,requiresPrefix:r._requiresPrefix,forceRun:!1});(0,b["default"])(e,o)}))}),e):e}}],[{key:"prefixAll",value:function(r){var i={},t=(0,u["default"])("*");return t.browsers.forEach(function(e){var r=h["default"][e];r&&(0,b["default"])(i,r)}),!Object.keys(i).length>0?r:(r=(0,b["default"])({},r),Object.keys(r).forEach(function(n){var o=r[n];if(o instanceof Object)r[n]=e.prefixAll(o);else{var a=Object.keys(t.prefixes);a.forEach(function(e){var a=t.prefixes[e];i[n]&&(r[a.inline+(0,d["default"])(n)]=o),y["default"].forEach(function(t){var s=t({property:n,value:o,styles:r,browserInfo:{name:e,prefix:a,version:0},prefix:{},keepUnprefixed:!0,requiresPrefix:i,forceRun:!0});(0,b["default"])(r,s)})})}}),r)}}]),e}();r["default"]=S,e.exports=r["default"]},function(e,r){var i={chrome:{transform:35,transformOrigin:35,transformOriginX:35,transformOriginY:35,backfaceVisibility:35,perspective:35,perspectiveOrigin:35,transformStyle:35,transformOriginZ:35,animation:42,animationDelay:42,animationDirection:42,animationFillMode:42,animationDuration:42,animationIterationCount:42,animationName:42,animationPlayState:42,animationTimingFunction:42,appearance:50,userSelect:50,fontKerning:32,textEmphasisPosition:50,textEmphasis:50,textEmphasisStyle:50,textEmphasisColor:50,boxDecorationBreak:50,clipPath:50,maskImage:50,maskMode:50,maskRepeat:50,maskPosition:50,maskClip:50,maskOrigin:50,maskSize:50,maskComposite:50,mask:50,maskBorderSource:50,maskBorderMode:50,maskBorderSlice:50,maskBorderWidth:50,maskBorderOutset:50,maskBorderRepeat:50,maskBorder:50,maskType:50,textDecorationStyle:50,textDecorationSkip:50,textDecorationLine:50,textDecorationColor:50,filter:50,fontFeatureSettings:47,breakAfter:50,breakBefore:50,breakInside:50,columnCount:50,columnFill:50,columnGap:50,columnRule:50,columnRuleColor:50,columnRuleStyle:50,columnRuleWidth:50,columns:50,columnSpan:50,columnWidth:50},safari:{flex:8,flexBasis:8,flexDirection:8,flexGrow:8,flexFlow:8,flexShrink:8,flexWrap:8,alignContent:8,alignItems:8,alignSelf:8,justifyContent:8,order:8,transition:6,transitionDelay:6,transitionDuration:6,transitionProperty:6,transitionTimingFunction:6,transform:8,transformOrigin:8,transformOriginX:8,transformOriginY:8,backfaceVisibility:8,perspective:8,perspectiveOrigin:8,transformStyle:8,transformOriginZ:8,animation:8,animationDelay:8,animationDirection:8,animationFillMode:8,animationDuration:8,animationIterationCount:8,animationName:8,animationPlayState:8,animationTimingFunction:8,appearance:9.1,userSelect:9.1,backdropFilter:9.1,fontKerning:9.1,scrollSnapType:9.1,scrollSnapPointsX:9.1,scrollSnapPointsY:9.1,scrollSnapDestination:9.1,scrollSnapCoordinate:9.1,textEmphasisPosition:7,textEmphasis:7,textEmphasisStyle:7,textEmphasisColor:7,boxDecorationBreak:9.1,clipPath:9.1,maskImage:9.1,maskMode:9.1,maskRepeat:9.1,maskPosition:9.1,maskClip:9.1,maskOrigin:9.1,maskSize:9.1,maskComposite:9.1,mask:9.1,maskBorderSource:9.1,maskBorderMode:9.1,maskBorderSlice:9.1,maskBorderWidth:9.1,maskBorderOutset:9.1,maskBorderRepeat:9.1,maskBorder:9.1,maskType:9.1,textDecorationStyle:9.1,textDecorationSkip:9.1,textDecorationLine:9.1,textDecorationColor:9.1,shapeImageThreshold:9.1,shapeImageMargin:9.1,shapeImageOutside:9.1,filter:9,hyphens:9.1,flowInto:9.1,flowFrom:9.1,breakBefore:8,breakAfter:8,breakInside:8,regionFragment:9.1,columnCount:8,columnFill:8,columnGap:8,columnRule:8,columnRuleColor:8,columnRuleStyle:8,columnRuleWidth:8,columns:8,columnSpan:8,columnWidth:8},firefox:{appearance:46,userSelect:46,boxSizing:28,textAlignLast:46,textDecorationStyle:35,textDecorationSkip:35,textDecorationLine:35,textDecorationColor:35,tabSize:46,hyphens:42,fontFeatureSettings:33,breakAfter:46,breakBefore:46,breakInside:46,columnCount:46,columnFill:46,columnGap:46,columnRule:46,columnRuleColor:46,columnRuleStyle:46,columnRuleWidth:46,columns:46,columnSpan:46,columnWidth:46},opera:{flex:16,flexBasis:16,flexDirection:16,flexGrow:16,flexFlow:16,flexShrink:16,flexWrap:16,alignContent:16,alignItems:16,alignSelf:16,justifyContent:16,order:16,transform:22,transformOrigin:22,transformOriginX:22,transformOriginY:22,backfaceVisibility:22,perspective:22,perspectiveOrigin:22,transformStyle:22,transformOriginZ:22,animation:29,animationDelay:29,animationDirection:29,animationFillMode:29,animationDuration:29,animationIterationCount:29,animationName:29,animationPlayState:29,animationTimingFunction:29,appearance:36,userSelect:36,fontKerning:19,textEmphasisPosition:36,textEmphasis:36,textEmphasisStyle:36,textEmphasisColor:36,boxDecorationBreak:36,clipPath:36,maskImage:36,maskMode:36,maskRepeat:36,maskPosition:36,maskClip:36,maskOrigin:36,maskSize:36,maskComposite:36,mask:36,maskBorderSource:36,maskBorderMode:36,maskBorderSlice:36,maskBorderWidth:36,maskBorderOutset:36,maskBorderRepeat:36,maskBorder:36,maskType:36,filter:36,fontFeatureSettings:36,breakAfter:36,breakBefore:36,breakInside:36,columnCount:36,columnFill:36,columnGap:36,columnRule:36,columnRuleColor:36,columnRuleStyle:36,columnRuleWidth:36,columns:36,columnSpan:36,columnWidth:36},ie:{gridArea:11,gridGap:11,gridColumnStart:11,userSelect:11,grid:11,breakInside:11,hyphens:11,gridTemplateAreas:11,breakAfter:11,scrollSnapCoordinate:11,gridRowStart:11,gridAutoFlow:11,scrollSnapDestination:11,gridTemplate:11,gridTemplateColumns:11,transformOrigin:9,gridAutoRows:11,gridColumnEnd:11,transformOriginY:9,scrollSnapPointsY:11,breakBefore:11,gridRowGap:11,scrollSnapPointsX:11,regionFragment:11,flexWrap:10,wrapFlow:11,gridRowEnd:11,flex:10,flexDirection:10,flowInto:11,touchAction:10,gridColumn:11,transform:9,gridTemplateRows:11,flexFlow:10,transformOriginX:9,flowFrom:11,scrollSnapType:11,wrapMargin:11,gridColumnGap:11,gridRow:11,wrapThrough:11,gridAutoColumns:11,textSizeAdjust:11},edge:{userSelect:14,wrapFlow:14,wrapThrough:14,wrapMargin:14,scrollSnapType:14,scrollSnapPointsX:14,scrollSnapPointsY:14,scrollSnapDestination:14,scrollSnapCoordinate:14,hyphens:14,flowInto:14,flowFrom:14,breakBefore:14,breakAfter:14,breakInside:14,regionFragment:14,gridTemplateColumns:14,gridTemplateRows:14,gridTemplateAreas:14,gridTemplate:14,gridAutoColumns:14,gridAutoRows:14,gridAutoFlow:14,grid:14,gridRowStart:14,gridColumnStart:14,gridRowEnd:14,gridRow:14,gridColumn:14,gridColumnEnd:14,gridColumnGap:14,gridRowGap:14,gridArea:14,gridGap:14},ios_saf:{flex:8.1,flexBasis:8.1,flexDirection:8.1,flexGrow:8.1,flexFlow:8.1,flexShrink:8.1,flexWrap:8.1,alignContent:8.1,alignItems:8.1,alignSelf:8.1,justifyContent:8.1,order:8.1,transition:6,transitionDelay:6,transitionDuration:6,transitionProperty:6,transitionTimingFunction:6,transform:8.1,transformOrigin:8.1,transformOriginX:8.1,transformOriginY:8.1,backfaceVisibility:8.1,perspective:8.1,perspectiveOrigin:8.1,transformStyle:8.1,transformOriginZ:8.1,animation:8.1,animationDelay:8.1,animationDirection:8.1,animationFillMode:8.1,animationDuration:8.1,animationIterationCount:8.1,animationName:8.1,animationPlayState:8.1,animationTimingFunction:8.1,appearance:9.3,userSelect:9.3,backdropFilter:9.3,fontKerning:9.3,scrollSnapType:9.3,scrollSnapPointsX:9.3,scrollSnapPointsY:9.3,scrollSnapDestination:9.3,scrollSnapCoordinate:9.3,boxDecorationBreak:9.3,clipPath:9.3,maskImage:9.3,maskMode:9.3,maskRepeat:9.3,maskPosition:9.3,maskClip:9.3,maskOrigin:9.3,maskSize:9.3,maskComposite:9.3,mask:9.3,maskBorderSource:9.3,maskBorderMode:9.3,maskBorderSlice:9.3,maskBorderWidth:9.3,maskBorderOutset:9.3,maskBorderRepeat:9.3,maskBorder:9.3,maskType:9.3,textSizeAdjust:9.3,textDecorationStyle:9.3,textDecorationSkip:9.3,textDecorationLine:9.3,textDecorationColor:9.3,shapeImageThreshold:9.3,shapeImageMargin:9.3,shapeImageOutside:9.3,filter:9,hyphens:9.3,flowInto:9.3,flowFrom:9.3,breakBefore:8.1,breakAfter:8.1,breakInside:8.1,regionFragment:9.3,columnCount:8.1,columnFill:8.1,columnGap:8.1,columnRule:8.1,columnRuleColor:8.1,columnRuleStyle:8.1,columnRuleWidth:8.1,columns:8.1,columnSpan:8.1,columnWidth:8.1},android:{borderImage:4.2,borderImageOutset:4.2,borderImageRepeat:4.2,borderImageSlice:4.2,borderImageSource:4.2,borderImageWidth:4.2,flex:4.2,flexBasis:4.2,flexDirection:4.2,flexGrow:4.2,flexFlow:4.2,flexShrink:4.2,flexWrap:4.2,alignContent:4.2,alignItems:4.2,alignSelf:4.2,justifyContent:4.2,order:4.2,transition:4.2,transitionDelay:4.2,transitionDuration:4.2,transitionProperty:4.2,transitionTimingFunction:4.2,transform:4.4,transformOrigin:4.4,transformOriginX:4.4,transformOriginY:4.4,backfaceVisibility:4.4,perspective:4.4,perspectiveOrigin:4.4,transformStyle:4.4,transformOriginZ:4.4,animation:4.4,animationDelay:4.4,animationDirection:4.4,animationFillMode:4.4,animationDuration:4.4,animationIterationCount:4.4,animationName:4.4,animationPlayState:4.4,animationTimingFunction:4.4,appearance:46,userSelect:46,fontKerning:4.4,textEmphasisPosition:46,textEmphasis:46,textEmphasisStyle:46,textEmphasisColor:46,boxDecorationBreak:46,clipPath:46,maskImage:46,maskMode:46,maskRepeat:46,maskPosition:46,maskClip:46,maskOrigin:46,maskSize:46,maskComposite:46,mask:46,maskBorderSource:46,maskBorderMode:46,maskBorderSlice:46,maskBorderWidth:46,maskBorderOutset:46,maskBorderRepeat:46,maskBorder:46,maskType:46,filter:46,fontFeatureSettings:46,breakAfter:46,breakBefore:46,breakInside:46,columnCount:46,columnFill:46,columnGap:46,columnRule:46,columnRuleColor:46,columnRuleStyle:46,columnRuleWidth:46,columns:46,columnSpan:46,columnWidth:46},and_chr:{appearance:47,userSelect:47,textEmphasisPosition:47,textEmphasis:47,textEmphasisStyle:47,textEmphasisColor:47,boxDecorationBreak:47,clipPath:47,maskImage:47,maskMode:47,maskRepeat:47,maskPosition:47,maskClip:47,maskOrigin:47,maskSize:47,maskComposite:47,mask:47,maskBorderSource:47,maskBorderMode:47,maskBorderSlice:47,maskBorderWidth:47,maskBorderOutset:47,maskBorderRepeat:47,maskBorder:47,maskType:47,textDecorationStyle:47,textDecorationSkip:47,textDecorationLine:47,textDecorationColor:47,filter:47,fontFeatureSettings:47,breakAfter:47,breakBefore:47,breakInside:47,columnCount:47,columnFill:47,columnGap:47,columnRule:47,columnRuleColor:47,columnRuleStyle:47,columnRuleWidth:47,columns:47,columnSpan:47,columnWidth:47},and_uc:{flex:9.9,flexBasis:9.9,flexDirection:9.9,flexGrow:9.9,flexFlow:9.9,flexShrink:9.9,flexWrap:9.9,alignContent:9.9,alignItems:9.9,alignSelf:9.9,justifyContent:9.9,order:9.9,transition:9.9,transitionDelay:9.9,transitionDuration:9.9,transitionProperty:9.9,transitionTimingFunction:9.9,transform:9.9,transformOrigin:9.9,transformOriginX:9.9,transformOriginY:9.9,backfaceVisibility:9.9,perspective:9.9,perspectiveOrigin:9.9,transformStyle:9.9,transformOriginZ:9.9,animation:9.9,animationDelay:9.9,animationDirection:9.9,animationFillMode:9.9,animationDuration:9.9,animationIterationCount:9.9,animationName:9.9,animationPlayState:9.9,animationTimingFunction:9.9,appearance:9.9,userSelect:9.9,fontKerning:9.9,textEmphasisPosition:9.9,textEmphasis:9.9,textEmphasisStyle:9.9,textEmphasisColor:9.9,maskImage:9.9,maskMode:9.9,maskRepeat:9.9,maskPosition:9.9,maskClip:9.9,maskOrigin:9.9,maskSize:9.9,maskComposite:9.9,mask:9.9,maskBorderSource:9.9,maskBorderMode:9.9,maskBorderSlice:9.9,maskBorderWidth:9.9,maskBorderOutset:9.9,maskBorderRepeat:9.9,maskBorder:9.9,maskType:9.9,textSizeAdjust:9.9,filter:9.9,hyphens:9.9,flowInto:9.9,flowFrom:9.9,breakBefore:9.9,breakAfter:9.9,breakInside:9.9,regionFragment:9.9,fontFeatureSettings:9.9,columnCount:9.9,columnFill:9.9,columnGap:9.9,columnRule:9.9,columnRuleColor:9.9,columnRuleStyle:9.9,columnRuleWidth:9.9,columns:9.9,columnSpan:9.9,columnWidth:9.9},op_mini:{borderImage:5,borderImageOutset:5,borderImageRepeat:5,borderImageSlice:5,borderImageSource:5,borderImageWidth:5,tabSize:5,objectFit:5,objectPosition:5}};e.exports=i},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,s=e.forceRun,l=n.browser,u=n.version;if("string"==typeof t&&t.indexOf("calc(")>-1&&(s||"firefox"===l&&15>u||"chrome"===l&&25>u||"safari"===l&&6.1>u||"ios_saf"===l&&7>u)){var f=s?["-webkit-","-moz-"].map(function(e){return t.replace(/calc\(/g,e+"calc(")}).join(";"+r+":"):t.replace(/calc\(/g,o.css+"calc(");return i({},r,f+(a?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t,e.exports=r["default"]},function(e,r){"use strict";function i(e){var r=e.property,i=e.value,n=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,s=e.forceRun,l=n.browser,u=n.version;if("cursor"===r&&t[i]&&(s||"firefox"===l&&24>u||"chrome"===l&&37>u||"safari"===l&&9>u||"opera"===l&&24>u)){var f=s?["-webkit-","-moz-"].map(function(e){return e+i}).join(";"+r+":"):o.css+i;return{cursor:f+(a?";"+r+":"+i:"")}}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=i;var t={"zoom-in":!0,"zoom-out":!0,grab:!0,grabbing:!0};e.exports=r["default"]},function(e,r){"use strict";function i(e){var r=e.property,i=e.value,n=e.browserInfo,o=(e.prefix,e.keepUnprefixed),a=e.forceRun,s=n.browser,l=n.version;if("display"===r&&t[i]&&(a||"chrome"===s&&29>l&&l>20||("safari"===s||"ios_saf"===s)&&9>l&&l>6||"opera"===s&&(15==l||16==l))){var u=a?["-webkit-box","-moz-box","-ms-"+i+"box","-webkit-"+i].join(";"+r+":"):"-webkit-"+i;return{display:u+(o?";"+r+":"+i:"")}}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=i;var t={flex:!0,"inline-flex":!0};e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.styles,l=e.browserInfo,u=(e.prefix,e.keepUnprefixed),f=e.forceRun,m=l.browser,c=l.version;if(s[r]&&(f||("ie_mob"===m||"ie"===m)&&10==c)){if(u||delete n[r],a[r])return i({},a[r],o[t]||t);if(o[t])return i({},r,o[t]+(u?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0});var n=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e};r["default"]=t;var o={"space-around":"distribute","space-between":"justify","flex-start":"start","flex-end":"end",flex:"-ms-flexbox","inline-flex":"-ms-inline-flexbox"},a={alignContent:"msFlexLinePack",alignSelf:"msFlexItemAlign",alignItems:"msFlexAlign",justifyContent:"msFlexPack",order:"msFlexOrder",flexGrow:"msFlexPositive",flexShrink:"msFlexNegative",flexBasis:"msPreferredSize"},s=Object.keys(a).concat("display").reduce(function(e,r){return n({},e,i({},r,!0))},{});e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.styles,l=e.browserInfo,u=e.prefix,f=e.keepUnprefixed,m=e.forceRun,c=l.browser,d=l.version;if(s[r]&&(m||"firefox"===c&&22>d||"chrome"===c&&21>d||("safari"===c||"ios_saf"===c)&&6.1>=d||"android"===c&&4.4>d||"and_uc"===c)){if(f||delete n[r],"flexDirection"===r)return{WebkitBoxOrient:t.indexOf("column")>-1?"vertical":"horizontal",WebkitBoxDirection:t.indexOf("reverse")>-1?"reverse":"normal"};if("display"===r&&o[t])return{display:u.css+o[t]+(f?";"+r+":"+t:"")};if(a[r])return i({},a[r],o[t]||t);if(o[t])return i({},r,o[t]+(f?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0});var n=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e};r["default"]=t;var o={"space-around":"justify","space-between":"justify","flex-start":"start","flex-end":"end","wrap-reverse":"multiple",wrap:"multiple",flex:"box","inline-flex":"inline-box"},a={alignItems:"WebkitBoxAlign",justifyContent:"WebkitBoxPack",flexWrap:"WebkitBoxLines"},s=Object.keys(a).concat(["alignContent","alignSelf","display","order","flexGrow","flexShrink","flexBasis","flexDirection"]).reduce(function(e,r){return n({},e,i({},r,!0))},{});e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,o=e.browserInfo,a=e.prefix,s=e.keepUnprefixed,l=e.forceRun,u=o.browser,f=o.version;if("string"==typeof t&&null!==t.match(n)&&(l||"firefox"===u&&16>f||"chrome"===u&&26>f||("safari"===u||"ios_saf"===u)&&7>f||("opera"===u||"op_mini"===u)&&12.1>f||"android"===u&&4.4>f||"and_uc"===u)){var m=l?["-webkit-","-moz-"].map(function(e){return e+t}).join(";"+r+":"):a.css+t;return i({},r,m+(s?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t;var n=/linear-gradient|radial-gradient|repeating-linear-gradient|repeating-radial-gradient/;e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,a=e.browserInfo,s=e.prefix,l=e.keepUnprefixed,u=e.forceRun;a.browser,a.version;if(n[r]&&o[t]){var f=u?["-webkit-","-moz-"].map(function(e){return e+t}).join(";"+r+":"):s.css+t;return i({},r,f+(l?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t;var n={maxHeight:!0,maxWidth:!0,width:!0,height:!0,columnWidth:!0,minWidth:!0,minHeight:!0},o={"min-content":!0,"max-content":!0,"fill-available":!0,"fit-content":!0,"contain-floats":!0};e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function o(e){var r=e.property,i=e.value,t=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,l=e.forceRun,f=e.requiresPrefix;t.browser,t.version;if("string"==typeof i&&(r.toLowerCase().indexOf("transition")>-1||r.toLowerCase().indexOf("transitionproperty")>-1)){var m,c=function(){var e=Object.keys(f).map(function(e){return(0,s["default"])(e)}),t=i,c=t.split(/,(?![^()]*(?:\([^()]*\))?\))/g);e.forEach(function(e){c.forEach(function(r,i){if(r.indexOf(e)>-1){var t=l?["-webkit-","-moz-","-ms-"].map(function(i){return r.replace(e,i+e)}).join(","):r.replace(e,o.css+e);c[i]=t+(a?","+r:"")}})});var d=c.join(",");return l?{v:(m={},n(m,"Webkit"+(0,u["default"])(r),d),n(m,"Moz"+(0,u["default"])(r),d),n(m,"ms"+(0,u["default"])(r),d),n(m,r,d),m)}:{v:n({},r,d)}}();if("object"==typeof c)return c.v}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=o;var a=i(16),s=t(a),l=i(1),u=t(l);e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){var r=arguments.length<=1||void 0===arguments[1]?{}:arguments[1];return Object.keys(r).forEach(function(i){return e[i]=r[i]}),e},e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){return e.replace(/([a-z]|^)([A-Z])/g,function(e,r,i){return r+"-"+i.toLowerCase()}).replace("ms-","-ms-")},e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(r,"__esModule",{value:!0});var n=i(3),o=t(n),a={Webkit:["chrome","safari","ios","android","phantom","opera","webos","blackberry","bada","tizen"],Moz:["firefox","seamonkey","sailfish"],ms:["msie","msedge"]},s={chrome:[["chrome"]],safari:[["safari"]],firefox:[["firefox"]],ie:[["msie"]],edge:[["msedge"]],opera:[["opera"]],ios_saf:[["ios","mobile"],["ios","tablet"]],ie_mob:[["windowsphone","mobile","msie"],["windowsphone","tablet","msie"],["windowsphone","mobile","msedge"],["windowsphone","tablet","msedge"]],op_mini:[["opera","mobile"],["opera","tablet"]],and_uc:[["android","mobile"],["android","tablet"]],android:[["android","mobile"],["android","tablet"]]},l=function(e){var r=void 0,i=void 0,t=void 0,n=void 0,o=void 0,l=void 0;r=Object.keys(a);for(var u=0;u<r.length;u++){i=r[u],t=a[i],n=s[e];for(var f=0;f<t.length;f++){o=t[f];for(var m=0;m<n.length;m++)if(l=n[m],-1!==l.indexOf(o))return{inline:i,css:"-"+i.toLowerCase()+"-"}}}return{inline:"",css:""}};r["default"]=function(e){if(!e)return!1;var r={};if("*"===e)return r.browsers=Object.keys(s),r.prefixes={},r.browsers.forEach(function(e){r.prefixes[e]=l(e)}),r;r=o["default"]._detect(e),Object.keys(a).forEach(function(e){a[e].forEach(function(i){r[i]&&(r.prefix={inline:e,css:"-"+e.toLowerCase()+"-"})})});var i="";return Object.keys(s).forEach(function(e){s[e].forEach(function(t){var n=0;t.forEach(function(e){r[e]&&(n+=1)}),t.length===n&&(i=e)})}),r.browser=i,r.version=r.version?parseFloat(r.version):parseInt(parseFloat(r.osversion),10),"android"===r.browser&&r.chrome&&r.version>37&&(r.browser="and_chr"),r.version=parseFloat(r.version),r.osversion=parseFloat(r.osversion),"android"===r.browser&&r.osversion<5&&(r.version=r.osversion),r},e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){var r=e.browser,i=e.version,t=e.prefix,n="keyframes";return("chrome"===r&&43>i||("safari"===r||"ios_saf"===r)&&9>i||"opera"===r&&30>i||"android"===r&&4.4>=i||"and_uc"===r)&&(n=t.css+n),n},e.exports=r["default"]},function(e,r,i){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(){},e.exports=r["default"]},function(r,i){r.exports=e}])});
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -483,7 +471,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -580,7 +568,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -640,7 +628,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -707,7 +695,7 @@ var createPath = exports.createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -778,7 +766,7 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -802,7 +790,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -816,7 +804,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(6);
+var emptyFunction = __webpack_require__(5);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -871,7 +859,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -879,7 +867,7 @@ module.exports = warning;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(9);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -947,7 +935,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -961,9 +949,9 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(8);
-  var warning = __webpack_require__(12);
-  var ReactPropTypesSecret = __webpack_require__(15);
+  var invariant = __webpack_require__(7);
+  var warning = __webpack_require__(11);
+  var ReactPropTypesSecret = __webpack_require__(14);
   var loggedTypeFailures = {};
 }
 
@@ -1014,7 +1002,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1033,7 +1021,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1052,7 +1040,7 @@ var _valueEqual = __webpack_require__(32);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1117,7 +1105,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 };
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1208,18 +1196,18 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(18);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1338,7 +1326,7 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1415,7 +1403,7 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1500,7 +1488,7 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1528,7 +1516,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1600,6 +1588,18 @@ function isPlainObject(value) {
 
 
 /***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,r){ true?module.exports=r(__webpack_require__(0)):"function"==typeof define&&define.amd?define(["react"],r):"object"==typeof exports?exports.ReactCenter=r(require("react")):e.ReactCenter=r(e.React)}(this,function(e){return function(e){function r(t){if(i[t])return i[t].exports;var n=i[t]={exports:{},id:t,loaded:!1};return e[t].call(n.exports,n,n.exports,r),n.loaded=!0,n.exports}var i={};return r.m=e,r.c=i,r.p="",r(0)}([function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}var n=i(2),o=t(n);e.exports=o["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){return e.charAt(0).toUpperCase()+e.slice(1)},e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r){var i={};for(var t in e)r.indexOf(t)>=0||Object.prototype.hasOwnProperty.call(e,t)&&(i[t]=e[t]);return i}Object.defineProperty(r,"__esModule",{value:!0});var o=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e},a=i(20),s=t(a),l=i(5),u=t(l);r["default"]=function(e){var r=e.style,i=e.prefixer,t=void 0===i?new u["default"]:i,a=e.children,l=n(e,["style","prefixer","children"]),f={alignContent:"center",alignItems:"center",boxSizing:"border-box",display:"flex",flexDirection:"row",flexWrap:"nowrap",justifyContent:"center"};return s["default"].createElement("div",o({style:o({},t.prefix(f),r)},l),a)}},function(e,r,i){var t,n;/*!
+	  * Bowser - a browser detector
+	  * https://github.com/ded/bowser
+	  * MIT License | (c) Dustin Diaz 2015
+	  */
+!function(o,a){"undefined"!=typeof e&&e.exports?e.exports=a():(t=a,n="function"==typeof t?t.call(r,i,r,e):t,!(void 0!==n&&(e.exports=n)))}("bowser",function(){function e(e){function i(r){var i=e.match(r);return i&&i.length>1&&i[1]||""}function t(r){var i=e.match(r);return i&&i.length>1&&i[2]||""}var n,o=i(/(ipod|iphone|ipad)/i).toLowerCase(),a=/like android/i.test(e),s=!a&&/android/i.test(e),l=/CrOS/.test(e),u=i(/edge\/(\d+(\.\d+)?)/i),f=i(/version\/(\d+(\.\d+)?)/i),m=/tablet/i.test(e),c=!m&&/[^-]mobi/i.test(e);/opera|opr/i.test(e)?n={name:"Opera",opera:r,version:f||i(/(?:opera|opr)[\s\/](\d+(\.\d+)?)/i)}:/yabrowser/i.test(e)?n={name:"Yandex Browser",yandexbrowser:r,version:f||i(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)}:/windows phone/i.test(e)?(n={name:"Windows Phone",windowsphone:r},u?(n.msedge=r,n.version=u):(n.msie=r,n.version=i(/iemobile\/(\d+(\.\d+)?)/i))):/msie|trident/i.test(e)?n={name:"Internet Explorer",msie:r,version:i(/(?:msie |rv:)(\d+(\.\d+)?)/i)}:l?n={name:"Chrome",chromeBook:r,chrome:r,version:i(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:/chrome.+? edge/i.test(e)?n={name:"Microsoft Edge",msedge:r,version:u}:/chrome|crios|crmo/i.test(e)?n={name:"Chrome",chrome:r,version:i(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:o?(n={name:"iphone"==o?"iPhone":"ipad"==o?"iPad":"iPod"},f&&(n.version=f)):/sailfish/i.test(e)?n={name:"Sailfish",sailfish:r,version:i(/sailfish\s?browser\/(\d+(\.\d+)?)/i)}:/seamonkey\//i.test(e)?n={name:"SeaMonkey",seamonkey:r,version:i(/seamonkey\/(\d+(\.\d+)?)/i)}:/firefox|iceweasel/i.test(e)?(n={name:"Firefox",firefox:r,version:i(/(?:firefox|iceweasel)[ \/](\d+(\.\d+)?)/i)},/\((mobile|tablet);[^\)]*rv:[\d\.]+\)/i.test(e)&&(n.firefoxos=r)):/silk/i.test(e)?n={name:"Amazon Silk",silk:r,version:i(/silk\/(\d+(\.\d+)?)/i)}:s?n={name:"Android",version:f}:/phantom/i.test(e)?n={name:"PhantomJS",phantom:r,version:i(/phantomjs\/(\d+(\.\d+)?)/i)}:/blackberry|\bbb\d+/i.test(e)||/rim\stablet/i.test(e)?n={name:"BlackBerry",blackberry:r,version:f||i(/blackberry[\d]+\/(\d+(\.\d+)?)/i)}:/(web|hpw)os/i.test(e)?(n={name:"WebOS",webos:r,version:f||i(/w(?:eb)?osbrowser\/(\d+(\.\d+)?)/i)},/touchpad\//i.test(e)&&(n.touchpad=r)):n=/bada/i.test(e)?{name:"Bada",bada:r,version:i(/dolfin\/(\d+(\.\d+)?)/i)}:/tizen/i.test(e)?{name:"Tizen",tizen:r,version:i(/(?:tizen\s?)?browser\/(\d+(\.\d+)?)/i)||f}:/safari/i.test(e)?{name:"Safari",safari:r,version:f}:{name:i(/^(.*)\/(.*) /),version:t(/^(.*)\/(.*) /)},!n.msedge&&/(apple)?webkit/i.test(e)?(n.name=n.name||"Webkit",n.webkit=r,!n.version&&f&&(n.version=f)):!n.opera&&/gecko\//i.test(e)&&(n.name=n.name||"Gecko",n.gecko=r,n.version=n.version||i(/gecko\/(\d+(\.\d+)?)/i)),n.msedge||!s&&!n.silk?o&&(n[o]=r,n.ios=r):n.android=r;var d="";n.windowsphone?d=i(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i):o?(d=i(/os (\d+([_\s]\d+)*) like mac os x/i),d=d.replace(/[_\s]/g,".")):s?d=i(/android[ \/-](\d+(\.\d+)*)/i):n.webos?d=i(/(?:web|hpw)os\/(\d+(\.\d+)*)/i):n.blackberry?d=i(/rim\stablet\sos\s(\d+(\.\d+)*)/i):n.bada?d=i(/bada\/(\d+(\.\d+)*)/i):n.tizen&&(d=i(/tizen[\/\s](\d+(\.\d+)*)/i)),d&&(n.osversion=d);var p=d.split(".")[0];return m||"ipad"==o||s&&(3==p||4==p&&!c)||n.silk?n.tablet=r:(c||"iphone"==o||"ipod"==o||s||n.blackberry||n.webos||n.bada)&&(n.mobile=r),n.msedge||n.msie&&n.version>=10||n.yandexbrowser&&n.version>=15||n.chrome&&n.version>=20||n.firefox&&n.version>=20||n.safari&&n.version>=6||n.opera&&n.version>=10||n.ios&&n.osversion&&n.osversion.split(".")[0]>=6||n.blackberry&&n.version>=10.1?n.a=r:n.msie&&n.version<10||n.chrome&&n.version<20||n.firefox&&n.version<20||n.safari&&n.version<6||n.opera&&n.version<10||n.ios&&n.osversion&&n.osversion.split(".")[0]<6?n.c=r:n.x=r,n}var r=!0,i=e("undefined"!=typeof navigator?navigator.userAgent:"");return i.test=function(e){for(var r=0;r<e.length;++r){var t=e[r];if("string"==typeof t&&t in i)return!0}return!1},i._detect=e,i})},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(r,"__esModule",{value:!0});var n=i(7),o=t(n),a=i(8),s=t(a),l=i(9),u=t(l),f=i(13),m=t(f),c=i(12),d=t(c),p=i(14),b=t(p),g=i(10),x=t(g),k=i(11),h=t(k);r["default"]=[o["default"],s["default"],m["default"],d["default"],b["default"],x["default"],h["default"],u["default"]],e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function o(e,r){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(r,"__esModule",{value:!0});var a=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e},s=function(){function e(e,r){for(var i=0;i<r.length;i++){var t=r[i];t.enumerable=t.enumerable||!1,t.configurable=!0,"value"in t&&(t.writable=!0),Object.defineProperty(e,t.key,t)}}return function(r,i,t){return i&&e(r.prototype,i),t&&e(r,t),r}}(),l=i(17),u=t(l),f=i(18),m=t(f),c=i(1),d=t(c),p=i(15),b=t(p),g=i(19),x=t(g),k=i(6),h=t(k),v=i(4),y=t(v),w=["phantom"],S=function(){function e(){var r=this,i=arguments.length<=0||void 0===arguments[0]?{}:arguments[0];o(this,e);var t="undefined"!=typeof navigator?navigator.userAgent:void 0;if(this._userAgent=i.userAgent||t,this._keepUnprefixed=i.keepUnprefixed||!1,this._browserInfo=(0,u["default"])(this._userAgent),!this._browserInfo||!this._browserInfo.prefix)return this._hasPropsRequiringPrefix=!1,(0,x["default"])("Either the global navigator was undefined or an invalid userAgent was provided.","Using a valid userAgent? Please let us know and create an issue at https://github.com/rofrischmann/inline-style-prefixer/issues"),!1;this.cssPrefix=this._browserInfo.prefix.css,this.jsPrefix=this._browserInfo.prefix.inline,this.prefixedKeyframes=(0,m["default"])(this._browserInfo);var s=this._browserInfo.browser&&h["default"][this._browserInfo.browser];return s?(this._requiresPrefix=Object.keys(s).filter(function(e){return s[e]>=r._browserInfo.version}).reduce(function(e,r){return a({},e,n({},r,!0))},{}),void(this._hasPropsRequiringPrefix=Object.keys(this._requiresPrefix).length>0)):(w.forEach(function(e){r._browserInfo[e]&&(r._isWhitelisted=!0)}),this._hasPropsRequiringPrefix=!1,this._isWhitelisted?!0:((0,x["default"])("Your userAgent seems to be not supported by inline-style-prefixer. Feel free to open an issue."),!1))}return s(e,[{key:"prefix",value:function(e){var r=this;return this._hasPropsRequiringPrefix?(e=(0,b["default"])({},e),Object.keys(e).forEach(function(i){var t=e[i];t instanceof Object?e[i]=r.prefix(t):(r._requiresPrefix[i]&&(e[r.jsPrefix+(0,d["default"])(i)]=t,r._keepUnprefixed||delete e[i]),y["default"].forEach(function(n){var o=n({property:i,value:t,styles:e,browserInfo:r._browserInfo,prefix:{js:r.jsPrefix,css:r.cssPrefix,keyframes:r.prefixedKeyframes},keepUnprefixed:r._keepUnprefixed,requiresPrefix:r._requiresPrefix,forceRun:!1});(0,b["default"])(e,o)}))}),e):e}}],[{key:"prefixAll",value:function(r){var i={},t=(0,u["default"])("*");return t.browsers.forEach(function(e){var r=h["default"][e];r&&(0,b["default"])(i,r)}),!Object.keys(i).length>0?r:(r=(0,b["default"])({},r),Object.keys(r).forEach(function(n){var o=r[n];if(o instanceof Object)r[n]=e.prefixAll(o);else{var a=Object.keys(t.prefixes);a.forEach(function(e){var a=t.prefixes[e];i[n]&&(r[a.inline+(0,d["default"])(n)]=o),y["default"].forEach(function(t){var s=t({property:n,value:o,styles:r,browserInfo:{name:e,prefix:a,version:0},prefix:{},keepUnprefixed:!0,requiresPrefix:i,forceRun:!0});(0,b["default"])(r,s)})})}}),r)}}]),e}();r["default"]=S,e.exports=r["default"]},function(e,r){var i={chrome:{transform:35,transformOrigin:35,transformOriginX:35,transformOriginY:35,backfaceVisibility:35,perspective:35,perspectiveOrigin:35,transformStyle:35,transformOriginZ:35,animation:42,animationDelay:42,animationDirection:42,animationFillMode:42,animationDuration:42,animationIterationCount:42,animationName:42,animationPlayState:42,animationTimingFunction:42,appearance:50,userSelect:50,fontKerning:32,textEmphasisPosition:50,textEmphasis:50,textEmphasisStyle:50,textEmphasisColor:50,boxDecorationBreak:50,clipPath:50,maskImage:50,maskMode:50,maskRepeat:50,maskPosition:50,maskClip:50,maskOrigin:50,maskSize:50,maskComposite:50,mask:50,maskBorderSource:50,maskBorderMode:50,maskBorderSlice:50,maskBorderWidth:50,maskBorderOutset:50,maskBorderRepeat:50,maskBorder:50,maskType:50,textDecorationStyle:50,textDecorationSkip:50,textDecorationLine:50,textDecorationColor:50,filter:50,fontFeatureSettings:47,breakAfter:50,breakBefore:50,breakInside:50,columnCount:50,columnFill:50,columnGap:50,columnRule:50,columnRuleColor:50,columnRuleStyle:50,columnRuleWidth:50,columns:50,columnSpan:50,columnWidth:50},safari:{flex:8,flexBasis:8,flexDirection:8,flexGrow:8,flexFlow:8,flexShrink:8,flexWrap:8,alignContent:8,alignItems:8,alignSelf:8,justifyContent:8,order:8,transition:6,transitionDelay:6,transitionDuration:6,transitionProperty:6,transitionTimingFunction:6,transform:8,transformOrigin:8,transformOriginX:8,transformOriginY:8,backfaceVisibility:8,perspective:8,perspectiveOrigin:8,transformStyle:8,transformOriginZ:8,animation:8,animationDelay:8,animationDirection:8,animationFillMode:8,animationDuration:8,animationIterationCount:8,animationName:8,animationPlayState:8,animationTimingFunction:8,appearance:9.1,userSelect:9.1,backdropFilter:9.1,fontKerning:9.1,scrollSnapType:9.1,scrollSnapPointsX:9.1,scrollSnapPointsY:9.1,scrollSnapDestination:9.1,scrollSnapCoordinate:9.1,textEmphasisPosition:7,textEmphasis:7,textEmphasisStyle:7,textEmphasisColor:7,boxDecorationBreak:9.1,clipPath:9.1,maskImage:9.1,maskMode:9.1,maskRepeat:9.1,maskPosition:9.1,maskClip:9.1,maskOrigin:9.1,maskSize:9.1,maskComposite:9.1,mask:9.1,maskBorderSource:9.1,maskBorderMode:9.1,maskBorderSlice:9.1,maskBorderWidth:9.1,maskBorderOutset:9.1,maskBorderRepeat:9.1,maskBorder:9.1,maskType:9.1,textDecorationStyle:9.1,textDecorationSkip:9.1,textDecorationLine:9.1,textDecorationColor:9.1,shapeImageThreshold:9.1,shapeImageMargin:9.1,shapeImageOutside:9.1,filter:9,hyphens:9.1,flowInto:9.1,flowFrom:9.1,breakBefore:8,breakAfter:8,breakInside:8,regionFragment:9.1,columnCount:8,columnFill:8,columnGap:8,columnRule:8,columnRuleColor:8,columnRuleStyle:8,columnRuleWidth:8,columns:8,columnSpan:8,columnWidth:8},firefox:{appearance:46,userSelect:46,boxSizing:28,textAlignLast:46,textDecorationStyle:35,textDecorationSkip:35,textDecorationLine:35,textDecorationColor:35,tabSize:46,hyphens:42,fontFeatureSettings:33,breakAfter:46,breakBefore:46,breakInside:46,columnCount:46,columnFill:46,columnGap:46,columnRule:46,columnRuleColor:46,columnRuleStyle:46,columnRuleWidth:46,columns:46,columnSpan:46,columnWidth:46},opera:{flex:16,flexBasis:16,flexDirection:16,flexGrow:16,flexFlow:16,flexShrink:16,flexWrap:16,alignContent:16,alignItems:16,alignSelf:16,justifyContent:16,order:16,transform:22,transformOrigin:22,transformOriginX:22,transformOriginY:22,backfaceVisibility:22,perspective:22,perspectiveOrigin:22,transformStyle:22,transformOriginZ:22,animation:29,animationDelay:29,animationDirection:29,animationFillMode:29,animationDuration:29,animationIterationCount:29,animationName:29,animationPlayState:29,animationTimingFunction:29,appearance:36,userSelect:36,fontKerning:19,textEmphasisPosition:36,textEmphasis:36,textEmphasisStyle:36,textEmphasisColor:36,boxDecorationBreak:36,clipPath:36,maskImage:36,maskMode:36,maskRepeat:36,maskPosition:36,maskClip:36,maskOrigin:36,maskSize:36,maskComposite:36,mask:36,maskBorderSource:36,maskBorderMode:36,maskBorderSlice:36,maskBorderWidth:36,maskBorderOutset:36,maskBorderRepeat:36,maskBorder:36,maskType:36,filter:36,fontFeatureSettings:36,breakAfter:36,breakBefore:36,breakInside:36,columnCount:36,columnFill:36,columnGap:36,columnRule:36,columnRuleColor:36,columnRuleStyle:36,columnRuleWidth:36,columns:36,columnSpan:36,columnWidth:36},ie:{gridArea:11,gridGap:11,gridColumnStart:11,userSelect:11,grid:11,breakInside:11,hyphens:11,gridTemplateAreas:11,breakAfter:11,scrollSnapCoordinate:11,gridRowStart:11,gridAutoFlow:11,scrollSnapDestination:11,gridTemplate:11,gridTemplateColumns:11,transformOrigin:9,gridAutoRows:11,gridColumnEnd:11,transformOriginY:9,scrollSnapPointsY:11,breakBefore:11,gridRowGap:11,scrollSnapPointsX:11,regionFragment:11,flexWrap:10,wrapFlow:11,gridRowEnd:11,flex:10,flexDirection:10,flowInto:11,touchAction:10,gridColumn:11,transform:9,gridTemplateRows:11,flexFlow:10,transformOriginX:9,flowFrom:11,scrollSnapType:11,wrapMargin:11,gridColumnGap:11,gridRow:11,wrapThrough:11,gridAutoColumns:11,textSizeAdjust:11},edge:{userSelect:14,wrapFlow:14,wrapThrough:14,wrapMargin:14,scrollSnapType:14,scrollSnapPointsX:14,scrollSnapPointsY:14,scrollSnapDestination:14,scrollSnapCoordinate:14,hyphens:14,flowInto:14,flowFrom:14,breakBefore:14,breakAfter:14,breakInside:14,regionFragment:14,gridTemplateColumns:14,gridTemplateRows:14,gridTemplateAreas:14,gridTemplate:14,gridAutoColumns:14,gridAutoRows:14,gridAutoFlow:14,grid:14,gridRowStart:14,gridColumnStart:14,gridRowEnd:14,gridRow:14,gridColumn:14,gridColumnEnd:14,gridColumnGap:14,gridRowGap:14,gridArea:14,gridGap:14},ios_saf:{flex:8.1,flexBasis:8.1,flexDirection:8.1,flexGrow:8.1,flexFlow:8.1,flexShrink:8.1,flexWrap:8.1,alignContent:8.1,alignItems:8.1,alignSelf:8.1,justifyContent:8.1,order:8.1,transition:6,transitionDelay:6,transitionDuration:6,transitionProperty:6,transitionTimingFunction:6,transform:8.1,transformOrigin:8.1,transformOriginX:8.1,transformOriginY:8.1,backfaceVisibility:8.1,perspective:8.1,perspectiveOrigin:8.1,transformStyle:8.1,transformOriginZ:8.1,animation:8.1,animationDelay:8.1,animationDirection:8.1,animationFillMode:8.1,animationDuration:8.1,animationIterationCount:8.1,animationName:8.1,animationPlayState:8.1,animationTimingFunction:8.1,appearance:9.3,userSelect:9.3,backdropFilter:9.3,fontKerning:9.3,scrollSnapType:9.3,scrollSnapPointsX:9.3,scrollSnapPointsY:9.3,scrollSnapDestination:9.3,scrollSnapCoordinate:9.3,boxDecorationBreak:9.3,clipPath:9.3,maskImage:9.3,maskMode:9.3,maskRepeat:9.3,maskPosition:9.3,maskClip:9.3,maskOrigin:9.3,maskSize:9.3,maskComposite:9.3,mask:9.3,maskBorderSource:9.3,maskBorderMode:9.3,maskBorderSlice:9.3,maskBorderWidth:9.3,maskBorderOutset:9.3,maskBorderRepeat:9.3,maskBorder:9.3,maskType:9.3,textSizeAdjust:9.3,textDecorationStyle:9.3,textDecorationSkip:9.3,textDecorationLine:9.3,textDecorationColor:9.3,shapeImageThreshold:9.3,shapeImageMargin:9.3,shapeImageOutside:9.3,filter:9,hyphens:9.3,flowInto:9.3,flowFrom:9.3,breakBefore:8.1,breakAfter:8.1,breakInside:8.1,regionFragment:9.3,columnCount:8.1,columnFill:8.1,columnGap:8.1,columnRule:8.1,columnRuleColor:8.1,columnRuleStyle:8.1,columnRuleWidth:8.1,columns:8.1,columnSpan:8.1,columnWidth:8.1},android:{borderImage:4.2,borderImageOutset:4.2,borderImageRepeat:4.2,borderImageSlice:4.2,borderImageSource:4.2,borderImageWidth:4.2,flex:4.2,flexBasis:4.2,flexDirection:4.2,flexGrow:4.2,flexFlow:4.2,flexShrink:4.2,flexWrap:4.2,alignContent:4.2,alignItems:4.2,alignSelf:4.2,justifyContent:4.2,order:4.2,transition:4.2,transitionDelay:4.2,transitionDuration:4.2,transitionProperty:4.2,transitionTimingFunction:4.2,transform:4.4,transformOrigin:4.4,transformOriginX:4.4,transformOriginY:4.4,backfaceVisibility:4.4,perspective:4.4,perspectiveOrigin:4.4,transformStyle:4.4,transformOriginZ:4.4,animation:4.4,animationDelay:4.4,animationDirection:4.4,animationFillMode:4.4,animationDuration:4.4,animationIterationCount:4.4,animationName:4.4,animationPlayState:4.4,animationTimingFunction:4.4,appearance:46,userSelect:46,fontKerning:4.4,textEmphasisPosition:46,textEmphasis:46,textEmphasisStyle:46,textEmphasisColor:46,boxDecorationBreak:46,clipPath:46,maskImage:46,maskMode:46,maskRepeat:46,maskPosition:46,maskClip:46,maskOrigin:46,maskSize:46,maskComposite:46,mask:46,maskBorderSource:46,maskBorderMode:46,maskBorderSlice:46,maskBorderWidth:46,maskBorderOutset:46,maskBorderRepeat:46,maskBorder:46,maskType:46,filter:46,fontFeatureSettings:46,breakAfter:46,breakBefore:46,breakInside:46,columnCount:46,columnFill:46,columnGap:46,columnRule:46,columnRuleColor:46,columnRuleStyle:46,columnRuleWidth:46,columns:46,columnSpan:46,columnWidth:46},and_chr:{appearance:47,userSelect:47,textEmphasisPosition:47,textEmphasis:47,textEmphasisStyle:47,textEmphasisColor:47,boxDecorationBreak:47,clipPath:47,maskImage:47,maskMode:47,maskRepeat:47,maskPosition:47,maskClip:47,maskOrigin:47,maskSize:47,maskComposite:47,mask:47,maskBorderSource:47,maskBorderMode:47,maskBorderSlice:47,maskBorderWidth:47,maskBorderOutset:47,maskBorderRepeat:47,maskBorder:47,maskType:47,textDecorationStyle:47,textDecorationSkip:47,textDecorationLine:47,textDecorationColor:47,filter:47,fontFeatureSettings:47,breakAfter:47,breakBefore:47,breakInside:47,columnCount:47,columnFill:47,columnGap:47,columnRule:47,columnRuleColor:47,columnRuleStyle:47,columnRuleWidth:47,columns:47,columnSpan:47,columnWidth:47},and_uc:{flex:9.9,flexBasis:9.9,flexDirection:9.9,flexGrow:9.9,flexFlow:9.9,flexShrink:9.9,flexWrap:9.9,alignContent:9.9,alignItems:9.9,alignSelf:9.9,justifyContent:9.9,order:9.9,transition:9.9,transitionDelay:9.9,transitionDuration:9.9,transitionProperty:9.9,transitionTimingFunction:9.9,transform:9.9,transformOrigin:9.9,transformOriginX:9.9,transformOriginY:9.9,backfaceVisibility:9.9,perspective:9.9,perspectiveOrigin:9.9,transformStyle:9.9,transformOriginZ:9.9,animation:9.9,animationDelay:9.9,animationDirection:9.9,animationFillMode:9.9,animationDuration:9.9,animationIterationCount:9.9,animationName:9.9,animationPlayState:9.9,animationTimingFunction:9.9,appearance:9.9,userSelect:9.9,fontKerning:9.9,textEmphasisPosition:9.9,textEmphasis:9.9,textEmphasisStyle:9.9,textEmphasisColor:9.9,maskImage:9.9,maskMode:9.9,maskRepeat:9.9,maskPosition:9.9,maskClip:9.9,maskOrigin:9.9,maskSize:9.9,maskComposite:9.9,mask:9.9,maskBorderSource:9.9,maskBorderMode:9.9,maskBorderSlice:9.9,maskBorderWidth:9.9,maskBorderOutset:9.9,maskBorderRepeat:9.9,maskBorder:9.9,maskType:9.9,textSizeAdjust:9.9,filter:9.9,hyphens:9.9,flowInto:9.9,flowFrom:9.9,breakBefore:9.9,breakAfter:9.9,breakInside:9.9,regionFragment:9.9,fontFeatureSettings:9.9,columnCount:9.9,columnFill:9.9,columnGap:9.9,columnRule:9.9,columnRuleColor:9.9,columnRuleStyle:9.9,columnRuleWidth:9.9,columns:9.9,columnSpan:9.9,columnWidth:9.9},op_mini:{borderImage:5,borderImageOutset:5,borderImageRepeat:5,borderImageSlice:5,borderImageSource:5,borderImageWidth:5,tabSize:5,objectFit:5,objectPosition:5}};e.exports=i},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,s=e.forceRun,l=n.browser,u=n.version;if("string"==typeof t&&t.indexOf("calc(")>-1&&(s||"firefox"===l&&15>u||"chrome"===l&&25>u||"safari"===l&&6.1>u||"ios_saf"===l&&7>u)){var f=s?["-webkit-","-moz-"].map(function(e){return t.replace(/calc\(/g,e+"calc(")}).join(";"+r+":"):t.replace(/calc\(/g,o.css+"calc(");return i({},r,f+(a?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t,e.exports=r["default"]},function(e,r){"use strict";function i(e){var r=e.property,i=e.value,n=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,s=e.forceRun,l=n.browser,u=n.version;if("cursor"===r&&t[i]&&(s||"firefox"===l&&24>u||"chrome"===l&&37>u||"safari"===l&&9>u||"opera"===l&&24>u)){var f=s?["-webkit-","-moz-"].map(function(e){return e+i}).join(";"+r+":"):o.css+i;return{cursor:f+(a?";"+r+":"+i:"")}}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=i;var t={"zoom-in":!0,"zoom-out":!0,grab:!0,grabbing:!0};e.exports=r["default"]},function(e,r){"use strict";function i(e){var r=e.property,i=e.value,n=e.browserInfo,o=(e.prefix,e.keepUnprefixed),a=e.forceRun,s=n.browser,l=n.version;if("display"===r&&t[i]&&(a||"chrome"===s&&29>l&&l>20||("safari"===s||"ios_saf"===s)&&9>l&&l>6||"opera"===s&&(15==l||16==l))){var u=a?["-webkit-box","-moz-box","-ms-"+i+"box","-webkit-"+i].join(";"+r+":"):"-webkit-"+i;return{display:u+(o?";"+r+":"+i:"")}}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=i;var t={flex:!0,"inline-flex":!0};e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.styles,l=e.browserInfo,u=(e.prefix,e.keepUnprefixed),f=e.forceRun,m=l.browser,c=l.version;if(s[r]&&(f||("ie_mob"===m||"ie"===m)&&10==c)){if(u||delete n[r],a[r])return i({},a[r],o[t]||t);if(o[t])return i({},r,o[t]+(u?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0});var n=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e};r["default"]=t;var o={"space-around":"distribute","space-between":"justify","flex-start":"start","flex-end":"end",flex:"-ms-flexbox","inline-flex":"-ms-inline-flexbox"},a={alignContent:"msFlexLinePack",alignSelf:"msFlexItemAlign",alignItems:"msFlexAlign",justifyContent:"msFlexPack",order:"msFlexOrder",flexGrow:"msFlexPositive",flexShrink:"msFlexNegative",flexBasis:"msPreferredSize"},s=Object.keys(a).concat("display").reduce(function(e,r){return n({},e,i({},r,!0))},{});e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,n=e.styles,l=e.browserInfo,u=e.prefix,f=e.keepUnprefixed,m=e.forceRun,c=l.browser,d=l.version;if(s[r]&&(m||"firefox"===c&&22>d||"chrome"===c&&21>d||("safari"===c||"ios_saf"===c)&&6.1>=d||"android"===c&&4.4>d||"and_uc"===c)){if(f||delete n[r],"flexDirection"===r)return{WebkitBoxOrient:t.indexOf("column")>-1?"vertical":"horizontal",WebkitBoxDirection:t.indexOf("reverse")>-1?"reverse":"normal"};if("display"===r&&o[t])return{display:u.css+o[t]+(f?";"+r+":"+t:"")};if(a[r])return i({},a[r],o[t]||t);if(o[t])return i({},r,o[t]+(f?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0});var n=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var t in i)Object.prototype.hasOwnProperty.call(i,t)&&(e[t]=i[t])}return e};r["default"]=t;var o={"space-around":"justify","space-between":"justify","flex-start":"start","flex-end":"end","wrap-reverse":"multiple",wrap:"multiple",flex:"box","inline-flex":"inline-box"},a={alignItems:"WebkitBoxAlign",justifyContent:"WebkitBoxPack",flexWrap:"WebkitBoxLines"},s=Object.keys(a).concat(["alignContent","alignSelf","display","order","flexGrow","flexShrink","flexBasis","flexDirection"]).reduce(function(e,r){return n({},e,i({},r,!0))},{});e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,o=e.browserInfo,a=e.prefix,s=e.keepUnprefixed,l=e.forceRun,u=o.browser,f=o.version;if("string"==typeof t&&null!==t.match(n)&&(l||"firefox"===u&&16>f||"chrome"===u&&26>f||("safari"===u||"ios_saf"===u)&&7>f||("opera"===u||"op_mini"===u)&&12.1>f||"android"===u&&4.4>f||"and_uc"===u)){var m=l?["-webkit-","-moz-"].map(function(e){return e+t}).join(";"+r+":"):a.css+t;return i({},r,m+(s?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t;var n=/linear-gradient|radial-gradient|repeating-linear-gradient|repeating-radial-gradient/;e.exports=r["default"]},function(e,r){"use strict";function i(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function t(e){var r=e.property,t=e.value,a=e.browserInfo,s=e.prefix,l=e.keepUnprefixed,u=e.forceRun;a.browser,a.version;if(n[r]&&o[t]){var f=u?["-webkit-","-moz-"].map(function(e){return e+t}).join(";"+r+":"):s.css+t;return i({},r,f+(l?";"+r+":"+t:""))}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=t;var n={maxHeight:!0,maxWidth:!0,width:!0,height:!0,columnWidth:!0,minWidth:!0,minHeight:!0},o={"min-content":!0,"max-content":!0,"fill-available":!0,"fit-content":!0,"contain-floats":!0};e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}function n(e,r,i){return r in e?Object.defineProperty(e,r,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[r]=i,e}function o(e){var r=e.property,i=e.value,t=e.browserInfo,o=e.prefix,a=e.keepUnprefixed,l=e.forceRun,f=e.requiresPrefix;t.browser,t.version;if("string"==typeof i&&(r.toLowerCase().indexOf("transition")>-1||r.toLowerCase().indexOf("transitionproperty")>-1)){var m,c=function(){var e=Object.keys(f).map(function(e){return(0,s["default"])(e)}),t=i,c=t.split(/,(?![^()]*(?:\([^()]*\))?\))/g);e.forEach(function(e){c.forEach(function(r,i){if(r.indexOf(e)>-1){var t=l?["-webkit-","-moz-","-ms-"].map(function(i){return r.replace(e,i+e)}).join(","):r.replace(e,o.css+e);c[i]=t+(a?","+r:"")}})});var d=c.join(",");return l?{v:(m={},n(m,"Webkit"+(0,u["default"])(r),d),n(m,"Moz"+(0,u["default"])(r),d),n(m,"ms"+(0,u["default"])(r),d),n(m,r,d),m)}:{v:n({},r,d)}}();if("object"==typeof c)return c.v}}Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=o;var a=i(16),s=t(a),l=i(1),u=t(l);e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){var r=arguments.length<=1||void 0===arguments[1]?{}:arguments[1];return Object.keys(r).forEach(function(i){return e[i]=r[i]}),e},e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){return e.replace(/([a-z]|^)([A-Z])/g,function(e,r,i){return r+"-"+i.toLowerCase()}).replace("ms-","-ms-")},e.exports=r["default"]},function(e,r,i){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(r,"__esModule",{value:!0});var n=i(3),o=t(n),a={Webkit:["chrome","safari","ios","android","phantom","opera","webos","blackberry","bada","tizen"],Moz:["firefox","seamonkey","sailfish"],ms:["msie","msedge"]},s={chrome:[["chrome"]],safari:[["safari"]],firefox:[["firefox"]],ie:[["msie"]],edge:[["msedge"]],opera:[["opera"]],ios_saf:[["ios","mobile"],["ios","tablet"]],ie_mob:[["windowsphone","mobile","msie"],["windowsphone","tablet","msie"],["windowsphone","mobile","msedge"],["windowsphone","tablet","msedge"]],op_mini:[["opera","mobile"],["opera","tablet"]],and_uc:[["android","mobile"],["android","tablet"]],android:[["android","mobile"],["android","tablet"]]},l=function(e){var r=void 0,i=void 0,t=void 0,n=void 0,o=void 0,l=void 0;r=Object.keys(a);for(var u=0;u<r.length;u++){i=r[u],t=a[i],n=s[e];for(var f=0;f<t.length;f++){o=t[f];for(var m=0;m<n.length;m++)if(l=n[m],-1!==l.indexOf(o))return{inline:i,css:"-"+i.toLowerCase()+"-"}}}return{inline:"",css:""}};r["default"]=function(e){if(!e)return!1;var r={};if("*"===e)return r.browsers=Object.keys(s),r.prefixes={},r.browsers.forEach(function(e){r.prefixes[e]=l(e)}),r;r=o["default"]._detect(e),Object.keys(a).forEach(function(e){a[e].forEach(function(i){r[i]&&(r.prefix={inline:e,css:"-"+e.toLowerCase()+"-"})})});var i="";return Object.keys(s).forEach(function(e){s[e].forEach(function(t){var n=0;t.forEach(function(e){r[e]&&(n+=1)}),t.length===n&&(i=e)})}),r.browser=i,r.version=r.version?parseFloat(r.version):parseInt(parseFloat(r.osversion),10),"android"===r.browser&&r.chrome&&r.version>37&&(r.browser="and_chr"),r.version=parseFloat(r.version),r.osversion=parseFloat(r.osversion),"android"===r.browser&&r.osversion<5&&(r.version=r.osversion),r},e.exports=r["default"]},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(e){var r=e.browser,i=e.version,t=e.prefix,n="keyframes";return("chrome"===r&&43>i||("safari"===r||"ios_saf"===r)&&9>i||"opera"===r&&30>i||"android"===r&&4.4>=i||"and_uc"===r)&&(n=t.css+n),n},e.exports=r["default"]},function(e,r,i){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r["default"]=function(){},e.exports=r["default"]},function(r,i){r.exports=e}])});
+//# sourceMappingURL=index.js.map
+
+/***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1654,7 +1654,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(6);
+var emptyFunction = __webpack_require__(5);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -1927,7 +1927,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(35);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(17);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(82);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
@@ -2281,7 +2281,7 @@ Link.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2953,7 +2953,7 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(102);
 
 
@@ -3396,8 +3396,8 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifyPlainObject;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(21);
 
 
 
@@ -3426,14 +3426,15 @@ var _reactRouterDom = __webpack_require__(30);
 
 var _reactRedux = __webpack_require__(39);
 
-var _container = __webpack_require__(112);
+var _second_container = __webpack_require__(112);
 
-var _container2 = _interopRequireDefault(_container);
+var _second_container2 = _interopRequireDefault(_second_container);
 
-var _index = __webpack_require__(122);
+var _index = __webpack_require__(116);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import Container from './components/container/container';
 var app = document.getElementById('app');
 
 _reactDom2.default.render(_react2.default.createElement(
@@ -3442,7 +3443,7 @@ _reactDom2.default.render(_react2.default.createElement(
     _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
         null,
-        _react2.default.createElement(_container2.default, null)
+        _react2.default.createElement(_second_container2.default, null)
     )
 ), app);
 
@@ -3460,7 +3461,7 @@ _reactDom2.default.render(_react2.default.createElement(
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(7),n=__webpack_require__(11),p=__webpack_require__(6),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(6),n=__webpack_require__(10),p=__webpack_require__(5),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -3496,12 +3497,12 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(7);
-var emptyObject = __webpack_require__(11);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(12);
-var emptyFunction = __webpack_require__(6);
-var checkPropTypes = __webpack_require__(14);
+var _assign = __webpack_require__(6);
+var emptyObject = __webpack_require__(10);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(11);
+var emptyFunction = __webpack_require__(5);
+var checkPropTypes = __webpack_require__(13);
 
 // TODO: this is special because it gets imported during build.
 
@@ -4902,7 +4903,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(24),B=__webpack_require__(7),C=__webpack_require__(6),ba=__webpack_require__(25),da=__webpack_require__(26),ea=__webpack_require__(27),fa=__webpack_require__(28),ia=__webpack_require__(29),D=__webpack_require__(11);
+var aa=__webpack_require__(0),l=__webpack_require__(24),B=__webpack_require__(6),C=__webpack_require__(5),ba=__webpack_require__(25),da=__webpack_require__(26),ea=__webpack_require__(27),fa=__webpack_require__(28),ia=__webpack_require__(29),D=__webpack_require__(10);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -5200,18 +5201,18 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(0);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(12);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(11);
 var ExecutionEnvironment = __webpack_require__(24);
-var _assign = __webpack_require__(7);
-var emptyFunction = __webpack_require__(6);
+var _assign = __webpack_require__(6);
+var emptyFunction = __webpack_require__(5);
 var EventListener = __webpack_require__(25);
 var getActiveElement = __webpack_require__(26);
 var shallowEqual = __webpack_require__(27);
 var containsNode = __webpack_require__(28);
 var focusNode = __webpack_require__(29);
-var emptyObject = __webpack_require__(11);
-var checkPropTypes = __webpack_require__(14);
+var emptyObject = __webpack_require__(10);
+var checkPropTypes = __webpack_require__(13);
 var hyphenateStyleName = __webpack_require__(58);
 var camelizeStyleName = __webpack_require__(60);
 
@@ -20748,7 +20749,7 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(17);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -20816,13 +20817,13 @@ BrowserRouter.propTypes = {
 
 
 
-var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(12);
-var assign = __webpack_require__(7);
+var emptyFunction = __webpack_require__(5);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(11);
+var assign = __webpack_require__(6);
 
-var ReactPropTypesSecret = __webpack_require__(15);
-var checkPropTypes = __webpack_require__(14);
+var ReactPropTypesSecret = __webpack_require__(14);
+var checkPropTypes = __webpack_require__(13);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -21366,9 +21367,9 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(8);
-var ReactPropTypesSecret = __webpack_require__(15);
+var emptyFunction = __webpack_require__(5);
+var invariant = __webpack_require__(7);
+var ReactPropTypesSecret = __webpack_require__(14);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -21438,11 +21439,11 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(15);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(8);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(16);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -21743,7 +21744,7 @@ exports.default = createBrowserHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(17);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -21815,11 +21816,11 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(15);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(8);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(16);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -22150,7 +22151,7 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22221,11 +22222,11 @@ var _warning = __webpack_require__(2);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(8);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(15);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(16);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -23134,10 +23135,10 @@ Redirect.contextTypes = {
 /* unused harmony reexport createHashHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(81);
 /* unused harmony reexport createMemoryHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(12);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(9);
 /* unused harmony reexport parsePath */
 /* unused harmony reexport createPath */
 
@@ -23159,9 +23160,9 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(37);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -23463,9 +23464,9 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(37);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -23782,9 +23783,9 @@ var createHashHistory = function createHashHistory() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(20);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -23967,9 +23968,9 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24161,7 +24162,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(19);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24247,7 +24248,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(19);
 // Written in this round about way for babel-transform-imports
 
 
@@ -24320,7 +24321,7 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(21);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24990,7 +24991,7 @@ function symbolObservablePonyfill(root) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(46);
 
 
@@ -25432,7 +25433,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifySubselectors;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(21);
 
 
 function verify(selector, methodName, displayName) {
@@ -25472,41 +25473,21 @@ var _reactRouterDom = __webpack_require__(30);
 
 var _reactRedux = __webpack_require__(39);
 
-var _reactCenter = __webpack_require__(5);
+var _reactCenter = __webpack_require__(23);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _topBar = __webpack_require__(113);
-
-var _topBar2 = _interopRequireDefault(_topBar);
-
-var _home = __webpack_require__(115);
-
-var _home2 = _interopRequireDefault(_home);
-
-var _about = __webpack_require__(116);
-
-var _about2 = _interopRequireDefault(_about);
-
-var _blog = __webpack_require__(117);
-
-var _blog2 = _interopRequireDefault(_blog);
-
-var _signIn = __webpack_require__(118);
-
-var _signIn2 = _interopRequireDefault(_signIn);
-
-var _signUp = __webpack_require__(119);
-
-var _signUp2 = _interopRequireDefault(_signUp);
-
-var _userMainPage = __webpack_require__(120);
+var _userMainPage = __webpack_require__(113);
 
 var _userMainPage2 = _interopRequireDefault(_userMainPage);
 
-var _settingsPage = __webpack_require__(121);
+var _settingsPage = __webpack_require__(114);
 
 var _settingsPage2 = _interopRequireDefault(_settingsPage);
+
+var _userSidebarMenu = __webpack_require__(115);
+
+var _userSidebarMenu2 = _interopRequireDefault(_userSidebarMenu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25516,58 +25497,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// FRONT END PAGES IMPORTS //
-
-// FRONT END PAGES IMPORT END //
-
 // USER FRONT END PAGES IMPORTS //
-
 
 // USER FRONT END PAGES IMPORTS END //
 
 
-var Container = function (_React$Component) {
-    _inherits(Container, _React$Component);
+var SecondContainer = function (_React$Component) {
+    _inherits(SecondContainer, _React$Component);
 
-    function Container() {
-        _classCallCheck(this, Container);
+    function SecondContainer(props) {
+        _classCallCheck(this, SecondContainer);
 
-        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (SecondContainer.__proto__ || Object.getPrototypeOf(SecondContainer)).call(this, props));
     }
 
-    _createClass(Container, [{
+    _createClass(SecondContainer, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_topBar2.default, null),
+                _react2.default.createElement(_userSidebarMenu2.default, null),
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
+                    { className: 'container-fluid' },
                     _react2.default.createElement(
                         _reactRouterDom.Switch,
                         null,
-                        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
-                                return _react2.default.createElement(_home2.default, { title: 'Welcome' });
-                            } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', render: function render() {
-                                return _react2.default.createElement(_about2.default, { title: 'About' });
-                            } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/blog', render: function render() {
-                                return _react2.default.createElement(_blog2.default, { title: 'Blog' });
-                            } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_in', render: function render() {
-                                return _react2.default.createElement(_signIn2.default, { title: 'Sign In' });
-                            } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_up', render: function render() {
-                                return _react2.default.createElement(_signUp2.default, { title: 'Sign Up' });
-                            } })
-                    ),
-                    _react2.default.createElement(
-                        _reactRouterDom.Switch,
-                        null,
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/user_main', render: function render() {
+                        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/user', render: function render() {
                                 return _react2.default.createElement(_userMainPage2.default, null);
                             } }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/user_settings', render: function render() {
@@ -25579,10 +25536,10 @@ var Container = function (_React$Component) {
         }
     }]);
 
-    return Container;
+    return SecondContainer;
 }(_react2.default.Component);
 
-exports.default = Container;
+exports.default = SecondContainer;
 
 /***/ }),
 /* 113 */
@@ -25601,566 +25558,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-var _menuBar = __webpack_require__(114);
-
-var _menuBar2 = _interopRequireDefault(_menuBar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var TopBar = function (_React$Component) {
-    _inherits(TopBar, _React$Component);
-
-    function TopBar(props) {
-        _classCallCheck(this, TopBar);
-
-        return _possibleConstructorReturn(this, (TopBar.__proto__ || Object.getPrototypeOf(TopBar)).call(this, props));
-    }
-
-    _createClass(TopBar, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { style: { backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 620 } },
-                _react2.default.createElement(
-                    _reactCenter2.default,
-                    null,
-                    _react2.default.createElement(_menuBar2.default, null)
-                ),
-                _react2.default.createElement(
-                    _reactCenter2.default,
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        { style: { marginTop: 140 } },
-                        _react2.default.createElement(
-                            'h1',
-                            { id: 'center-text' },
-                            this.props.title,
-                            'Welcome'
-                        ),
-                        _react2.default.createElement(
-                            _reactCenter2.default,
-                            null,
-                            _react2.default.createElement(
-                                'div',
-                                { style: { marginBottom: -500 } },
-                                _react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/svg/24/24567.svg', alt: 'down-arrow', style: { height: '60px', width: '60px' } })
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return TopBar;
-}(_react2.default.Component);
-
-exports.default = TopBar;
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MenuBar = function (_React$Component) {
-    _inherits(MenuBar, _React$Component);
-
-    function MenuBar(props) {
-        _classCallCheck(this, MenuBar);
-
-        return _possibleConstructorReturn(this, (MenuBar.__proto__ || Object.getPrototypeOf(MenuBar)).call(this, props));
-    }
-
-    _createClass(MenuBar, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'nav',
-                    { className: 'nav-primary' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'container-fluid' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'navbar-header', style: { paddingRight: 700 } },
-                            _react2.default.createElement(
-                                'a',
-                                { className: 'navbar-brand', href: '#', id: 'menu-item' },
-                                'Onus'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'ul',
-                            { className: 'nav navbar-nav' },
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '/', id: 'menu-item' },
-                                    'Home'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '/about', id: 'menu-item' },
-                                    'About'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '/blog', id: 'menu-item' },
-                                    'Blog'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '/sign_in', id: 'menu-item' },
-                                    'Sign In'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '/sign_up', id: 'menu-item' },
-                                    'Sign Up'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'div',
-                                    { 'class': 'dropdown' },
-                                    _react2.default.createElement(
-                                        'button',
-                                        { 'class': 'btn btn-primary dropdown-toggle', type: 'button', 'data-toggle': 'dropdown' },
-                                        'Dropdown Example',
-                                        _react2.default.createElement('span', { 'class': 'caret' })
-                                    ),
-                                    _react2.default.createElement(
-                                        'ul',
-                                        { 'class': 'dropdown-menu' },
-                                        _react2.default.createElement(
-                                            'li',
-                                            null,
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: '#' },
-                                                'HTML'
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'li',
-                                            null,
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: '#' },
-                                                'CSS'
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'li',
-                                            null,
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: '#' },
-                                                'JavaScript'
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return MenuBar;
-}(_react2.default.Component);
-
-exports.default = MenuBar;
-
-/***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Home = function (_React$Component) {
-    _inherits(Home, _React$Component);
-
-    function Home(props) {
-        _classCallCheck(this, Home);
-
-        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
-    }
-
-    _createClass(Home, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'HOME'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Home;
-}(_react2.default.Component);
-
-exports.default = Home;
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var About = function (_React$Component) {
-    _inherits(About, _React$Component);
-
-    function About(props) {
-        _classCallCheck(this, About);
-
-        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
-    }
-
-    _createClass(About, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'ABOUT'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return About;
-}(_react2.default.Component);
-
-exports.default = About;
-
-/***/ }),
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Blog = function (_React$Component) {
-    _inherits(Blog, _React$Component);
-
-    function Blog(props) {
-        _classCallCheck(this, Blog);
-
-        return _possibleConstructorReturn(this, (Blog.__proto__ || Object.getPrototypeOf(Blog)).call(this, props));
-    }
-
-    _createClass(Blog, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'BLOG'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Blog;
-}(_react2.default.Component);
-
-exports.default = Blog;
-
-/***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SignIn = function (_React$Component) {
-    _inherits(SignIn, _React$Component);
-
-    function SignIn(props) {
-        _classCallCheck(this, SignIn);
-
-        return _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).call(this, props));
-    }
-
-    _createClass(SignIn, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'SIGN IN'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return SignIn;
-}(_react2.default.Component);
-
-exports.default = SignIn;
-
-/***/ }),
-/* 119 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
-
-var _reactCenter2 = _interopRequireDefault(_reactCenter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SignUP = function (_React$Component) {
-    _inherits(SignUP, _React$Component);
-
-    function SignUP(props) {
-        _classCallCheck(this, SignUP);
-
-        return _possibleConstructorReturn(this, (SignUP.__proto__ || Object.getPrototypeOf(SignUP)).call(this, props));
-    }
-
-    _createClass(SignUP, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'SIGN UP'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return SignUP;
-}(_react2.default.Component);
-
-exports.default = SignUP;
-
-/***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCenter = __webpack_require__(5);
+var _reactCenter = __webpack_require__(23);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
@@ -26184,7 +25582,92 @@ var UserMainPage = function (_React$Component) {
     _createClass(UserMainPage, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', null);
+            return _react2.default.createElement(
+                _reactCenter2.default,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container-fluid', style: { paddingTop: 20, paddingLeft: 100 } },
+                    _react2.default.createElement(
+                        _reactCenter2.default,
+                        null,
+                        _react2.default.createElement(
+                            'div',
+                            { style: { paddingBottom: 275 } },
+                            _react2.default.createElement(
+                                'h1',
+                                { style: { fontSize: 60 } },
+                                'WELCOME NAME'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'form',
+                                { className: 'form-inline' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'form-group' },
+                                    _react2.default.createElement('img', { src: './journal.jpg', alt: 'Journal', id: 'user-image', className: 'img-circle' }),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'form-group', style: { paddingLeft: 40 } },
+                                        _react2.default.createElement('textarea', { className: 'form-control', rows: '4', style: { height: 150, width: 350 } })
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'form',
+                                { style: { paddingLeft: 520 } },
+                                _react2.default.createElement(
+                                    'button',
+                                    { className: 'btn', id: 'edit-btn' },
+                                    'EDIT'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { style: { paddingTop: 65 }, className: 'col-md-12' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-sm-6' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { style: { paddingLeft: 75 } },
+                                    _react2.default.createElement(
+                                        'h3',
+                                        null,
+                                        'JOURNAL'
+                                    )
+                                ),
+                                _react2.default.createElement('br', null),
+                                _react2.default.createElement('textarea', { name: '', id: 'user-journal-text', cols: '35', rows: '7' })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-sm-6', style: { paddingLeft: 30 } },
+                                _react2.default.createElement(
+                                    'div',
+                                    { style: { paddingLeft: 75 } },
+                                    _react2.default.createElement(
+                                        'h3',
+                                        null,
+                                        'PLANNER'
+                                    )
+                                ),
+                                _react2.default.createElement('br', null),
+                                _react2.default.createElement('textarea', { name: '', id: 'user-journal-text', cols: '35', rows: '7' })
+                            )
+                        )
+                    )
+                )
+            );
         }
     }]);
 
@@ -26194,7 +25677,7 @@ var UserMainPage = function (_React$Component) {
 exports.default = UserMainPage;
 
 /***/ }),
-/* 121 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26210,7 +25693,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactCenter = __webpack_require__(5);
+var _reactCenter = __webpack_require__(23);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
@@ -26235,160 +25718,40 @@ var SettingsPage = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                _reactCenter2.default,
                 null,
                 _react2.default.createElement(
-                    _reactCenter2.default,
+                    'div',
                     null,
+                    _react2.default.createElement(
+                        _reactCenter2.default,
+                        null,
+                        _react2.default.createElement(
+                            'div',
+                            { style: { paddingBottom: 200 } },
+                            _react2.default.createElement(
+                                'h1',
+                                { style: { fontSize: 60 } },
+                                'Settings'
+                            )
+                        )
+                    ),
                     _react2.default.createElement(
                         'div',
                         null,
                         _react2.default.createElement(
-                            'h2',
-                            { style: { fontFamily: "'Flavors',cursive", fontSize: 65, color: 'green' } },
-                            'SIGN  UP TO ROLL UP'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    _reactCenter2.default,
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        { style: { marginTop: 30 } },
-                        _react2.default.createElement(
-                            'form',
+                            'div',
                             null,
                             _react2.default.createElement(
-                                'div',
-                                { className: 'form-group' },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'div',
-                                        null,
-                                        _react2.default.createElement(
-                                            'label',
-                                            { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                            'Enter Name'
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'form-inline', style: { marginTop: 10 } },
-                                    _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'First'
-                                    ),
-                                    _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'First Name' }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { paddingLeft: 15, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Last'
-                                    ),
-                                    _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'Last Name' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-group', style: { marginTop: 50 } },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'div',
-                                        null,
-                                        _react2.default.createElement(
-                                            'label',
-                                            { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                            'Enter Username'
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'Username' })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-group', style: { marginTop: 50 } },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Date Of Birth'
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { style: { paddingLeft: 50 } },
-                                        _react2.default.createElement('input', { type: 'date', name: 'Birthdate', className: 'form-control', required: true })
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-group', style: { marginTop: 50 } },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'div',
-                                        { style: { marginBottom: 10 } },
-                                        _react2.default.createElement(
-                                            'label',
-                                            { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                            'Enter Email Address'
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement('input', { type: 'email', name: 'Email Adress', className: 'form-control', placeholder: 'Email Address', required: true })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-inline', style: { marginTop: 50 } },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Enter Password'
-                                    ),
-                                    _react2.default.createElement('input', { type: 'password', name: 'Password', className: 'form-control', required: true })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-inline', style: { marginTop: 50 } },
-                                _react2.default.createElement(
-                                    _reactCenter2.default,
-                                    null,
-                                    _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Confirm Password'
-                                    ),
-                                    _react2.default.createElement('input', { type: 'password', name: 'Password', className: 'form-control', required: true })
-                                )
-                            ),
-                            _react2.default.createElement(
                                 _reactCenter2.default,
                                 null,
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'form-group', style: { marginTop: 50 } },
+                                    null,
                                     _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Upload Recommendation'
-                                    ),
-                                    _react2.default.createElement(
-                                        _reactCenter2.default,
-                                        null,
-                                        _react2.default.createElement('input', { type: 'file', name: '' })
+                                        'h2',
+                                        { style: { fontFamily: "'Flavors',cursive", fontSize: 65, color: 'green' } },
+                                        'SIGN  UP TO ROLL UP'
                                     )
                                 )
                             ),
@@ -26397,29 +25760,174 @@ var SettingsPage = function (_React$Component) {
                                 null,
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'form-group', style: { marginTop: 50 } },
+                                    { style: { marginTop: 30 } },
                                     _react2.default.createElement(
-                                        'label',
-                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
-                                        'Upload Photo ID'
-                                    ),
-                                    _react2.default.createElement(
-                                        _reactCenter2.default,
+                                        'form',
                                         null,
-                                        _react2.default.createElement('input', { type: 'file', name: '' })
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                _reactCenter2.default,
-                                null,
-                                _react2.default.createElement(
-                                    'div',
-                                    { style: { marginTop: 45, marginBottom: 75 } },
-                                    _react2.default.createElement(
-                                        'button',
-                                        { type: 'submit', className: 'btn', style: { backgroundColor: 'green', color: 'black', fontFamily: "'Nanum Brush Script',cursive", fontSize: 25 } },
-                                        'CREATE ACCOUNT'
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-group' },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'label',
+                                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                        'Enter Name'
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'form-inline', style: { marginTop: 10 } },
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'First'
+                                                ),
+                                                _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'First Name' }),
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { paddingLeft: 15, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Last'
+                                                ),
+                                                _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'Last Name' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-group', style: { marginTop: 50 } },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'label',
+                                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                        'Enter Username'
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement('input', { type: 'text', style: { marginLeft: 10 }, className: 'form-control', placeholder: 'Username' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-group', style: { marginTop: 50 } },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Date Of Birth'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { style: { paddingLeft: 50 } },
+                                                    _react2.default.createElement('input', { type: 'date', name: 'Birthdate', className: 'form-control', required: true })
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-group', style: { marginTop: 50 } },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { style: { marginBottom: 10 } },
+                                                    _react2.default.createElement(
+                                                        'label',
+                                                        { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                        'Enter Email Address'
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement('input', { type: 'email', name: 'Email Adress', className: 'form-control', placeholder: 'Email Address', required: true })
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-inline', style: { marginTop: 50 } },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Enter Password'
+                                                ),
+                                                _react2.default.createElement('input', { type: 'password', name: 'Password', className: 'form-control', required: true })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'form-inline', style: { marginTop: 50 } },
+                                            _react2.default.createElement(
+                                                _reactCenter2.default,
+                                                null,
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Confirm Password'
+                                                ),
+                                                _react2.default.createElement('input', { type: 'password', name: 'Password', className: 'form-control', required: true })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            _reactCenter2.default,
+                                            null,
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'form-group', style: { marginTop: 50 } },
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Upload Recommendation'
+                                                ),
+                                                _react2.default.createElement(
+                                                    _reactCenter2.default,
+                                                    null,
+                                                    _react2.default.createElement('input', { type: 'file', name: '' })
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            _reactCenter2.default,
+                                            null,
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'form-group', style: { marginTop: 50 } },
+                                                _react2.default.createElement(
+                                                    'label',
+                                                    { htmlFor: '', style: { fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' } },
+                                                    'Upload Photo ID'
+                                                ),
+                                                _react2.default.createElement(
+                                                    _reactCenter2.default,
+                                                    null,
+                                                    _react2.default.createElement('input', { type: 'file', name: '' })
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            _reactCenter2.default,
+                                            null,
+                                            _react2.default.createElement(
+                                                'div',
+                                                { style: { marginTop: 45, marginBottom: 75 } },
+                                                _react2.default.createElement(
+                                                    'button',
+                                                    { type: 'submit', className: 'btn', style: { backgroundColor: 'green', color: 'black', fontFamily: "'Nanum Brush Script',cursive", fontSize: 25 } },
+                                                    'CREATE ACCOUNT'
+                                                )
+                                            )
+                                        )
                                     )
                                 )
                             )
@@ -26436,7 +25944,131 @@ var SettingsPage = function (_React$Component) {
 exports.default = SettingsPage;
 
 /***/ }),
-/* 122 */
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserSideBarMenu = function (_Component) {
+    _inherits(UserSideBarMenu, _Component);
+
+    function UserSideBarMenu(props) {
+        _classCallCheck(this, UserSideBarMenu);
+
+        var _this = _possibleConstructorReturn(this, (UserSideBarMenu.__proto__ || Object.getPrototypeOf(UserSideBarMenu)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(UserSideBarMenu, [{
+        key: "dropdownClick",
+        value: function dropdownClick() {
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+
+            for (var i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "div",
+                    { className: "sidenav" },
+                    _react2.default.createElement("img", { id: "placeholderImg", src: "journal.jpg", className: "img-thumbnail" }),
+                    _react2.default.createElement(
+                        "a",
+                        { href: "/user" },
+                        "Home"
+                    ),
+                    _react2.default.createElement(
+                        "a",
+                        { href: "/user_settings" },
+                        "Settings"
+                    ),
+                    _react2.default.createElement(
+                        "button",
+                        { className: "dropdown-btn", onClick: this.dropdownClick },
+                        "Dropdown",
+                        _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "dropdown-container" },
+                        _react2.default.createElement(
+                            "a",
+                            { href: "#" },
+                            "View Entry"
+                        ),
+                        _react2.default.createElement(
+                            "a",
+                            { href: "#" },
+                            "Make New Entry"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "button",
+                        { className: "dropdown-btn", onClick: this.dropdownClick },
+                        "Planner",
+                        _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "dropdown-container" },
+                        _react2.default.createElement(
+                            "a",
+                            { href: "#" },
+                            "Todo List"
+                        ),
+                        _react2.default.createElement(
+                            "a",
+                            { href: "#" },
+                            "Add New Planner"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return UserSideBarMenu;
+}(_react.Component);
+
+exports.default = UserSideBarMenu;
+
+/***/ }),
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26448,7 +26080,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(42);
 
-var _index = __webpack_require__(123);
+var _index = __webpack_require__(117);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -26459,7 +26091,7 @@ var store = (0, _redux.createStore)(_index2.default);
 exports.default = store;
 
 /***/ }),
-/* 123 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
