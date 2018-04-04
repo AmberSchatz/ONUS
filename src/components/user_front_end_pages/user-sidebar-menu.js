@@ -25,26 +25,24 @@ class UserSideBarMenu extends Component {
 
     render() {
         return (
-            <div>
-                <div className="sidenav">
-                    <img id="placeholderImg" src="journal.jpg" className="img-thumbnail" />
+            <div className="sidenav">
+            <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
-                    <a href="/user">Home</a>
-                    <a href="/user_settings">Settings</a>
-                    <button className="dropdown-btn" onClick={this.dropdownClick}>Dropdown
+                <a href="#">Home</a>
+                <a href="#">Settings</a>
+                <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-container">
-                        <a href="#">View Entry</a>
-                        <a href="#">Make New Entry</a>
-                    </div>
-                    <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
+                </button>
+                <div className="dropdown-container">
+                    <a href="#">View Directory</a>
+                    <a href="#">Make New Entry</a>                   
+                </div>
+                <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
                 <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-container">
-                        <a href="#">Todo List</a>
-                        <a href="#">Add New Planner</a>
-                    </div>
+                </button>
+                <div className="dropdown-container">
+                    <a href="#">Todo List</a>
+                    <a href="#">Add New Planner</a>
                 </div>
             </div>
 
