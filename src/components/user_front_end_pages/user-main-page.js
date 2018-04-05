@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { userDetails } from '../redux/actions';
 
+import axios from 'axios';
+
 
 class UserMainPage extends React.Component {
     constructor(props) {
@@ -62,7 +64,7 @@ class UserMainPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/users/' + userId)
+        axios.get('http://localhost:5000/api/users/')
             .then(response => {
                 console.log (response.data);
             })

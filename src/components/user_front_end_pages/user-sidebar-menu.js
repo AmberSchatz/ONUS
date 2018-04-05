@@ -24,6 +24,7 @@ class UserSideBarMenu extends Component {
         }
     }
 
+    
 
     render() {
         return (
@@ -46,9 +47,8 @@ class UserSideBarMenu extends Component {
                     <a href="#">Todo List</a>
                     <a href="#">Add New Planner</a>
                 </div>
+                <a href="/">Main</a>
                 
-
-
             </div>
 
         )

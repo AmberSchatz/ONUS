@@ -44,7 +44,6 @@ class SignIn extends React.Component {
                                 <input onChange={(e) => { this.setState({ password: e.target.value }) }} value={this.state.password} type="password" placeholder="Password" className='form-control' />
                             </Center>
                         </div>
-
                     </div>
                     <Center>
                         <div style={{ marginTop: 50 }} >
