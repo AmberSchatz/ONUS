@@ -5646,7 +5646,7 @@ var BoxLink = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'col-md-2', id: 'boxLinkStyle' },
+                { className: 'col-md-2 card', id: 'boxLinkStyle' },
                 _react2.default.createElement(
                     _reactCenter2.default,
                     null,
@@ -5942,6 +5942,65 @@ module.exports = invariant;
 
 /***/ }),
 /* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(247);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(251);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(73);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(253);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(256);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(259);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(261);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(74);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(47);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(267);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(269);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(271);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(272);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6008,7 +6067,7 @@ var createPath = exports.createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6079,7 +6138,7 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6505,7 +6564,7 @@ module.exports = {
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6582,7 +6641,7 @@ module.exports = {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(36),
@@ -6616,7 +6675,7 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 /**
@@ -6651,7 +6710,7 @@ module.exports = isObjectLike;
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6675,7 +6734,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6744,65 +6803,6 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(247);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(251);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(73);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(253);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(256);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(259);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(261);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(74);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(47);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(267);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(269);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(271);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(272);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
 /* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6811,7 +6811,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(24);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -7440,8 +7440,8 @@ module.exports = keys;
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(26),
-    isObjectLike = __webpack_require__(27);
+var baseGetTag = __webpack_require__(27),
+    isObjectLike = __webpack_require__(28);
 
 /** `Object#toString` result references. */
 var symbolTag = '[object Symbol]';
@@ -7514,7 +7514,7 @@ module.exports = toKey;
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(21);
-  var warning = __webpack_require__(29);
+  var warning = __webpack_require__(30);
   var ReactPropTypesSecret = __webpack_require__(44);
   var loggedTypeFailures = {};
 }
@@ -7604,7 +7604,7 @@ var _valueEqual = __webpack_require__(71);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(22);
+var _PathUtils = __webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8403,7 +8403,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsEqualDeep = __webpack_require__(373),
-    isObjectLike = __webpack_require__(27);
+    isObjectLike = __webpack_require__(28);
 
 /**
  * The base implementation of `_.isEqual` which supports partial comparisons
@@ -10624,7 +10624,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(30);
+var _reactRouterDom = __webpack_require__(22);
 
 var _reactRedux = __webpack_require__(32);
 
@@ -10648,7 +10648,7 @@ var _journalDirectory = __webpack_require__(321);
 
 var _journalDirectory2 = _interopRequireDefault(_journalDirectory);
 
-var _plannerDirectory = __webpack_require__(473);
+var _plannerDirectory = __webpack_require__(474);
 
 var _plannerDirectory2 = _interopRequireDefault(_plannerDirectory);
 
@@ -24445,7 +24445,7 @@ module.exports = eq;
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(26),
+var baseGetTag = __webpack_require__(27),
     isObject = __webpack_require__(37);
 
 /** `Object#toString` result references. */
@@ -24621,7 +24621,7 @@ module.exports = equalArrays;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsArguments = __webpack_require__(420),
-    isObjectLike = __webpack_require__(27);
+    isObjectLike = __webpack_require__(28);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -24886,7 +24886,7 @@ var _reactDom = __webpack_require__(238);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(30);
+var _reactRouterDom = __webpack_require__(22);
 
 var _reactRedux = __webpack_require__(32);
 
@@ -24894,7 +24894,7 @@ var _main_container = __webpack_require__(297);
 
 var _main_container2 = _interopRequireDefault(_main_container);
 
-var _index = __webpack_require__(483);
+var _index = __webpack_require__(484);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24924,7 +24924,7 @@ _reactDom2.default.render(_react2.default.createElement(
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(20),n=__webpack_require__(28),p=__webpack_require__(13),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(20),n=__webpack_require__(29),p=__webpack_require__(13),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -24961,9 +24961,9 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(20);
-var emptyObject = __webpack_require__(28);
+var emptyObject = __webpack_require__(29);
 var invariant = __webpack_require__(21);
-var warning = __webpack_require__(29);
+var warning = __webpack_require__(30);
 var emptyFunction = __webpack_require__(13);
 var checkPropTypes = __webpack_require__(43);
 
@@ -26366,7 +26366,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),l=__webpack_require__(64),B=__webpack_require__(20),C=__webpack_require__(13),ba=__webpack_require__(65),da=__webpack_require__(66),ea=__webpack_require__(67),fa=__webpack_require__(68),ia=__webpack_require__(69),D=__webpack_require__(28);
+var aa=__webpack_require__(1),l=__webpack_require__(64),B=__webpack_require__(20),C=__webpack_require__(13),ba=__webpack_require__(65),da=__webpack_require__(66),ea=__webpack_require__(67),fa=__webpack_require__(68),ia=__webpack_require__(69),D=__webpack_require__(29);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -26665,7 +26665,7 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(1);
 var invariant = __webpack_require__(21);
-var warning = __webpack_require__(29);
+var warning = __webpack_require__(30);
 var ExecutionEnvironment = __webpack_require__(64);
 var _assign = __webpack_require__(20);
 var emptyFunction = __webpack_require__(13);
@@ -26674,7 +26674,7 @@ var getActiveElement = __webpack_require__(66);
 var shallowEqual = __webpack_require__(67);
 var containsNode = __webpack_require__(68);
 var focusNode = __webpack_require__(69);
-var emptyObject = __webpack_require__(28);
+var emptyObject = __webpack_require__(29);
 var checkPropTypes = __webpack_require__(43);
 var hyphenateStyleName = __webpack_require__(243);
 var camelizeStyleName = __webpack_require__(245);
@@ -42282,7 +42282,7 @@ BrowserRouter.propTypes = {
 
 var emptyFunction = __webpack_require__(13);
 var invariant = __webpack_require__(21);
-var warning = __webpack_require__(29);
+var warning = __webpack_require__(30);
 var assign = __webpack_require__(20);
 
 var ReactPropTypesSecret = __webpack_require__(44);
@@ -42904,7 +42904,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(45);
 
-var _PathUtils = __webpack_require__(22);
+var _PathUtils = __webpack_require__(23);
 
 var _createTransitionManager = __webpack_require__(46);
 
@@ -43281,7 +43281,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(45);
 
-var _PathUtils = __webpack_require__(22);
+var _PathUtils = __webpack_require__(23);
 
 var _createTransitionManager = __webpack_require__(46);
 
@@ -43685,7 +43685,7 @@ var _warning = __webpack_require__(5);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(22);
+var _PathUtils = __webpack_require__(23);
 
 var _LocationUtils = __webpack_require__(45);
 
@@ -44601,7 +44601,7 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(31);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(24);
 /* unused harmony reexport parsePath */
 /* unused harmony reexport createPath */
 
@@ -44624,7 +44624,7 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(76);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -44928,7 +44928,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(76);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -45246,7 +45246,7 @@ var createHashHistory = function createHashHistory() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(50);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -45431,7 +45431,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(48);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -46932,7 +46932,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(30);
+var _reactRouterDom = __webpack_require__(22);
 
 var _reactRedux = __webpack_require__(32);
 
@@ -47037,7 +47037,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(30);
+var _reactRouterDom = __webpack_require__(22);
 
 var _reactRedux = __webpack_require__(32);
 
@@ -47051,27 +47051,27 @@ var _second_container = __webpack_require__(92);
 
 var _second_container2 = _interopRequireDefault(_second_container);
 
-var _topBar = __webpack_require__(476);
+var _topBar = __webpack_require__(477);
 
 var _topBar2 = _interopRequireDefault(_topBar);
 
-var _home = __webpack_require__(478);
+var _home = __webpack_require__(479);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _about = __webpack_require__(479);
+var _about = __webpack_require__(480);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _blog = __webpack_require__(480);
+var _blog = __webpack_require__(481);
 
 var _blog2 = _interopRequireDefault(_blog);
 
-var _signIn = __webpack_require__(481);
+var _signIn = __webpack_require__(482);
 
 var _signIn2 = _interopRequireDefault(_signIn);
 
-var _signUp = __webpack_require__(482);
+var _signUp = __webpack_require__(483);
 
 var _signUp2 = _interopRequireDefault(_signUp);
 
@@ -48050,6 +48050,8 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(22);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48071,7 +48073,7 @@ var UserSideBarMenu = function (_Component) {
     }
 
     _createClass(UserSideBarMenu, [{
-        key: "dropdownClick",
+        key: 'dropdownClick',
         value: function dropdownClick() {
             var dropdown = document.getElementsByClassName("dropdown-btn");
 
@@ -48088,60 +48090,60 @@ var UserSideBarMenu = function (_Component) {
             }
         }
     }, {
-        key: "render",
+        key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                { className: "sidenav" },
-                _react2.default.createElement("img", { id: "placeholderImg", src: "http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png" }),
+                'div',
+                { className: 'sidenav' },
+                _react2.default.createElement('img', { id: 'placeholderImg', src: 'http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png' }),
                 _react2.default.createElement(
-                    "a",
-                    { href: "/user" },
-                    "Home"
+                    'a',
+                    { href: '/user' },
+                    'Home'
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "/settings" },
-                    "Settings"
+                    'a',
+                    { href: '/settings' },
+                    'Settings'
                 ),
                 _react2.default.createElement(
-                    "button",
-                    { className: "dropdown-btn", onClick: this.dropdownClick },
-                    "Journal",
-                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                    'button',
+                    { className: 'dropdown-btn', onClick: this.dropdownClick },
+                    'Journal',
+                    _react2.default.createElement('i', { className: 'fa fa-caret-down' })
                 ),
                 _react2.default.createElement(
-                    "div",
-                    { className: "dropdown-container" },
+                    'div',
+                    { className: 'dropdown-container' },
                     _react2.default.createElement(
-                        "a",
-                        { href: "/journal_directory" },
-                        "View Directory"
+                        'a',
+                        { href: '/journal_directory' },
+                        'View Directory'
                     ),
                     _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Make New Entry"
+                        'a',
+                        { href: '#' },
+                        'Make New Entry'
                     )
                 ),
                 _react2.default.createElement(
-                    "button",
-                    { className: "dropdown-btn", onClick: this.dropdownClick },
-                    "Planner",
-                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                    'button',
+                    { className: 'dropdown-btn', onClick: this.dropdownClick },
+                    'Planner',
+                    _react2.default.createElement('i', { className: 'fa fa-caret-down' })
                 ),
                 _react2.default.createElement(
-                    "div",
-                    { className: "dropdown-container" },
+                    'div',
+                    { className: 'dropdown-container' },
                     _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Todo List"
+                        'a',
+                        { href: '#' },
+                        'Todo List'
                     ),
                     _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Add New Planner"
+                        'a',
+                        { href: '#' },
+                        'Add New Planner'
                     )
                 )
             );
@@ -48584,6 +48586,10 @@ var _journalDay = __webpack_require__(472);
 
 var _journalDay2 = _interopRequireDefault(_journalDay);
 
+var _newEntry = __webpack_require__(473);
+
+var _newEntry2 = _interopRequireDefault(_newEntry);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48938,10 +48944,10 @@ Chart.defaults = __webpack_require__(3);
 Chart.Element = __webpack_require__(10);
 Chart.elements = __webpack_require__(15);
 Chart.Interaction = __webpack_require__(95);
-Chart.layouts = __webpack_require__(24);
+Chart.layouts = __webpack_require__(25);
 Chart.platform = __webpack_require__(96);
 Chart.plugins = __webpack_require__(97);
-Chart.Ticks = __webpack_require__(25);
+Chart.Ticks = __webpack_require__(26);
 
 __webpack_require__(341)(Chart);
 __webpack_require__(342)(Chart);
@@ -52713,7 +52719,7 @@ module.exports = function(Chart) {
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(2);
 var Interaction = __webpack_require__(95);
-var layouts = __webpack_require__(24);
+var layouts = __webpack_require__(25);
 var platform = __webpack_require__(96);
 var plugins = __webpack_require__(97);
 
@@ -54003,7 +54009,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(2);
-var layouts = __webpack_require__(24);
+var layouts = __webpack_require__(25);
 
 module.exports = function(Chart) {
 
@@ -54057,7 +54063,7 @@ module.exports = function(Chart) {
 var defaults = __webpack_require__(3);
 var Element = __webpack_require__(10);
 var helpers = __webpack_require__(2);
-var Ticks = __webpack_require__(25);
+var Ticks = __webpack_require__(26);
 
 defaults._set('scale', {
 	display: true,
@@ -56287,7 +56293,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(2);
-var Ticks = __webpack_require__(25);
+var Ticks = __webpack_require__(26);
 
 module.exports = function(Chart) {
 
@@ -56484,7 +56490,7 @@ module.exports = function(Chart) {
 
 
 var helpers = __webpack_require__(2);
-var Ticks = __webpack_require__(25);
+var Ticks = __webpack_require__(26);
 
 /**
  * Generate a set of logarithmic ticks
@@ -56839,7 +56845,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(2);
-var Ticks = __webpack_require__(25);
+var Ticks = __webpack_require__(26);
 
 module.exports = function(Chart) {
 
@@ -60691,7 +60697,7 @@ module.exports = {
 var defaults = __webpack_require__(3);
 var Element = __webpack_require__(10);
 var helpers = __webpack_require__(2);
-var layouts = __webpack_require__(24);
+var layouts = __webpack_require__(25);
 
 var noop = helpers.noop;
 
@@ -61274,7 +61280,7 @@ module.exports = {
 var defaults = __webpack_require__(3);
 var Element = __webpack_require__(10);
 var helpers = __webpack_require__(2);
-var layouts = __webpack_require__(24);
+var layouts = __webpack_require__(25);
 
 var noop = helpers.noop;
 
@@ -63081,8 +63087,8 @@ module.exports = baseTimes;
 /* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(26),
-    isObjectLike = __webpack_require__(27);
+var baseGetTag = __webpack_require__(27),
+    isObjectLike = __webpack_require__(28);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]';
@@ -63129,9 +63135,9 @@ module.exports = stubFalse;
 /* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(26),
+var baseGetTag = __webpack_require__(27),
     isLength = __webpack_require__(60),
-    isObjectLike = __webpack_require__(27);
+    isObjectLike = __webpack_require__(28);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
@@ -63342,7 +63348,7 @@ var DataView = __webpack_require__(430),
     Promise = __webpack_require__(431),
     Set = __webpack_require__(432),
     WeakMap = __webpack_require__(433),
-    baseGetTag = __webpack_require__(26),
+    baseGetTag = __webpack_require__(27),
     toSource = __webpack_require__(225);
 
 /** `Object#toString` result references. */
@@ -65008,17 +65014,163 @@ var JournalDay = function (_Component) {
                         'p',
                         null,
                         'date: Day of the week'
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn pull-right' },
-                        'edit'
                     )
                 ),
                 _react2.default.createElement(
                     'div',
                     { className: 'row' },
-                    'COMPONENTS FOR DIFFRENT TYPES OF ENTRYS NEED TO GO HERE ENTRY TEMPLATS NEEDED ARE: DIET EXERCISE WATER INTAKE POSITIVITY MEDITATION SLEEP BUDGET'
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'card col-md-3 entryCard' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'container' },
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Water'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'user saved data'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'card col-md-3 entryCard' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'container' },
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Exercise'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'user saved data'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'card col-md-3 entryCard' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'container' },
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Diet'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'user saved data'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'container' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Steps'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'user saved data'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'container' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Sleep'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'user saved data'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'container' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Meditation'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'user saved data'
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'container' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Budget'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'user saved data'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-6 positivityCard' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'container' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Positivity'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'user saved data'
+                                )
+                            )
+                        )
+                    )
                 ),
                 'CHART COMPONENTS NEEDED HERE',
                 _react2.default.createElement(
@@ -65056,6 +65208,394 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NewEntry = function (_Component) {
+    _inherits(NewEntry, _Component);
+
+    function NewEntry(props) {
+        _classCallCheck(this, NewEntry);
+
+        var _this = _possibleConstructorReturn(this, (NewEntry.__proto__ || Object.getPrototypeOf(NewEntry)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(NewEntry, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "row" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "card col-md-3 entryCard" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "container" },
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Water"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "How many cup did you drink today?"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "row" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-md-3" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "form-group" },
+                                    _react2.default.createElement(
+                                        "select",
+                                        { className: "form-control" },
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "1"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "2"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "3"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "4"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "5"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "6"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "7"
+                                        ),
+                                        _react2.default.createElement(
+                                            "option",
+                                            null,
+                                            "8"
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "card col-md-3 entryCard" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "container" },
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Exercise"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "How long did you exercise for today?"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "col-md-3" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "form-group" },
+                                _react2.default.createElement(
+                                    "select",
+                                    { className: "form-control" },
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "1"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "2"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "3"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "4"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "5"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "6"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "7"
+                                    ),
+                                    _react2.default.createElement(
+                                        "option",
+                                        null,
+                                        "8"
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "card col-md-3 entryCard" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "container" },
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Diet"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "How many calories did you eat today?"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "row" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-md-3" },
+                                _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Calories" })
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "card col-md-3 entryCard" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container" },
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Steps"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "How many steps did you take today?"
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "row" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-2" },
+                                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Number of Steps" })
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "card col-md-3 entryCard" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container" },
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Sleep"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "How long did you sleep for?"
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "row" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-2" },
+                                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Hours of sleep" })
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "card col-md-3 entryCard" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container" },
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Meditation"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "How long did you meditate today?"
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "row" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-2" },
+                                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Hours of Meditation" })
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "card col-md-3 entryCard" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container" },
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Budget"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "How much did you save and spend today? "
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "row" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-1" },
+                                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Saved" })
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-1" },
+                                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Spent" })
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "card col-md-6 positivityCard" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container" },
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Positivity"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "List 3 positive things that happend today."
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "row" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "col-md-6" },
+                                    _react2.default.createElement(
+                                        "div",
+                                        { className: "form-group" },
+                                        _react2.default.createElement("textarea", { className: "form-control", name: "positivity", rows: "2" })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "col-md-10", style: { margin: 15 } },
+                        _react2.default.createElement(
+                            "button",
+                            { className: "btn pull-right", type: "submit" },
+                            "Submit"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return NewEntry;
+}(_react.Component);
+
+exports.default = NewEntry;
+
+/***/ }),
+/* 474 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactCenter = __webpack_require__(6);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
@@ -65064,11 +65604,11 @@ var _title = __webpack_require__(14);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _plannerMain = __webpack_require__(474);
+var _plannerMain = __webpack_require__(475);
 
 var _plannerMain2 = _interopRequireDefault(_plannerMain);
 
-var _plannerToDo = __webpack_require__(475);
+var _plannerToDo = __webpack_require__(476);
 
 var _plannerToDo2 = _interopRequireDefault(_plannerToDo);
 
@@ -65122,7 +65662,7 @@ var PlannerDirectory = function (_Component) {
 exports.default = PlannerDirectory;
 
 /***/ }),
-/* 474 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65192,7 +65732,7 @@ var PlannerMain = function (_Component) {
 exports.default = PlannerMain;
 
 /***/ }),
-/* 475 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65266,7 +65806,7 @@ var PlannerToDo = function (_Component) {
 exports.default = PlannerToDo;
 
 /***/ }),
-/* 476 */
+/* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65286,7 +65826,7 @@ var _reactCenter = __webpack_require__(6);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _menuBar = __webpack_require__(477);
+var _menuBar = __webpack_require__(478);
 
 var _menuBar2 = _interopRequireDefault(_menuBar);
 
@@ -65386,7 +65926,7 @@ var TopBar = function (_React$Component) {
 exports.default = TopBar;
 
 /***/ }),
-/* 477 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65505,7 +66045,7 @@ var MenuBar = function (_React$Component) {
 exports.default = MenuBar;
 
 /***/ }),
-/* 478 */
+/* 479 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65567,7 +66107,7 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 /***/ }),
-/* 479 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65642,7 +66182,7 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 480 */
+/* 481 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65795,7 +66335,7 @@ var Blog = function (_React$Component) {
 exports.default = Blog;
 
 /***/ }),
-/* 481 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65917,7 +66457,7 @@ var SignIn = function (_React$Component) {
 exports.default = SignIn;
 
 /***/ }),
-/* 482 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66176,7 +66716,7 @@ var SignUP = function (_React$Component) {
 exports.default = SignUP;
 
 /***/ }),
-/* 483 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66188,7 +66728,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(80);
 
-var _index = __webpack_require__(484);
+var _index = __webpack_require__(485);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -66199,7 +66739,7 @@ var store = (0, _redux.createStore)(_index2.default);
 exports.default = store;
 
 /***/ }),
-/* 484 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
