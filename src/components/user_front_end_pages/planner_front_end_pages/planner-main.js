@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import BoxLink from './box-link';
-import BoxLinkSmall from './box-link-sm';
-import Title from './title';
+import BoxLink from '../box-link';
+import BoxLinkSmall from '../box-link-sm';
+import Title from '../title';
 
 
 class PlannerMain extends Component {

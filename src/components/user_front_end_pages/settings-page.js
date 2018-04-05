@@ -9,92 +9,94 @@ class SettingsPage extends React.Component {
 
     render() {
         return (
-            <div>
-                <Center>
+            <Center>
+                <div style={{marginBottom: 150}}>
+                    <Center>
+                        <div style={{ paddingBottom: 170 }} >
+                            <h1 style={{ fontSize: 60 }}  >Settings</h1>
+                        </div>
+                    </Center>
+
                     <div>
-                        <h2 style={{ fontFamily: "'Flavors',cursive", fontSize: 65, color: 'green' }}>SIGN  UP TO ROLL UP</h2>
-                    </div>
-                </Center>
-                <Center>
-                    <div style={{ marginTop: 30 }} >
-                        <form>
-                            <div className="form-group">
-                                <Center>
-                                    <div>
-                                        <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Enter Name</label>
-                                    </div>
-                                </Center>
-                                <div className='form-inline' style={{ marginTop: 10 }} >
 
-                                    <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>First</label>
-                                    <input type="text" style={{ marginLeft: 10 }} className='form-control' placeholder="First Name" />
-
-                                    <label htmlFor="" style={{ paddingLeft: 15, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Last</label>
-                                    <input type="text" style={{ marginLeft: 10 }} className='form-control' placeholder="Last Name" />
-                                </div>
-                            </div>
-                            <div className="form-group" style={{ marginTop: 50 }} >
-                                <Center>
-                                    <div>
-                                        <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Enter Username</label>
-                                    </div>
-                                </Center>
-
-                                <input type="text" style={{ marginLeft: 10 }} className='form-control' placeholder="Username" />
-                            </div>
-                            <div className="form-group" style={{ marginTop: 50 }} >
-                                <Center >
-                                    <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Date Of Birth</label>
-                                    <div style={{ paddingLeft: 50 }} >
-                                        <input type="date" name="Birthdate" className='form-control' required />
-                                    </div>
-                                </Center>
-                            </div>
-                            <div className="form-group" style={{ marginTop: 50 }} >
-                                <Center>
-                                    <div style={{ marginBottom: 10 }}>
-                                        <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Enter Email Address</label>
-                                    </div>
-                                </Center>
-                                <input type="email" name="Email Adress" className='form-control' placeholder='Email Address' required />
-                            </div>
-                            <div className="form-inline" style={{ marginTop: 50 }} >
-                                <Center>
-                                    <label htmlFor="" style={{ paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }} >Enter Password</label>
-                                    <input type="password" name="Password" className='form-control' required />
-                                </Center>
-                            </div>
-                            <div className="form-inline" style={{ marginTop: 50 }} >
-                                <Center>
-                                    <label htmlFor="" style={{ paddingRight: 50, fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Confirm Password</label>
-                                    <input type="password" name="Password" className='form-control' required />
-                                </Center>
-                            </div>
-                            <Center>
-                                <div className="form-group" style={{ marginTop: 50 }} >
-                                    <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Upload Recommendation</label>
+                        <Center>
+                            <div style={{ paddingTop: 30 }} >
+                                <form>
                                     <Center>
-                                        <input type="file" name="" />
+                                        <div className="form-group" style={{ paddingTop: 10 }}>
+
+                                            <div className='form-inline' style={{ paddingTop: 10 }} >
+                                                <Center>
+                                                        <label htmlFor="" style={{ fontSize: 30 }}  >Name</label>
+                                                </Center>
+                                                <input type="text" className='form-control' placeholder="First Name" />
+                                                <input type="text" style={{ marginLeft: 20 }} className='form-control' placeholder="Last Name" />
+                                            </div>
+                                        </div>
                                     </Center>
-                                </div>
-                            </Center>
-                            <Center>
-                                <div className="form-group" style={{ marginTop: 50 }} >
-                                    <label htmlFor="" style={{ fontFamily: "'Nanum Brush Script',cursive", fontSize: 45, color: 'green' }}>Upload Photo ID</label>
+
                                     <Center>
-                                        <input type="file" name="" />
+                                        <div className="col-lg-12" style={{ paddingTop: 50 }} >
+                                            <div className="col-md-6" >
+                                                <Center>
+                                                    <div style={{ paddingBottom: 10 }}>
+                                                        <label htmlFor="" style={{ fontSize: 30 }}  >Age</label>
+                                                    </div>
+                                                </Center>
+                                                <input type="date" name="Age" placeholder="Age" class="form-control" />
+                                            </div>
+                                            <div style={{ paddingLeft: 30 }} className="col-md-6" >
+                                                <Center>
+                                                    <div style={{ paddingBottom: 10 }}>
+                                                        <label htmlFor="" style={{ fontSize: 30 }}  >Gender</label>
+                                                    </div>
+                                                </Center>
+                                                <select class="form-control" id="gender"  >
+                                                    <option>Select</option>
+                                                    <option>Female</option>
+                                                    <option>Male</option>
+                                                    <option>Transgender</option>
+                                                    <option>Prefer Not To Specify</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </Center>
-                                </div>
-                            </Center>
-                            <Center>
-                                <div style={{marginTop: 45, marginBottom:75 }}  >
-                                    <button type="submit" className='btn' style={{ backgroundColor: 'green', color: 'black', fontFamily: "'Nanum Brush Script',cursive", fontSize: 25 }}>CREATE ACCOUNT</button>
-                                </div>
-                            </Center>
-                        </form>
+                                    <Center>
+                                        <div className="form-group" style={{ paddingTop: 50 }} >
+                                            <Center>
+                                                <div style={{ paddingBottom: 10 }}>
+                                                    <label htmlFor="" style={{ fontSize: 30 }}  >Email Address</label>
+                                                </div>
+                                            </Center>
+                                            <input type="email" name="Email Adress" className='form-control' placeholder='Email Address' required />
+                                        </div>
+                                    </Center>
+                                    <div >
+                                        <Center>
+                                            <div style={{ paddingTop: 40 }}>
+                                                <label htmlFor="" style={{ fontSize: 30 }}  >Password</label>
+                                            </div>
+                                        </Center>
+                                        <div className="form-inline" style={{ paddingTop: 50 }} >
+                                            <Center>
+                                                <input type="password" placeholder="Password" className='form-control' required />
+                                            </Center>
+                                        </div>
+                                        <div className="form-inline" style={{ paddingTop: 50 }} >
+                                            <Center>
+                                                <input type="password" placeholder=" Confirm Password" className='form-control' required />
+                                            </Center>
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </Center>
                     </div>
-                </Center>
-            </div>
+
+                </div>
+            </Center>
         )
     }
 }

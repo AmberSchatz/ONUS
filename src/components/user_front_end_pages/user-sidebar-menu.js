@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Switch, Route } from 'react-router-dom'
 
 
-class UserSidebarMenu extends Component {
+class UserSideBarMenu extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -30,8 +30,8 @@ class UserSidebarMenu extends Component {
             <div className="sidenav">
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
-                <a href="#">Home</a>
-                <a href="#">Settings</a>
+                <a href="/user">Home</a>
+                <a href="/user/user_settings">Settings</a>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
                 </button>
@@ -50,9 +50,10 @@ class UserSidebarMenu extends Component {
 
 
             </div>
+
         )
 
     }
 }
 
-export default UserSidebarMenu;
+export default UserSideBarMenu

@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import Center from 'react-center';
 
-import Title from './title';
-import JournalMain from './journal-main';
-import JournalMonth from './journal-month';
-import JournalWeek from './journal-week';
-import JournalDay from './journal-day';
-import NewEntry from './new-entry';
+import Title from '../title';
+import PlannerMain from './planner-main';
+import PlannerToDo from './planner-to-do'
 
 
-
-class JournalDirectory extends Component {
+class PlannerDirectory extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -23,11 +19,8 @@ class JournalDirectory extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
-                        {/* <JournalMain /> */}
-                        {/* <JournalMonth /> */}
-                        {/* <JournalWeek /> */}
-                        <JournalDay/>
-                        {/* <NewEntry/> */}
+                        {/* <PlannerMain/> */}
+                        <PlannerToDo/>
 
                     </div>
                 </div>
@@ -37,4 +30,4 @@ class JournalDirectory extends Component {
     }
 }
 
-export default JournalDirectory;
+export default PlannerDirectory;

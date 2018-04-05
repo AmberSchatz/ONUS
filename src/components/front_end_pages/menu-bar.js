@@ -11,12 +11,11 @@ class MenuBar extends React.Component {
 
     render() {
         return (
-
-            <div  >
+            <div style={{ paddingTop: 20 }} >
                 <nav className="nav-primary"  >
                     <div className="container-fluid"  >
-                        <div className="navbar-header" style={{ paddingRight: 700 }}  >
-                            <a className="navbar-brand" href="#" id="menu-item">Onus</a>
+                        <div className="navbar-header" style={{ paddingRight: 650 }}  >
+                            <a className="navbar-brand" href="/" id="menu-item" style={{ fontSize: 55, paddingTop: 35 }}>Onus</a>
                         </div>
                         <ul className="nav navbar-nav">
                             <li><a href="/" id="menu-item" >Home</a></li>
@@ -24,18 +23,6 @@ class MenuBar extends React.Component {
                             <li><a href="/blog" id="menu-item" >Blog</a></li>
                             <li><a href="/sign_in" id="menu-item" >Sign In</a></li>
                             <li><a href="/sign_up" id="menu-item" >Sign Up</a></li>
-                            {/* <li>
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                                        <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">HTML</a></li>
-                                        <li><a href="#">CSS</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                    </ul>
-                                </div>
-
-                            </li> */}
                         </ul>
                     </div>
                 </nav>
@@ -45,3 +32,11 @@ class MenuBar extends React.Component {
 }
 
 export default MenuBar
+
+
+
+
+
+
+
+

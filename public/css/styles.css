@@ -1,13 +1,38 @@
 #menu-item {
     font-family: 'Dancing Script', cursive;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
 }
+
 #center-text {
     font-family: 'Dancing Script', cursive;
-    font-size: 65px;
+    font-size: 95px;
     color: white;
 }
+
+#user-image {
+    width: 200px;
+    height: 200px;
+}
+
+#edit-btn {
+    padding: 10px 20px;
+}
+
+#front-pageText {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 60px;
+}
+
+
+#blog-text {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 30px;
+}
+
+
 
 /* sidebar menu css */
 
