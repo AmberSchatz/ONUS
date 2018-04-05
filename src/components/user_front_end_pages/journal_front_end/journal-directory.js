@@ -28,7 +28,6 @@ class JournalDirectory extends Component {
                         {/* <JournalWeek /> */}
                         <JournalDay/>
                         {/* <NewEntry/> */}
-
                     </div>
                 </div>
 

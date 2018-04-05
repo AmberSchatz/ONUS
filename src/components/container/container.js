@@ -15,7 +15,7 @@ import Home from '../front_end_pages/home';
 import About from '../front_end_pages/about';
 import Blog from '../front_end_pages/blog';
 import SignIn from '../front_end_pages/sign-in';
-import SignUP from '../front_end_pages/sign-up';
+import SignUp from '../front_end_pages/sign-up';
 // FRONT END PAGES IMPORT END //
 
 // USER FRONT END PAGES IMPORTS //
