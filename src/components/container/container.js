@@ -16,6 +16,7 @@ import About from '../front_end_pages/about';
 import Blog from '../front_end_pages/blog';
 import SignIn from '../front_end_pages/sign-in';
 import SignUp from '../front_end_pages/sign-up';
+import userMainPage from '../user_front_end_pages/user-main-page';
 // FRONT END PAGES IMPORT END //
 
 // USER FRONT END PAGES IMPORTS //
@@ -58,7 +59,8 @@ class Container extends React.Component {
                             <Route path="/about" component={About} />
                             <Route path="/blog" component={Blog} />
                             <Route path="/sign_in" component={SignIn} />
-                            <Route path="/sign_up" component={SignUP} />
+                            <Route path="/sign_up" component={SignUp} />
+                            <Route path = "/user" component={userMainPage} />
                             
                         </Switch>
                     </div>

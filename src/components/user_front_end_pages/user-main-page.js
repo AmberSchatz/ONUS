@@ -1,6 +1,7 @@
 import React from 'react';
 import Center from 'react-center';
 import { connect } from 'react-redux';
+import axios from 'axios';
 
 import { userDetails } from '../redux/actions';
 
@@ -52,7 +53,7 @@ class UserMainPage extends React.Component {
                                 <br />
                                 <textarea id="user-journal-text" cols="35" rows="7"></textarea>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -61,22 +62,22 @@ class UserMainPage extends React.Component {
         )
     }
 
-    componentDidMount() {
-        axios.get('http://localhost:5000/api/users/' + userId)
-            .then(response => {
-                console.log (response.data);
-            })
-    }
+    // componentDidMount() {
+    //     axios.get('http://localhost:5000/api/users/' + userId)
+    //         .then(response => {
+    //             console.log (response.data);
+    //         })
+    // }
 }
 
 
-const mapStateToProps = state => {
-    return {
-        userId: state.userId
-    }
+// const mapStateToProps = state => {
+//     return {
+//         userId: state.userId
+//     }
 
-    console.log (userId)
-}
+//     console.log (userId)
+// }
 
 
 // const mapDispatchToProps = dispatch => {
@@ -85,5 +86,5 @@ const mapStateToProps = state => {
 //     }
 // }
 
-export default connect(mapStateToProps)(UserMainPage);
+export default (UserMainPage);
 // export default connect(mapStateToProps, mapDispatchToProps)(UserMainPage);

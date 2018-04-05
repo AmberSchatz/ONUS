@@ -2,8 +2,10 @@ import React from 'react';
 import Center from 'react-center';
 import axios from 'axios';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 import { loadUser } from '../redux/actions'
+import UserMainPage from '../user_front_end_pages/user-main-page'
 
 
 
@@ -14,12 +16,18 @@ class SignIn extends React.Component {
             email: '',
             password: '',
             users: [],
+            redirect: false
         }
     }
 
 
 
     render() {
+
+        if (this.state.redirect) {
+            return <Redirect to="/user" component={UserMainPage} />;
+        }
+
         return (
             <Center>
                 <div style={{ marginBottom: 200 }}>
@@ -27,7 +35,7 @@ class SignIn extends React.Component {
                         <div className="form-group" style={{ paddingTop: 50 }} >
                             <Center>
                                 <div style={{ paddingBottom: 10 }}>
-                                    <label htmlFor="" id="front-pageText"  >Email </label>
+                                    <label id="front-pageText"> Email </label>
                                 </div>
                             </Center>
                             <input onChange={(e) => { this.setState({ email: e.target.value }) }} value={this.state.email} type="email" className='form-control' placeholder='Email Address' />
@@ -36,7 +44,7 @@ class SignIn extends React.Component {
                     <div >
                         <Center>
                             <div style={{ paddingTop: 40 }}>
-                                <label htmlFor="" id="front-pageText"  >Password</label>
+                                <label id="front-pageText"> Password </label>
                             </div>
                         </Center>
                         <div className="form-inline" style={{ paddingTop: 20 }} >
@@ -44,8 +52,8 @@ class SignIn extends React.Component {
                                 <input onChange={(e) => { this.setState({ password: e.target.value }) }} value={this.state.password} type="password" placeholder="Password" className='form-control' />
                             </Center>
                         </div>
-
                     </div>
+
                     <Center>
                         <div style={{ marginTop: 50 }} >
                             <button onClick={ this.logIn.bind(this) } className="btn" style={{ backgroundColor: 'black', fontSize: 25 }} id="menu-item" > SIGN   IN </button>
@@ -57,9 +65,8 @@ class SignIn extends React.Component {
         )
     }
 
-
     componentDidMount() {
-        axios.get('http://localhost:5000/api/users')
+        axios.get('http://10.0.1.164:5000/api/users')
             .then(response => {
                 var users = response.data
                 this.setState({ users: users });
@@ -67,36 +74,21 @@ class SignIn extends React.Component {
             })
     }
     
-
-
     logIn() {
         console.log(this.state.password);
         console.log(this.state.email);
         for ( var i = 0 ; i < this.state.users.length ; i++) {
-
             if ( this.state.users[i].email == this.state.email && this.state.users[i].password == this.state.password ) {
                 console.log("yay!");
                 console.log(this.state.users[i].id);
-                // var userId = this.state.users[i].id;
 
                 this.props.sendStateToRedux(this.state.users[i].id)
+                
+                this.setState({redirect: true})
+            }                   
 
-                // this.setState({
-                //     loggedInUserId: userId
-                //   })
-
-                //   console.log(this.state.loggedInUserId)  
-
-                break;
-            }
         }
-        alert ("sorry the password and email don't match. please try again or sign-up")
-  
-
     }
-
-
-
 }
 
 
