@@ -23,7 +23,7 @@ class TopBar extends React.Component {
                 </Center>
                 <Center>
                     <div style={{ marginTop: 140 }}>
-                        <h1 id="center-text">{this.props.title}Welcome</h1>
+                        <h1 id="center-text">{this.props.title} Welcome </h1>
                         <Center>
                             <div style={{ paddingTop: 240 }} >
                                 <img src="https://image.flaticon.com/icons/svg/24/24567.svg" alt="down-arrow" style={{ height: '60px', width: '60px' }} />

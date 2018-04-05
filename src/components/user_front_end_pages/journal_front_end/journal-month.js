@@ -3,7 +3,7 @@ import BoxLink from '../box-link';
 import BoxLinkSmall from '../box-link-sm';
 import Title from '../title';
 import Header from '../header';
-import DataDashboard from '../data-dashboard';
+// import DataDashboard from '../data-dashboard';
 
 
 class JournalMonth extends Component {
@@ -31,7 +31,7 @@ class JournalMonth extends Component {
                 CHART COMPONENTS NEEDED HERE
                 <div className="row">
                 <div className="">
-                <DataDashboard/>
+                {/* <DataDashboard/> */}
                 </div>
                 
                 </div>

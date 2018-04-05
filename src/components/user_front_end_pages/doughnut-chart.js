@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
+// import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
 import Header from './header';
 
 class DoughnutChart extends Component {

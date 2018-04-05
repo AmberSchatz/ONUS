@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import BoxLink from '../box-link';
 import BoxLinkSmall from '../box-link-sm';
 import Title from '../title';
@@ -17,8 +19,8 @@ class JournalWeek extends Component {
                 <div className="col-md-12">
                     <Header />
                     <p>Week of: date</p>
-                    
                 </div>
+                
                 <div className="row">
                     <BoxLink />
                     <BoxLink />
@@ -31,9 +33,9 @@ class JournalWeek extends Component {
 
                 CHART COMPONENTS NEEDED HERE
                 <div className="row">
-                <div className="">
-                <DataDashboard/>
-                </div>
+                    <div>
+                        <DataDashboard/>
+                    </div>
                 </div>
 
             </div>
@@ -41,4 +43,14 @@ class JournalWeek extends Component {
     }
 }
 
-export default JournalWeek;
+
+const mapStateToProps = state => {
+    return {
+        user: state.user
+    }
+
+    console.log (user)
+}
+
+
+export default connect(mapStateToProps)(JournalWeek);

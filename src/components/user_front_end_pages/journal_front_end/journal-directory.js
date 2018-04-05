@@ -6,7 +6,7 @@ import JournalMain from './journal-main';
 import JournalMonth from './journal-month';
 import JournalWeek from './journal-week';
 import JournalDay from './journal-day';
-import NewEntry from './new-entry';
+// import NewEntry from './new-entry';
 
 
 
@@ -28,7 +28,6 @@ class JournalDirectory extends Component {
                         {/* <JournalWeek /> */}
                         <JournalDay/>
                         {/* <NewEntry/> */}
-
                     </div>
                 </div>
 

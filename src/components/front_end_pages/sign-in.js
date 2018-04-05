@@ -1,11 +1,20 @@
 import React from 'react';
 import Center from 'react-center';
+import axios from 'axios';
+import { connect } from 'react-redux';
+
+import { loadUser } from '../redux/actions'
 
 
 
 class SignIn extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+            users: [],
+        }
     }
 
 
@@ -21,7 +30,7 @@ class SignIn extends React.Component {
                                     <label htmlFor="" id="front-pageText"  >Email </label>
                                 </div>
                             </Center>
-                            <input type="email" name="Email Adress" className='form-control' placeholder='Email Address' required />
+                            <input onChange={(e) => { this.setState({ email: e.target.value }) }} value={this.state.email} type="email" className='form-control' placeholder='Email Address' />
                         </div>
                     </Center>
                     <div >
@@ -32,16 +41,14 @@ class SignIn extends React.Component {
                         </Center>
                         <div className="form-inline" style={{ paddingTop: 20 }} >
                             <Center>
-                                <input type="password" placeholder="Password" className='form-control' required />
+                                <input onChange={(e) => { this.setState({ password: e.target.value }) }} value={this.state.password} type="password" placeholder="Password" className='form-control' />
                             </Center>
                         </div>
 
                     </div>
                     <Center>
                         <div style={{ marginTop: 50 }} >
-                            <a href="/user">
-                                <button className="btn" style={{ backgroundColor: 'black', fontSize: 25 }} id="menu-item" > SIGN   IN </button>
-                            </a>
+                            <button onClick={ this.logIn.bind(this) } className="btn" style={{ backgroundColor: 'black', fontSize: 25 }} id="menu-item" > SIGN   IN </button>
                         </div>
                     </Center>
 
@@ -49,6 +56,55 @@ class SignIn extends React.Component {
             </Center>
         )
     }
+
+
+    componentDidMount() {
+        axios.get('http://localhost:5000/api/users')
+            .then(response => {
+                var users = response.data
+                this.setState({ users: users });
+                console.log (this.state.users)
+            })
+    }
+    
+
+
+    logIn() {
+        console.log(this.state.password);
+        console.log(this.state.email);
+        for ( var i = 0 ; i < this.state.users.length ; i++) {
+
+            if ( this.state.users[i].email == this.state.email && this.state.users[i].password == this.state.password ) {
+                console.log("yay!");
+                console.log(this.state.users[i].id);
+                // var userId = this.state.users[i].id;
+
+                this.props.sendStateToRedux(this.state.users[i].id)
+
+                // this.setState({
+                //     loggedInUserId: userId
+                //   })
+
+                //   console.log(this.state.loggedInUserId)  
+
+                break;
+            }
+        }
+        alert ("sorry the password and email don't match. please try again or sign-up")
+  
+
+    }
+
+
+
 }
 
-export default SignIn
+
+const mapDispatchToProps = dispatch => {
+    return {
+        sendStateToRedux: apiResponse => dispatch(loadUser(apiResponse))
+    }
+}
+
+
+export default connect(null, mapDispatchToProps)(SignIn)

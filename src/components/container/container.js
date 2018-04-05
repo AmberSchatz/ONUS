@@ -13,7 +13,7 @@ import Home from '../front_end_pages/home';
 import About from '../front_end_pages/about';
 import Blog from '../front_end_pages/blog';
 import SignIn from '../front_end_pages/sign-in';
-import SignUP from '../front_end_pages/sign-up';
+import SignUp from '../front_end_pages/sign-up';
 // FRONT END PAGES IMPORT END //
 
 // USER FRONT END PAGES IMPORTS //
@@ -36,16 +36,17 @@ class Container extends React.Component {
             <div>
                 <TopBar />
 
-
-
                 <div>
                     <div className="container" >
+
                         <Switch>
                             <Route path="/about" render={() => <About id="about" />} />
                             <Route path="/blog" render={() => <Blog id="blog" />} />
                             <Route path="/sign_in" render={() => <SignIn id="sign-in" />} />
-                            <Route path="/sign_up" render={() => <SignUP id="sign-up" />} />
-                        </Switch>
+                            <Route path="/sign_up" render={() => <SignUp id="sign-up" />} />
+                        </Switch> 
+
+
                     </div>
                 </div>
 
