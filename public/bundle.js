@@ -10632,17 +10632,17 @@ var _reactCenter = __webpack_require__(6);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _userMainPage = __webpack_require__(318);
+var _userSidebarMenu = __webpack_require__(318);
+
+var _userSidebarMenu2 = _interopRequireDefault(_userSidebarMenu);
+
+var _userMainPage = __webpack_require__(319);
 
 var _userMainPage2 = _interopRequireDefault(_userMainPage);
 
-var _settingsPage = __webpack_require__(319);
+var _settingsPage = __webpack_require__(320);
 
 var _settingsPage2 = _interopRequireDefault(_settingsPage);
-
-var _userSidebarMenu = __webpack_require__(320);
-
-var _userSidebarMenu2 = _interopRequireDefault(_userSidebarMenu);
 
 var _journalDirectory = __webpack_require__(321);
 
@@ -10661,6 +10661,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // USER FRONT END PAGES IMPORTS //
+
 
 // USER FRONT END PAGES IMPORTS END //
 
@@ -10683,16 +10684,18 @@ var SecondContainer = function (_React$Component) {
                 _react2.default.createElement(_userSidebarMenu2.default, null),
                 _react2.default.createElement(
                     'div',
-                    { className: 'container-fluid' },
+                    null,
                     _react2.default.createElement(
-                        _reactRouterDom.Switch,
-                        null,
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/user', render: function render() {
-                                return _react2.default.createElement(_userMainPage2.default, null);
-                            } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/user/:settings', render: function render() {
-                                return _react2.default.createElement(_settingsPage2.default, null);
-                            } })
+                        'div',
+                        { className: 'container' },
+                        _react2.default.createElement(
+                            _reactRouterDom.Switch,
+                            null,
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/user', component: _userMainPage2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/settings', component: _settingsPage2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/journal_directory', component: _journalDirectory2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/planner_directory', component: _plannerDirectory2.default })
+                        )
                     )
                 )
             );
@@ -46961,28 +46964,43 @@ var MainContainer = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (MainContainer.__proto__ || Object.getPrototypeOf(MainContainer)).call(this, props));
 
-        _this.FirstCont = _react2.default.createElement(_reactRouterDom.Route, { path: '/', render: function render() {
-                return _react2.default.createElement(_container2.default, null);
-            } });
-        _this.SecondCont = _react2.default.createElement(_reactRouterDom.Route, { path: '/user', render: function render() {
-                return _react2.default.createElement(_second_container2.default, null);
-            } });
+        _this.FirstCont = _react2.default.createElement(_container2.default, null);
+        _this.SecondCont = _react2.default.createElement(_second_container2.default, null);
 
         return _this;
     }
+    // <Route path="/user" component={SecondContainer} />
+    // <Route path="/" component={Container} />
+
 
     _createClass(MainContainer, [{
-        key: 'pageRender',
-        value: function pageRender() {
+        key: 'firstPageRender',
+        value: function firstPageRender() {
 
             if (location.pathname === "/") {
-                return _react2.default.createElement(_reactRouterDom.Route, { path: '/', render: function render() {
-                        return _react2.default.createElement(_container2.default, null);
-                    } });
-            } else if (location.pathname === "/user") {
-                return _react2.default.createElement(_reactRouterDom.Route, { path: '/user', render: function render() {
-                        return _react2.default.createElement(_second_container2.default, null);
-                    } });
+                return this.FirstCont;
+            } else if (location.pathname === "/about") {
+                return this.FirstCont;
+            } else if (location.pathname === "/blog") {
+                return this.FirstCont;
+            } else if (location.pathname === "/sign_in") {
+                return this.FirstCont;
+            } else if (location.pathname === "/sign_up") {
+                return this.FirstCont;
+            }
+        }
+    }, {
+        key: 'secondPageRender',
+        value: function secondPageRender() {
+
+            if (location.pathname === "/user") {
+                return this.SecondCont;
+            } else if (location.pathname === "/settings") {
+                return this.SecondCont;
+            } else if (location.pathname === "/journal_directory") {
+                return this.SecondCont;
+            } else if (location.pathname === "/planner_directory") {
+                return this.SecondCont;
             }
         }
     }, {
@@ -46991,7 +47009,8 @@ var MainContainer = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                this.pageRender(this)
+                this.firstPageRender(this),
+                this.secondPageRender(this)
             );
         }
     }]);
@@ -47085,24 +47104,22 @@ var Container = function (_React$Component) {
         return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
     }
 
+    // componentDidMount() {
+    //     axios.get("http://10.0.1.164/api/users")
+    //         .then(response => {
+    //             var users = response.data
+    //             console.log (users)
+    //         })
+    // }
+
+
     _createClass(Container, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            _axios.axios.get("http://104.182.221.108:5000/api/users").then(function (response) {
-                var users = response.data;
-                console.log(users);
-            });
-        }
-    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/welcome', render: function render() {
-                        return _react2.default.createElement(_about2.default, { id: 'about' });
-                    } }),
-                _react2.default.createElement(_topBar2.default, null),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _topBar2.default }),
                 _react2.default.createElement(
                     'div',
                     null,
@@ -47112,18 +47129,10 @@ var Container = function (_React$Component) {
                         _react2.default.createElement(
                             _reactRouterDom.Switch,
                             null,
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/welcome/:about', render: function render() {
-                                    return _react2.default.createElement(_about2.default, { id: 'about' });
-                                } }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '//:blog', render: function render() {
-                                    return _react2.default.createElement(_blog2.default, { id: 'blog' });
-                                } }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '//:sign_in', render: function render() {
-                                    return _react2.default.createElement(_signIn2.default, { id: 'sign-in' });
-                                } }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '//:sign_up', render: function render() {
-                                    return _react2.default.createElement(_signUp2.default, { id: 'sign-up' });
-                                } })
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/blog', component: _blog2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_in', component: _signIn2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_up', component: _signUp2.default })
                         )
                     )
                 )
@@ -48041,6 +48050,126 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserSideBarMenu = function (_Component) {
+    _inherits(UserSideBarMenu, _Component);
+
+    function UserSideBarMenu(props) {
+        _classCallCheck(this, UserSideBarMenu);
+
+        var _this = _possibleConstructorReturn(this, (UserSideBarMenu.__proto__ || Object.getPrototypeOf(UserSideBarMenu)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(UserSideBarMenu, [{
+        key: "dropdownClick",
+        value: function dropdownClick() {
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+
+            for (var i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "sidenav" },
+                _react2.default.createElement("img", { id: "placeholderImg", src: "http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png" }),
+                _react2.default.createElement(
+                    "a",
+                    { href: "/user" },
+                    "Home"
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { href: "/settings" },
+                    "Settings"
+                ),
+                _react2.default.createElement(
+                    "button",
+                    { className: "dropdown-btn", onClick: this.dropdownClick },
+                    "Journal",
+                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "dropdown-container" },
+                    _react2.default.createElement(
+                        "a",
+                        { href: "/journal_directory" },
+                        "View Directory"
+                    ),
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#" },
+                        "Make New Entry"
+                    )
+                ),
+                _react2.default.createElement(
+                    "button",
+                    { className: "dropdown-btn", onClick: this.dropdownClick },
+                    "Planner",
+                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "dropdown-container" },
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#" },
+                        "Todo List"
+                    ),
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#" },
+                        "Add New Planner"
+                    )
+                )
+            );
+        }
+    }]);
+
+    return UserSideBarMenu;
+}(_react.Component);
+
+exports.default = UserSideBarMenu;
+
+/***/ }),
+/* 319 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactCenter = __webpack_require__(6);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
@@ -48160,7 +48289,7 @@ var UserMainPage = function (_React$Component) {
 exports.default = UserMainPage;
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48214,7 +48343,7 @@ var SettingsPage = function (_React$Component) {
                             { style: { paddingBottom: 170 } },
                             _react2.default.createElement(
                                 'h1',
-                                { style: { fontSize: 60 } },
+                                { style: { fontSize: 80 }, id: 'front-pageText' },
                                 'Settings'
                             )
                         )
@@ -48245,7 +48374,7 @@ var SettingsPage = function (_React$Component) {
                                                     null,
                                                     _react2.default.createElement(
                                                         'label',
-                                                        { htmlFor: '', style: { fontSize: 30 } },
+                                                        { htmlFor: '', style: { fontSize: 50 }, id: 'front-pageText' },
                                                         'Name'
                                                     )
                                                 ),
@@ -48259,7 +48388,7 @@ var SettingsPage = function (_React$Component) {
                                         null,
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-lg-12', style: { paddingTop: 50 } },
+                                            { className: 'col-lg-12', style: { paddingTop: 30 } },
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-6' },
@@ -48271,7 +48400,7 @@ var SettingsPage = function (_React$Component) {
                                                         { style: { paddingBottom: 10 } },
                                                         _react2.default.createElement(
                                                             'label',
-                                                            { htmlFor: '', style: { fontSize: 30 } },
+                                                            { htmlFor: '', style: { fontSize: 50 }, id: 'front-pageText' },
                                                             'Age'
                                                         )
                                                     )
@@ -48289,7 +48418,7 @@ var SettingsPage = function (_React$Component) {
                                                         { style: { paddingBottom: 10 } },
                                                         _react2.default.createElement(
                                                             'label',
-                                                            { htmlFor: '', style: { fontSize: 30 } },
+                                                            { htmlFor: '', style: { fontSize: 50 }, id: 'front-pageText' },
                                                             'Gender'
                                                         )
                                                     )
@@ -48340,7 +48469,7 @@ var SettingsPage = function (_React$Component) {
                                                     { style: { paddingBottom: 10 } },
                                                     _react2.default.createElement(
                                                         'label',
-                                                        { htmlFor: '', style: { fontSize: 30 } },
+                                                        { htmlFor: '', style: { fontSize: 50 }, id: 'front-pageText' },
                                                         'Email Address'
                                                     )
                                                 )
@@ -48359,14 +48488,14 @@ var SettingsPage = function (_React$Component) {
                                                 { style: { paddingTop: 40 } },
                                                 _react2.default.createElement(
                                                     'label',
-                                                    { htmlFor: '', style: { fontSize: 30 } },
+                                                    { htmlFor: '', style: { fontSize: 50 }, id: 'front-pageText' },
                                                     'Password'
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'form-inline', style: { paddingTop: 50 } },
+                                            { className: 'form-inline', style: { paddingTop: 20 } },
                                             _react2.default.createElement(
                                                 _reactCenter2.default,
                                                 null,
@@ -48375,11 +48504,28 @@ var SettingsPage = function (_React$Component) {
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'form-inline', style: { paddingTop: 50 } },
+                                            { className: 'form-inline', style: { paddingTop: 30 } },
                                             _react2.default.createElement(
                                                 _reactCenter2.default,
                                                 null,
                                                 _react2.default.createElement('input', { type: 'password', placeholder: ' Confirm Password', className: 'form-control', required: true })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            _reactCenter2.default,
+                                            null,
+                                            _react2.default.createElement(
+                                                'div',
+                                                { style: { marginTop: 80 } },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '/user' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { className: 'btn', style: { backgroundColor: 'black', fontSize: 25, width: 200 }, id: 'menu-item' },
+                                                        'E D I T'
+                                                    )
+                                                )
                                             )
                                         )
                                     )
@@ -48396,126 +48542,6 @@ var SettingsPage = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SettingsPage;
-
-/***/ }),
-/* 320 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var UserSideBarMenu = function (_Component) {
-    _inherits(UserSideBarMenu, _Component);
-
-    function UserSideBarMenu(props) {
-        _classCallCheck(this, UserSideBarMenu);
-
-        var _this = _possibleConstructorReturn(this, (UserSideBarMenu.__proto__ || Object.getPrototypeOf(UserSideBarMenu)).call(this, props));
-
-        _this.state = {};
-        return _this;
-    }
-
-    _createClass(UserSideBarMenu, [{
-        key: "dropdownClick",
-        value: function dropdownClick() {
-            var dropdown = document.getElementsByClassName("dropdown-btn");
-
-            for (var i = 0; i < dropdown.length; i++) {
-                dropdown[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var dropdownContent = this.nextElementSibling;
-                    if (dropdownContent.style.display === "block") {
-                        dropdownContent.style.display = "none";
-                    } else {
-                        dropdownContent.style.display = "block";
-                    }
-                });
-            }
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
-                { className: "sidenav" },
-                _react2.default.createElement("img", { id: "placeholderImg", src: "http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png" }),
-                _react2.default.createElement(
-                    "a",
-                    { href: "/user" },
-                    "Home"
-                ),
-                _react2.default.createElement(
-                    "a",
-                    { href: "/user/:settings" },
-                    "Settings"
-                ),
-                _react2.default.createElement(
-                    "button",
-                    { className: "dropdown-btn", onClick: this.dropdownClick },
-                    "Journal",
-                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "dropdown-container" },
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "View Directory"
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Make New Entry"
-                    )
-                ),
-                _react2.default.createElement(
-                    "button",
-                    { className: "dropdown-btn", onClick: this.dropdownClick },
-                    "Planner",
-                    _react2.default.createElement("i", { className: "fa fa-caret-down" })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "dropdown-container" },
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Todo List"
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#" },
-                        "Add New Planner"
-                    )
-                )
-            );
-        }
-    }]);
-
-    return UserSideBarMenu;
-}(_react.Component);
-
-exports.default = UserSideBarMenu;
 
 /***/ }),
 /* 321 */
@@ -65278,7 +65304,11 @@ var TopBar = function (_React$Component) {
     function TopBar(props) {
         _classCallCheck(this, TopBar);
 
-        return _possibleConstructorReturn(this, (TopBar.__proto__ || Object.getPrototypeOf(TopBar)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (TopBar.__proto__ || Object.getPrototypeOf(TopBar)).call(this, props));
+
+        _this.ArrowImg = _react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/svg/24/24567.svg', alt: 'down-arrow', style: { height: '60px', width: '60px' } });
+
+        return _this;
     }
 
     _createClass(TopBar, [{
@@ -65295,6 +65325,22 @@ var TopBar = function (_React$Component) {
                 return "Sign Up";
             } else {
                 return "Welcome";
+            }
+        }
+    }, {
+        key: 'arrowImg',
+        value: function arrowImg() {
+
+            if (location.pathname === "/about") {
+                return this.ArrowImg;
+            } else if (location.pathname === "/blog") {
+                return this.ArrowImg;
+            } else if (location.pathname === "/sign_in") {
+                return this.ArrowImg;
+            } else if (location.pathname === "/sign_up") {
+                return this.ArrowImg;
+            } else {
+                return null;
             }
         }
     }, {
@@ -65325,7 +65371,7 @@ var TopBar = function (_React$Component) {
                             _react2.default.createElement(
                                 'div',
                                 { style: { paddingTop: 240 } },
-                                _react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/svg/24/24567.svg', alt: 'down-arrow', style: { height: '60px', width: '60px' } })
+                                this.arrowImg(this)
                             )
                         )
                     )
@@ -65567,6 +65613,15 @@ var About = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { style: { marginBottom: 200, marginTop: 100 } },
+                    _react2.default.createElement(
+                        _reactCenter2.default,
+                        null,
+                        _react2.default.createElement(
+                            'h2',
+                            { htmlFor: '', id: 'front-pageText' },
+                            'About Us'
+                        )
+                    ),
                     _react2.default.createElement(
                         'div',
                         { style: { paddingTop: 20 } },
