@@ -29,12 +29,12 @@ class UserSideBarMenu extends Component {
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
                 <a href="/user">Home</a>
-                <a href="/user/user_settings">Settings</a>
+                <a href="/settings">Settings</a>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-container">
-                    <a href="#">View Directory</a>
+                    <a href="/journal_directory">View Directory</a>
                     <a href="#">Make New Entry</a>                   
                 </div>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Planner

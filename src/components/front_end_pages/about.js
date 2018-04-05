@@ -14,6 +14,9 @@ class About extends React.Component {
         return (
             <Center>
                 <div style={{ marginBottom: 200, marginTop: 100 }} >
+                     <Center>
+                         <h2 htmlFor="" id="front-pageText"  >About Us</h2>
+                    </Center>
                     <div style={{paddingTop: 20}} >
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ratione odio rerum qui velit? Unde ipsam, at officia sit adipisci molestias exercitationem, alias nulla tenetur, minima eveniet fuga quibusdam facere!

@@ -3,6 +3,8 @@ import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import { axios } from 'axios';
+
 import Center from 'react-center';
 import SecondContainer from './second_container';
 
@@ -29,28 +31,39 @@ class Container extends React.Component {
         super(props)
     }
 
+    // componentDidMount() {
+    //     axios.get("http://10.0.1.164/api/users")
+    //         .then(response => {
+    //             var users = response.data
+    //             console.log (users)
+    //         })
+    // }
+
+
+
+
 
 
     render() {
         return (
             <div>
-                <TopBar />
 
-
+                <Route path="/" component={TopBar} />
 
                 <div>
                     <div className="container" >
+
                         <Switch>
-                            <Route path="/about" render={() => <About id="about" />} />
-                            <Route path="/blog" render={() => <Blog id="blog" />} />
-                            <Route path="/sign_in" render={() => <SignIn id="sign-in" />} />
-                            <Route path="/sign_up" render={() => <SignUP id="sign-up" />} />
+
+                            <Route path="/about" component={About} />
+                            <Route path="/blog" component={Blog} />
+                            <Route path="/sign_in" component={SignIn} />
+                            <Route path="/sign_up" component={SignUP} />
+                            
                         </Switch>
                     </div>
                 </div>
-
             </div>
-
         )
     }
 }
