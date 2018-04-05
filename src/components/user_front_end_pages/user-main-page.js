@@ -5,6 +5,8 @@ import axios from 'axios';
 
 import { userDetails } from '../redux/actions';
 
+import axios from 'axios';
+
 
 class UserMainPage extends React.Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class UserMainPage extends React.Component {
                 <div className="container-fluid" style={{ paddingTop: 20, paddingLeft: 100 }} >
                     <Center>
                         <div style={{ paddingBottom: 275 }} >
-                            <h1 style={{fontSize: 60}} >WELCOME NAME</h1>
+                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >WELCOME NAME</h1>
                         </div>
                     </Center>
 
@@ -62,12 +64,21 @@ class UserMainPage extends React.Component {
         )
     }
 
+<<<<<<< HEAD
     // componentDidMount() {
     //     axios.get('http://localhost:5000/api/users/' + userId)
     //         .then(response => {
     //             console.log (response.data);
     //         })
     // }
+=======
+    componentDidMount() {
+        axios.get('http://localhost:5000/api/users/')
+            .then(response => {
+                console.log (response.data);
+            })
+    }
+>>>>>>> 1277d601387f188677aeb2f58cb87d6e588eded2
 }
 
 
