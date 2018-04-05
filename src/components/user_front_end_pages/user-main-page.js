@@ -15,7 +15,7 @@ class UserMainPage extends React.Component {
                 <div className="container-fluid" style={{ paddingTop: 20, paddingLeft: 100 }} >
                     <Center>
                         <div style={{ paddingBottom: 275 }} >
-                            <h1 style={{fontSize: 60}} >WELCOME NAME</h1>
+                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >WELCOME NAME</h1>
                         </div>
                     </Center>
                     <div  >
