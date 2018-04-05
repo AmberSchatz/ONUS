@@ -18,15 +18,6 @@ class MainContainer extends React.Component {
         this.SecondCont = <SecondContainer />
 
     }
-    // <Route path="/user" component={SecondContainer} />
-    // <Route path="/" component={Container} />
-
-
-
-
-
-
-
     firstPageRender() {
 
         if (location.pathname === "/") {
@@ -81,17 +72,12 @@ class MainContainer extends React.Component {
         }
 
     }
-
-
-
-
-
-
     render() {
         return (
             <div>
 
                 {this.firstPageRender(this)}
+
                 {this.secondPageRender(this)}
                 
             </div>

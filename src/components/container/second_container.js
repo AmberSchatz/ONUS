@@ -17,7 +17,6 @@ import SettingsPage from '../user_front_end_pages/settings-page';
 import JournalDirectory from '../user_front_end_pages/journal_front_end/journal-directory';
 import PlannerDirectory from '../user_front_end_pages/planner_front_end_pages/planner-directory';
 
-
 // USER FRONT END PAGES IMPORTS END //
 
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import Center from 'react-center';
 
+import axios from 'axios';
+
 
 
 class About extends React.Component {
@@ -9,11 +11,22 @@ class About extends React.Component {
     }
 
 
+    // componentDidMount() {
+    //     axios.get("http://10.0.1.164:5000/api/water")
+    //     .then(response => {
+    //         var users = response.data
+    //         console.log (response.data)
+    //     })
+    // }
 
     render() {
+        
+      
+        
         return (
             <Center>
                 <div style={{ marginBottom: 200, marginTop: 100 }} >
+
                      <Center>
                          <h2 htmlFor="" id="front-pageText"  >About Us</h2>
                     </Center>
