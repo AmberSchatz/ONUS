@@ -11,13 +11,13 @@ class About extends React.Component {
     }
 
 
-    // componentDidMount() {
-    //     axios.get("http://10.0.1.164:5000/api/water")
-    //     .then(response => {
-    //         var users = response.data
-    //         console.log (response.data)
-    //     })
-    // }
+    componentDidMount() {
+        axios.get("http://10.0.1.164:5000/api/users")
+        .then(response => {
+            var users = response.data
+            console.log (response.data)
+        })
+    }
 
     render() {
         
