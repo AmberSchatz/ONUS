@@ -106,10 +106,10 @@ class TopBar extends React.Component {
                         <Center>
                             <div style={{ paddingTop: 220 }} >
                                 {this.arrowImg(this)}
-
                             </div>
                         </Center>
                     </div>
+                    
                 </Center>
                 <div id="prevDiv" >
                     {this.previousBtn()}
