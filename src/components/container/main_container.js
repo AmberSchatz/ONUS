@@ -14,8 +14,8 @@ class MainContainer extends React.Component {
         return (
             <div>
 
-                <Container />
-                {/* <SecondContainer /> */}
+                {/* <Container /> */}
+                <SecondContainer />
 
                 {/* <HashRouter basename="/onus" >
 

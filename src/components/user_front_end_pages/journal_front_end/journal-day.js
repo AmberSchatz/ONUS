@@ -9,14 +9,17 @@ import DataDashboard from '../data-dashboard';
 class JournalDay extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            date:'3-3-18',
+            dayOfWeek: 'Monday',
+        }
     }
     render() {
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <Header />
-                    <p>date: Day of the week</p>
+                    <Header headerText={this.state.dayOfWeek} />
+                    <p>{this.state.date}</p>
                 </div>
 
 

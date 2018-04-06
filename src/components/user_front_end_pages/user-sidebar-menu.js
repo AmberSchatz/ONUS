@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link, Switch, Route } from 'react-router-dom'
 
+import UserMainPage from './user-main-page';
+import SettingsPage  from './settings-page';
+import JournalDirectory from './journal_front_end/journal-directory';
+import NewEntry from './journal_front_end/new-entry';
+import PlannerToDo from './planner_front_end_pages/planner-to-do';
 
 class UserSideBarMenu extends Component {
     constructor(props) {
@@ -30,13 +35,13 @@ class UserSideBarMenu extends Component {
             <div className="sidenav">
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
-                <a href="/user">Home</a>
-                <a href="/user/user_settings">Settings</a>
+                <a href="/">Home</a>
+                <a href="/settings-page">Settings</a>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-container">
-                    <a href="#">View Directory</a>
+                    <Link to="/journal_front_end/journal-directory">View Directory</Link>
                     <a href="#">Make New Entry</a>                   
                 </div>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
@@ -46,7 +51,15 @@ class UserSideBarMenu extends Component {
                     <a href="#">Todo List</a>
                     <a href="#">Add New Planner</a>
                 </div>
-                
+
+                <Switch>
+                    <Route exact path="/" render={() => <UserMainPage />} />
+                    <Route exact path="/settings-page" render={() => <SettingsPage />} />
+                    <Route exact path="/journal_front_end/journal-directory" render={() => <JournalDirectory />} />
+                    <Route exact path="/journal_front_end/new-entry" render={() => <NewEntry />} />
+                    <Route exact path="/manga-pg" render={() => <PlannerToDo />} />
+                </Switch>
+
 
 
             </div>

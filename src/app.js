@@ -8,6 +8,7 @@ import MainContainer from './components/container/main_container';
 import { store } from './components/redux/store/index';
 
 
+
 const app = document.getElementById('app');
 
 

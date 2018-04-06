@@ -15,7 +15,7 @@ class JournalMonth extends Component {
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <Header />
+                    <Header headerText="March"/>
                 </div>
                 <div className="row">
                 <div className="col-md-12"> 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route, HashRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 
@@ -34,15 +34,19 @@ class SecondContainer extends React.Component {
                 <UserSideBarMenu />
 
                 <div className="container-fluid">
-                    <HashRouter  basename="/user" >
+                   
+                        {/* <Switch>
+                            <Route path="/home" render={() => < UserMainPage />} />
+                            <Route path="/settings" render={() => < SettingsPage />} />
+                        </Switch> */}
+                    <div className="col-md-12">
+                        {/* <UserMainPage/> */}
+                        <JournalDirectory />
+                        {/* <PlannerDirectory /> */}
                         <Switch>
                             <Route path="/home" render={() => < UserMainPage />} />
                             <Route path="/settings" render={() => < SettingsPage />} />
                         </Switch>
-                    </HashRouter>
-                    <div className="col-md-12">
-                        <JournalDirectory />
-                        <PlannerDirectory />
                     </div>
                 </div>
             </div>

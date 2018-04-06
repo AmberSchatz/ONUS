@@ -17,9 +17,9 @@ class JournalDirectory extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container">
                 <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
-                    <Title />
+                    <Title titleText="Journal"/>
                 </div>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
