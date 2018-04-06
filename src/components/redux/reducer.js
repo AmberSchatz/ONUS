@@ -10,22 +10,16 @@ const rootReducer = (state = initialState, action) => {
             ...state,
             userId: action.payload
         }
-        
     }
+    
     if (action.type == 'LOAD_DETAILS') {
         state = {
             ...state,
             user: action.payload
         }
-        
     }
 
-
-    
-
-
-    return state;
-        
+    return state; 
     console.log(user)        
 
 }
