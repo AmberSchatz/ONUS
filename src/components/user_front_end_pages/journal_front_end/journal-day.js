@@ -32,6 +32,7 @@ class JournalDay extends Component {
 
     render() {
         return (
+            <div className="container">
             <div className="row" style={{ marginLeft: 140 }} >
                 <div className="col-md-12">
                     <Header headerText={this.state.dayOfWeek} />
@@ -39,8 +40,9 @@ class JournalDay extends Component {
                     <button style={{ border: " 1px solid black " }} onClick={this.dateSubmitted.bind(this)} className="btn"> Submit </button>
                     <p>{this.state.date}</p>
                 </div>
+            </div>
 
-
+            <div className="row">
                 <div className="card col-md-3 entryCard" >
                     <div>
                         <h3>Water</h3>
@@ -62,56 +64,60 @@ class JournalDay extends Component {
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="card col-md-3 entryCard">
-                        <div>
-                            <h3>Steps</h3>
-                            <p> {this.state.userSteps} </p>
-                        </div>
-                    </div>
+            </div>
 
-                    <div className="card col-md-3 entryCard">
-                        <div>
-                            <h3>Sleep</h3>
-                            <p> {this.state.userSleep} </p>
-                        </div>
-                    </div>
-
-                    <div className="card col-md-3 entryCard">
-                        <div>
-                            <h3>Meditation</h3>
-                            <p> {this.state.userMeditation} </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="row">
-                    <div className="card col-md-3 entryCard">
-                        <div>
-                            <h3>Budget</h3>
-                            <p>Saved:</p>
-                            <p> {this.state.userSaved} </p>
-                            <p>Spent:</p>
-                            <p> {this.state.userSpent} </p>
-                        </div>
-                    </div>
-
-                    <div className="card col-md-6 entryCard">
-                        <div>
-                            <h3>Positivity</h3>
-                            <p> {this.state.userPositivity} </p>
-                        </div>
+            <div className="row">
+                <div className="card col-md-3 entryCard">
+                    <div>
+                        <h3>Steps</h3>
+                        <p> {this.state.userSteps} </p>
                     </div>
                 </div>
 
-                < div className="row" >
-                    <div className="col-md-12">
-                        <DataDashboard />
+                <div className="card col-md-3 entryCard">
+                    <div>
+                        <h3>Sleep</h3>
+                        <p> {this.state.userSleep} </p>
                     </div>
-                </div >
+                </div>
+
+                <div className="card col-md-3 entryCard">
+                    <div>
+                        <h3>Meditation</h3>
+                        <p> {this.state.userMeditation} </p>
+                    </div>
+                </div>
 
             </div>
+
+            <div className="row">
+                <div className="card col-md-3 entryCard">
+                    <div>
+                        <h3>Budget</h3>
+                        <p style={{ display: 'inline' }}>Saved:</p>
+                        <p style={{ display: 'inline' }}> {this.state.userSaved} </p>
+                        <br />
+                        <p style={{ display: 'inline', }}>Spent:</p>
+                        <p style={{ display: 'inline' }}> {this.state.userSpent} </p>
+                    </div>
+                </div>
+
+                <div className="card col-md-6 entryCard">
+                    <div>
+                        <h3>Positivity</h3>
+                        <p> {this.state.userPositivity} </p>
+                    </div>
+                </div>
+            </div >
+
+            < div className="row" >
+                <div className="col-md-12">
+                    <DataDashboard />
+                </div>
+            </div >
+
+
+            </div >
         )
     }
 
