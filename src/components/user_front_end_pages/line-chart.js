@@ -56,7 +56,7 @@ class LineChart extends Component {
                         },
                     }}
                 />
-                this is Line Chart
+                
             </div>
         )
     }
