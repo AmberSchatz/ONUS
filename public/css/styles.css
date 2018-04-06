@@ -10,6 +10,23 @@
     color: white;
 }
 
+#previous-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    color: black;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#prevDiv {
+  margin-left: 1300px; 
+  margin-top: -40px;
+}
+
 #user-image {
     width: 200px;
     height: 200px;
