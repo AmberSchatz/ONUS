@@ -31,6 +31,7 @@ class SignUP extends React.Component {
         if (this.state.redirect) {
             return <Redirect to="/sign_in" />;
         }
+        
         return (
             <Center>
                 <div style={{ marginBottom: 150, paddingTop: 30, textAlign: 'center' }}>
