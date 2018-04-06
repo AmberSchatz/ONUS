@@ -8,8 +8,6 @@ import JournalWeek from './journal-week';
 import JournalDay from './journal-day';
 import NewEntry from './new-entry';
 
-
-
 class JournalDirectory extends Component {
     constructor(props) {
         super(props);
