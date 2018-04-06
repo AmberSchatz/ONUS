@@ -22,18 +22,16 @@ class Container extends React.Component {
 
                 <Route path="/" component={TopBar} />
 
-                <div>
-                    <div className="container" >
+                <div className="container" >
 
-                        <Switch>
+                    <Switch>
 
-                            <Route path="/about" component={About} />
-                            <Route path="/blog" component={Blog} />
-                            <Route path="/sign_in" component={SignIn} />
-                            <Route path="/sign_up" component={SignUP} />
-                            
-                        </Switch>
-                    </div>
+                        <Route path="/about" component={About} />
+                        <Route path="/blog" component={Blog} />
+                        <Route path="/sign_in" component={SignIn} />
+                        <Route path="/sign_up" component={SignUP} />
+
+                    </Switch>
                 </div>
             </div>
         )

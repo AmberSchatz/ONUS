@@ -14,8 +14,7 @@ class PlannerToDo extends Component {
         return (
             <div className="row">
                 <div className="col-md-6">
-                    <Header/>
-                   To do app needs to go here
+                
                 </div>
             </div>
 
