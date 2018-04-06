@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 
 import { userDetails } from '../redux/actions';
+import Title from './title';
+import Header from './header';
 
 
 
@@ -19,8 +21,9 @@ class UserMainPage extends React.Component {
             <Center>
                 <div className="container-fluid" style={{ paddingTop: 20, paddingLeft: 100 }} >
                     <Center>
-                        <div style={{ paddingBottom: 125 }} >
-                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >Welcome { this.props.user.name }</h1>
+                        <div className="row" style={{ paddingBottom: 125 }} >
+                            <Title titleText='Welcome'/>
+                            <Title titleText={ this.props.user.name }/>
                         </div>
                     </Center>
 
@@ -30,12 +33,13 @@ class UserMainPage extends React.Component {
                                 <div className="form-group">
                                     <img src= {this.props.user.image_url} id="user-image" className="img-circle" />
                                     <div className="form-group" style={{ paddingLeft: 40 }}  >
-                                        <textarea className="form-control" rows="4" style={{ height: 150, width: 350 }} defaultValue=""></textarea>
+                                    <h5 className="positivityCard card" style={{ padding: 40, width: 400 }} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem at! Harum libero a quaerat delectus excepturi culpa autem, explicabo vero iusto earum officiis tempora eos repellat! Dicta, iste ex.</h5>
+                                        {/* <textarea className="form-control" rows="4" style={{ height: 150, width: 350 }} defaultValue=""></textarea> */}
                                     </div>
                                 </div>
                             </form>
-                            <form style={{ paddingLeft: 520 }} >
-                                <button className="btn" id="edit-btn"> EDIT </button>
+                            <form style={{ paddingLeft: 587 }} >
+                                <button className="btn" id="edit-btn"> Edit </button>
                             </form>
                         </div>
 
@@ -43,18 +47,14 @@ class UserMainPage extends React.Component {
 
                             <div className="col-sm-6" >
                                 <div style={{ paddingLeft: 75 }}   >
-                                    <h3> JOURNAL </h3>
+                                    <Header headerText='JOURNAL'/>
                                 </div>
-                                <br />
-                                <textarea id="user-journal-text" cols="35" rows="7" defaultValue=""></textarea>
                             </div>
 
                             <div className="col-sm-6"   style={{ paddingLeft:30 }} >
                                 <div style={{ paddingLeft: 75 }}   >
-                                    <h3> PLANNER </h3>
+                                <Header headerText='PLANNER'/>
                                 </div>
-                                <br />
-                                <textarea id="user-journal-text" cols="35" rows="7" defaultValue=""></textarea>
                             </div>
 
                         </div>
@@ -66,7 +66,7 @@ class UserMainPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/users/' + this.props.userId)
+        axios.get('http://10.0.1.55:5000/api/users/' + this.props.userId)
             .then(response => {
                 this.props.sendLoggedInUser(response.data);
             })

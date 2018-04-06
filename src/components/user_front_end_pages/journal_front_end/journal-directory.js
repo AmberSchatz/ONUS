@@ -25,7 +25,6 @@ class JournalDirectory extends Component {
                     <div className="col-md-10 col-md-offset-2">
                         {/* <JournalWeek /> */}
                         <JournalDay />
-                        {/* <NewEntry/> */}
                     </div>
                 </div>
             </div>

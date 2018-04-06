@@ -66,7 +66,7 @@ class SignIn extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/users')
+        axios.get("http://10.0.1.55:5000/api/users")
             .then(response => {
                 var users = response.data
                 this.setState({ users: users });
