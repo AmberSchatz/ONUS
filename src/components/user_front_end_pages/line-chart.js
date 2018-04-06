@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
-// import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
+import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
 
 class LineChart extends Component {
     constructor(props) {
         super(props);
         this.state = {
             chartData:{
-                labels:['Boston', 'worchester', 'springfield', 'lowell', 'cambridge','new bedford'],
+                labels:['Diet', 'Water', 'Exercise', 'Steps', 'Sleep','Meditation','Positivity','Saved','Spent'],
                 datasets:[
                     {
-                        label:'population',
+                        label:'March',
                         data:[
-                            6175954,
-                            1843045,
-                            1545787,
-                            1056597,
-                            1024784,
-                            85247
+                            2000,
+                            9,
+                            8,
+                            500,
+                            10,
+                            4,
+                            30,
+                            1000,
+                            2000
                         ],
                         backgroundColor:[
                             '#69848D',
@@ -44,14 +47,13 @@ class LineChart extends Component {
                     options={{
                         title:{
                             display: true,
-                            text:'these are some cities',
+                            text:'Progress',
                             fontSize:25
                         },
                         legend:{
                             display: true,
                             position:'right'
                         },
-                    //    maintainAspectRatio: false
                     }}
                 />
                 this is Line Chart

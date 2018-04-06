@@ -4,6 +4,7 @@ import BoxLinkSmall from '../box-link-sm';
 import Title from '../title';
 
 
+
 class JournalMain extends Component {
     constructor(props) {
         super(props);
