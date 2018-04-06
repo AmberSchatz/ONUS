@@ -2,13 +2,10 @@ import React from 'react';
 import Center from 'react-center';
 
 
-
 class Home extends React.Component {
     constructor(props) {
         super(props)
     }
-
-
 
     render() {
         return (
