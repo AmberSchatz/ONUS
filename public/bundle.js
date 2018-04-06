@@ -5341,7 +5341,9 @@ var Title = function (_Component) {
                 _react2.default.createElement(
                     "p",
                     { id: "title" },
-                    this.props.titleText
+                    this.props.titleText,
+                    " ",
+                    this.props.userName
                 )
             );
         }
@@ -8408,8 +8410,7 @@ var UserMainPage = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'row', style: { paddingBottom: 125 } },
-                        _react2.default.createElement(_title2.default, { titleText: 'Welcome' }),
-                        _react2.default.createElement(_title2.default, { titleText: this.props.user.name })
+                        _react2.default.createElement(_title2.default, { titleText: 'Welcome', userName: this.props.user.name })
                     )
                 ),
                 _react2.default.createElement(
@@ -25766,212 +25767,222 @@ var JournalDay = function (_Component) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'div',
+                    { className: 'col-md-3 col-md-offset-6', style: { marginRight: 20, marginTop: 50 } },
+                    _react2.default.createElement(_title2.default, { titleText: 'Journal' })
+                ),
+                _react2.default.createElement(
+                    'div',
                     { className: 'row', style: { marginLeft: 140 } },
                     _react2.default.createElement(
                         'div',
                         { className: 'col-md-12' },
-                        _react2.default.createElement(_header2.default, { headerText: this.state.dayOfWeek }),
-                        _react2.default.createElement('input', { type: 'date', className: 'input-group date', onChange: function onChange(e) {
-                                _this2.setState({ date: e.target.value });
-                            }, value: this.state.date }),
+                        _react2.default.createElement(_header2.default, { headerText: 'Daily Entry' }),
+                        _react2.default.createElement(_header2.default, { headerText: this.state.date }),
+                        _react2.default.createElement('br', null),
                         _react2.default.createElement(
-                            'button',
-                            { style: { border: " 1px solid black " }, onClick: this.dateSubmitted.bind(this), className: 'btn' },
-                            ' Submit '
+                            'div',
+                            { className: 'row' },
+                            _react2.default.createElement('input', { type: 'date', style: { display: 'inline', paddingLeft: 10 }, className: 'input-group date', onChange: function onChange(e) {
+                                    _this2.setState({ date: e.target.value });
+                                }, value: this.state.date }),
+                            _react2.default.createElement(
+                                'button',
+                                { style: { paddingLeft: 10, display: 'inline' }, onClick: this.dateSubmitted.bind(this), className: 'btn' },
+                                ' Submit '
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'col-md-10 col-md-offset-2', style: { paddingTop: 40 } },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Water'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userWater,
+                                    ' '
+                                )
+                            )
                         ),
                         _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.date
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'row' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-3 entryCard' },
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Exercise'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userExercise,
+                                    ' '
+                                )
+                            )
+                        ),
                         _react2.default.createElement(
                             'div',
-                            null,
+                            { className: 'card col-md-3 entryCard' },
                             _react2.default.createElement(
-                                'h3',
+                                'div',
                                 null,
-                                'Water'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userWater,
-                                ' '
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Diet'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userDiet,
+                                    ' '
+                                )
                             )
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'card col-md-3 entryCard' },
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            null,
+                            { className: 'card col-md-3 entryCard' },
                             _react2.default.createElement(
-                                'h3',
+                                'div',
                                 null,
-                                'Exercise'
-                            ),
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Steps'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userSteps,
+                                    ' '
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
                             _react2.default.createElement(
-                                'p',
+                                'div',
                                 null,
-                                ' ',
-                                this.state.userExercise,
-                                ' '
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Sleep'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userSleep,
+                                    ' '
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'card col-md-3 entryCard' },
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Meditation'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userMeditation,
+                                    ' '
+                                )
                             )
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'card col-md-3 entryCard' },
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            null,
+                            { className: 'card col-md-3 entryCard' },
                             _react2.default.createElement(
-                                'h3',
+                                'div',
                                 null,
-                                'Diet'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userDiet,
-                                ' '
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Budget'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { style: { display: 'inline' } },
+                                    'Saved:'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { style: { display: 'inline' } },
+                                    ' ',
+                                    this.state.userSaved,
+                                    ' '
+                                ),
+                                _react2.default.createElement('br', null),
+                                _react2.default.createElement(
+                                    'p',
+                                    { style: { display: 'inline' } },
+                                    'Spent:'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { style: { display: 'inline' } },
+                                    ' ',
+                                    this.state.userSpent,
+                                    ' '
+                                )
                             )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'row' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-3 entryCard' },
+                        ),
                         _react2.default.createElement(
                             'div',
-                            null,
+                            { className: 'card col-md-6 entryCard' },
                             _react2.default.createElement(
-                                'h3',
+                                'div',
                                 null,
-                                'Steps'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userSteps,
-                                ' '
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-3 entryCard' },
-                        _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                'h3',
-                                null,
-                                'Sleep'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userSleep,
-                                ' '
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-3 entryCard' },
-                        _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                'h3',
-                                null,
-                                'Meditation'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userMeditation,
-                                ' '
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'row' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-3 entryCard' },
-                        _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                'h3',
-                                null,
-                                'Budget'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { style: { display: 'inline' } },
-                                'Saved:'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { style: { display: 'inline' } },
-                                ' ',
-                                this.state.userSaved,
-                                ' '
-                            ),
-                            _react2.default.createElement('br', null),
-                            _react2.default.createElement(
-                                'p',
-                                { style: { display: 'inline' } },
-                                'Spent:'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { style: { display: 'inline' } },
-                                ' ',
-                                this.state.userSpent,
-                                ' '
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card col-md-6 entryCard' },
-                        _react2.default.createElement(
-                            'div',
-                            null,
-                            _react2.default.createElement(
-                                'h3',
-                                null,
-                                'Positivity'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                ' ',
-                                this.state.userPositivity,
-                                ' '
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Positivity'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    ' ',
+                                    this.state.userPositivity,
+                                    ' '
+                                )
                             )
                         )
                     )
@@ -50987,7 +50998,6 @@ var JournalWeek = function (_Component) {
                     _react2.default.createElement(_boxLink2.default, { id: '6' }),
                     _react2.default.createElement(_boxLink2.default, { id: '7' })
                 ),
-                'CHART COMPONENTS NEEDED HERE',
                 _react2.default.createElement(
                     'div',
                     { className: 'row' },
@@ -67002,8 +67012,7 @@ var LineChart = function (_Component) {
                             position: 'right'
                         }
                     }
-                }),
-                'this is Line Chart'
+                })
             );
         }
     }]);
@@ -67292,6 +67301,7 @@ var rootReducer = function rootReducer() {
             userId: action.payload
         });
     }
+
     if (action.type == 'LOAD_DETAILS') {
         state = _extends({}, state, {
             user: action.payload
@@ -67299,7 +67309,6 @@ var rootReducer = function rootReducer() {
     }
 
     return state;
-
     console.log(user);
 };
 
