@@ -1,6 +1,9 @@
 import React from 'react';
 import Center from 'react-center';
 
+import { Router } from 'react-router-dom';
+
+
 import MenuBar from './menu-bar';
 
 
@@ -11,7 +14,10 @@ class TopBar extends React.Component {
 
         this.ArrowImg = <img src="https://image.flaticon.com/icons/svg/24/24567.svg" alt="down-arrow" style={{ height: '60px', width: '60px' }} />
 
+        this.Previous = <a id="previous-text" href="javascript:history.back()"   >Previous</a>
+
     }
+
 
     pageName() {
 
@@ -33,7 +39,7 @@ class TopBar extends React.Component {
     }
 
     arrowImg() {
-         
+
         if (location.pathname === "/about") {
             return (
                 this.ArrowImg
@@ -59,22 +65,55 @@ class TopBar extends React.Component {
         }
     }
 
+
+
+    previousBtn() {
+
+        if (location.pathname === "/about") {
+            return (
+                this.Previous
+            )
+        }
+        else if (location.pathname === "/blog") {
+            return (
+                this.Previous
+            )
+        }
+        else if (location.pathname === "/sign_in") {
+            return (
+                this.Previous
+            )
+        }
+        else if (location.pathname === "/sign_up") {
+            return (
+                this.Previous
+            )
+        }
+        // else {
+        //     return null
+        // }
+    }
+
     render() {
         return (
-            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 700 }}>
+            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 750 }}>
                 <Center>
                     <MenuBar />
                 </Center>
-                <Center>
-                    <div style={{ marginTop: 140 }}>
+                <Center style={{ marginTop: -15 }}>
+                    <div >
                         <h1 id="center-text">{this.pageName(this)}</h1>
                         <Center>
-                            <div style={{ paddingTop: 240 }} >
-                            {this.arrowImg(this)}
+                            <div style={{ paddingTop: 220 }} >
+                                {this.arrowImg(this)}
+
                             </div>
                         </Center>
                     </div>
                 </Center>
+                <div id="prevDiv" >
+                    {this.previousBtn()}
+                </div>
             </div>
         )
     }
