@@ -18,19 +18,20 @@ class JournalDirectory extends Component {
     render() {
         return (
             <div>
-                <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
-                    <Title />
-                </div>
+                <Center>
+                    <div style={{ paddingBottom: 170 }} >
+                        <h1 style={{ fontSize: 80 }} id="front-pageText"  >Journal</h1>
+                    </div>
+                </Center>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
                         {/* <JournalMain /> */}
                         {/* <JournalMonth /> */}
                         {/* <JournalWeek /> */}
-                        <JournalDay/>
+                        <JournalDay />
                         {/* <NewEntry/> */}
                     </div>
                 </div>
-
             </div>
         )
     }
