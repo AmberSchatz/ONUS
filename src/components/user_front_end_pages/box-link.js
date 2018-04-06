@@ -7,43 +7,36 @@ class BoxLink extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+
+        this.daysOfWeek=this.daysOfWeek.bind(this)
     }
     daysOfWeek() {
-
-        if (this.props.id === '1') {
-            return (
-                <Header titleText='Monday'/>
-            )
+        if (this.props.id == '1') {
+            return <Header headerText='Monday'/>
+            
         }
-        else if (this.props.id === '2') {
-            return (
-                <Header titleText='Tuesday'/>
-            )
+        else if (this.props.id == '2') {
+            return <Header headerText='Tuesday'/>
+            
         }
         else if (this.props.id === '3') {
-            return (
-                <Header titleText='Wednesday'/>
-            )
+            return <Header headerText='Wednesday'/>
+            
         }
         else if (this.props.id === '4') {
-            return (
-                <Header titleText='Thursday'/>
-            )
+            return <Header headerText='Thursday'/>
+            
         }
         else if (this.props.id === '5') {
-            return (
-                <Header titleText='Friday'/>
-            )
+            return <Header headerText='Friday'/>
+            
         }
         else if (this.props.id === '6') {
-            return (
-                <Header titleText='Saturday'/>
-            )
+            return <Header headerText='Saturday'/>
+            
         }
         else if (this.props.id === '7') {
-            return (
-                <Header titleText='Sunday'/>
-            )
+            return <Header headerText='Sunday'/>
         }
 
     }
@@ -51,7 +44,7 @@ class BoxLink extends Component {
         return (
             <div className="col-md-2 card"id="boxLinkStyle">
                 <Center>
-                <p>{this.daysOfWeek}</p>
+                <p style={{margin:50, fontWeight:'bold', textDecoration: 'underline'}}>{this.daysOfWeek()}</p>
                 </Center>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
+import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
 import Header from './header';
 
 class DoughnutChart extends Component {
@@ -7,17 +7,16 @@ class DoughnutChart extends Component {
         super(props);
         this.state = {
             chartData:{
-                labels:['Boston', 'worchester', 'springfield', 'lowell', 'cambridge','new bedford'],
+                labels:['Diet', 'Exercise', 'Water', 'Steps'],
                 datasets:[
                     {
-                        label:'population',
+                        label:'health',
                         data:[
-                            6175954,
-                            1843045,
-                            1545787,
-                            1056597,
-                            1024784,
-                            85247
+                            2000,
+                            400,
+                            900,
+                            502
+                           
                         ],
                         backgroundColor:[
                             '#69848D',
@@ -45,14 +44,13 @@ class DoughnutChart extends Component {
                     options={{
                         title:{
                             display: true,
-                            text:'these are some cities',
+                            text:'Health',
                             fontSize:25
                         },
                         legend:{
                             display: true,
                             position:'right'
                         },
-                        //  maintainAspectRatio: false
                     }}
                 />
                 this is DoughnutChart

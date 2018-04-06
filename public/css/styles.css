@@ -43,7 +43,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #2f2b2d;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -52,7 +52,9 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    font-family: 'Volkhov', serif; 
+    letter-spacing: 2px;
+    color: #9A9A9A;
     display: block;
     border: none;
     background: none;
@@ -73,13 +75,13 @@
   }
   
   .active {
-    background-color:rgba(105, 132, 141, 255);
+    background-color: #a6b5bb;
     color: white;
   }
   
   .dropdown-container {
     display: none;
-    background-color: #262626;
+  background-color:#434042;
     padding-left: 8px;
   }
   
@@ -95,10 +97,11 @@
     margin-top: 15px;
   }
   #boxLinkStyle{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 20px;
     width: 250px;
     height: 150px;
+    border-radius: 25px;
   }
   #boxLinkStyleSmall{
     border: 2px solid black;
@@ -117,10 +120,33 @@
   }
 
 .entryCard{
-  width: 300px;
-  height: 230px;
-  margin: 10px;
-  padding-top: 15px;
+  width:300px;
+  height: 150px;
+  margin:10px;
+  padding-top: 7px;
+  border-radius: 25px;
+}
+.positivityCard{
+  width:300px;
+  height: 150px;
+  margin:10px;
+  padding-top: 7px;
+  border-radius: 25px;
+}
+
+.newEntryCard{
+  width:400px;
+  height: 250px;
+  margin:10px;
+  padding-top: 7px;
+  border-radius: 25px;
+}
+.newPositivityCard{
+  width:300px;
+  height: 250px;
+  margin:10px;
+  padding-top: 7px;
+  border-radius: 25px;
 }
 
 .card {
@@ -132,8 +158,8 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container {
-  padding: 2px 16px;
+.chart{
+  margin: 10px;
 }
 
 

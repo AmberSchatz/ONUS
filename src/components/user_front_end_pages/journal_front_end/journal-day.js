@@ -5,7 +5,7 @@ import BoxLink from '../box-link';
 import BoxLinkSmall from '../box-link-sm';
 import Title from '../title';
 import Header from '../header';
-// import DataDashboard from '../data-dashboard';
+import DataDashboard from '../data-dashboard';
 
 
 class JournalDay extends Component {
