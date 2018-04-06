@@ -18,27 +18,29 @@ class UserMainPage extends React.Component {
 
     render() {
         return (
-            <Center>
-                <div className="container-fluid" style={{ paddingTop: 20, paddingLeft: 100 }} >
-                    <Center>
-                        <div className="row" style={{ paddingBottom: 125 }} >
-                            <Title titleText='Welcome'/>
-                            <Title titleText={ this.props.user.name }/>
-                        </div>
-                    </Center>
+            <div className="container">
+                <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
+                    <div className="row" style={{ paddingBottom: 125 }} >
+                        <Title titleText='Welcome' />
+                        <Title titleText={this.props.user.name} />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-10 col-md-offset-2">
 
-                    <div>
+
+
                         <div>
                             <form className="form-inline" >
-                                <div className="form-group">
-                                    <img src= {this.props.user.image_url} id="user-image" className="img-circle" />
+                                <div className="form-group" style={{ paddingLeft: 80 }}>
+                                    <img src={this.props.user.image_url} id="user-image" className="img-circle" />
                                     <div className="form-group" style={{ paddingLeft: 40 }}  >
-                                    <h5 className="positivityCard card" style={{ padding: 40, width: 400 }} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem at! Harum libero a quaerat delectus excepturi culpa autem, explicabo vero iusto earum officiis tempora eos repellat! Dicta, iste ex.</h5>
+                                        <h5 className="positivityCard card" style={{ padding: 40, width: 400 }} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem at! Harum libero a quaerat delectus excepturi culpa autem, explicabo vero iusto earum officiis tempora eos repellat! Dicta, iste ex.</h5>
                                         {/* <textarea className="form-control" rows="4" style={{ height: 150, width: 350 }} defaultValue=""></textarea> */}
                                     </div>
                                 </div>
                             </form>
-                            <form style={{ paddingLeft: 587 }} >
+                            <form style={{ paddingLeft: 665 }} >
                                 <button className="btn" id="edit-btn"> Edit </button>
                             </form>
                         </div>
@@ -46,21 +48,24 @@ class UserMainPage extends React.Component {
                         <div style={{ paddingTop: 65 }} className="col-md-12" >
 
                             <div className="col-sm-6" >
-                                <div style={{ paddingLeft: 75 }}   >
-                                    <Header headerText='JOURNAL'/>
+                                <div style={{ paddingLeft: 100 }}   >
+                                    <Header headerText='JOURNAL' />
                                 </div>
                             </div>
 
-                            <div className="col-sm-6"   style={{ paddingLeft:30 }} >
+                            <div className="col-sm-6" style={{ paddingLeft: 100 }} >
                                 <div style={{ paddingLeft: 75 }}   >
-                                <Header headerText='PLANNER'/>
+                                    <Header headerText='PLANNER' />
                                 </div>
                             </div>
 
                         </div>
+
+
                     </div>
                 </div>
-            </Center>
+            </div>
+
 
         )
     }
