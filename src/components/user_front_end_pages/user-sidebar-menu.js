@@ -29,19 +29,20 @@ class UserSideBarMenu extends Component {
         }
     }
 
+    
 
     render() {
         return (
             <div className="sidenav">
             <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
 
-                <a href="/">Home</a>
-                <a href="/settings-page">Settings</a>
+                <a href="/user">Home</a>
+                <a href="/settings">Settings</a>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Journal
                 <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-container">
-                    <Link to="/journal_front_end/journal-directory">View Directory</Link>
+                    <a href="/journal_directory">View Directory</a>
                     <a href="#">Make New Entry</a>                   
                 </div>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
@@ -51,17 +52,8 @@ class UserSideBarMenu extends Component {
                     <a href="#">Todo List</a>
                     <a href="#">Add New Planner</a>
                 </div>
-
-                <Switch>
-                    <Route exact path="/" render={() => <UserMainPage />} />
-                    <Route exact path="/settings-page" render={() => <SettingsPage />} />
-                    <Route exact path="/journal_front_end/journal-directory" render={() => <JournalDirectory />} />
-                    <Route exact path="/journal_front_end/new-entry" render={() => <NewEntry />} />
-                    <Route exact path="/manga-pg" render={() => <PlannerToDo />} />
-                </Switch>
-
-
-
+                <a href="/">Main</a>
+                
             </div>
 
         )

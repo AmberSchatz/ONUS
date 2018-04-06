@@ -8,14 +8,14 @@ import Center from 'react-center';
 
 
 // USER FRONT END PAGES IMPORTS //
+import UserSideBarMenu from '../user_front_end_pages/user-sidebar-menu';
 
 import UserMainPage from '../user_front_end_pages/user-main-page';
 import SettingsPage from '../user_front_end_pages/settings-page';
-import UserSideBarMenu from '../user_front_end_pages/user-sidebar-menu';
+
 
 import JournalDirectory from '../user_front_end_pages/journal_front_end/journal-directory';
 import PlannerDirectory from '../user_front_end_pages/planner_front_end_pages/planner-directory';
-
 
 // USER FRONT END PAGES IMPORTS END //
 
@@ -30,28 +30,22 @@ class SecondContainer extends React.Component {
 
     render() {
         return (
-            <div   >
+            <div>
                 <UserSideBarMenu />
+                <div>
+                    <div className="container">
 
-                <div className="container-fluid">
-                   
-                        {/* <Switch>
-                            <Route path="/home" render={() => < UserMainPage />} />
-                            <Route path="/settings" render={() => < SettingsPage />} />
-                        </Switch> */}
-                    <div className="col-md-12">
-                        {/* <UserMainPage/> */}
-                        <JournalDirectory />
-                        {/* <PlannerDirectory /> */}
                         <Switch>
-                            <Route path="/home" render={() => < UserMainPage />} />
-                            <Route path="/settings" render={() => < SettingsPage />} />
+                            <Route path="/user" component={UserMainPage} />
+                            <Route path="/settings" component={SettingsPage} />
+                            <Route path="/journal_directory" component={JournalDirectory} />
+                            <Route path="/planner_directory" component={PlannerDirectory} />
                         </Switch>
                     </div>
                 </div>
             </div>
-
         )
+       
     }
 }
 

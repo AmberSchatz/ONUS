@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Center from 'react-center';
+import Header from './header';
 
 
 class BoxLink extends Component {
@@ -7,11 +8,50 @@ class BoxLink extends Component {
         super(props);
         this.state = {}
     }
+    daysOfWeek() {
+
+        if (this.props.id === '1') {
+            return (
+                <Header titleText='Monday'/>
+            )
+        }
+        else if (this.props.id === '2') {
+            return (
+                <Header titleText='Tuesday'/>
+            )
+        }
+        else if (this.props.id === '3') {
+            return (
+                <Header titleText='Wednesday'/>
+            )
+        }
+        else if (this.props.id === '4') {
+            return (
+                <Header titleText='Thursday'/>
+            )
+        }
+        else if (this.props.id === '5') {
+            return (
+                <Header titleText='Friday'/>
+            )
+        }
+        else if (this.props.id === '6') {
+            return (
+                <Header titleText='Saturday'/>
+            )
+        }
+        else if (this.props.id === '7') {
+            return (
+                <Header titleText='Sunday'/>
+            )
+        }
+
+    }
     render() {
         return (
             <div className="col-md-2 card"id="boxLinkStyle">
                 <Center>
-                    <img src="https://thumb9.shutterstock.com/display_pic_with_logo/3036470/532543942/stock-photo-snowflake-icon-blue-silhouette-snow-flake-sign-isolated-on-white-background-flat-design-symbol-532543942.jpg" style={{width: 100, height: 100, margin: 10}}/>
+                <p>{this.daysOfWeek}</p>
                 </Center>
             </div>
 
