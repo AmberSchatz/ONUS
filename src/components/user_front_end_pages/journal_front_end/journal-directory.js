@@ -6,7 +6,7 @@ import JournalMain from './journal-main';
 import JournalMonth from './journal-month';
 import JournalWeek from './journal-week';
 import JournalDay from './journal-day';
-import NewEntry from '../new-entry';
+import NewEntry from './new-entry';
 
 class JournalDirectory extends Component {
     constructor(props) {
@@ -15,16 +15,12 @@ class JournalDirectory extends Component {
     }
     render() {
         return (
-            <div>
-                <Center>
-                    <div style={{ paddingBottom: 170 }} >
-                        <h1 style={{ fontSize: 80 }} id="front-pageText"> Journal </h1>
-                    </div>
-                </Center>
+            <div className="container">
+                <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
+                    <Title titleText="Journal"/>
+                </div>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
-                        {/* <JournalMain /> */}
-                        {/* <JournalMonth /> */}
                         {/* <JournalWeek /> */}
                         <JournalDay />
                         {/* <NewEntry/> */}
@@ -32,7 +28,7 @@ class JournalDirectory extends Component {
                 </div>
             </div>
         )
-    }
+    } 
 }
 
 export default JournalDirectory;

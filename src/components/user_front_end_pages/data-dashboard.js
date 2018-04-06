@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DoughnutChart from './doughnut-chart';
 import LineChart from './line-chart';
+import BarChart from './bar-chart';
 
 class DataDashboard extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class DataDashboard extends Component {
                         <DoughnutChart />
                     </div>
                     <div className="col-md-4">
-                        <DoughnutChart />
+                        <BarChart />
                     </div>
                     <div className="col-md-4">
                         <DoughnutChart />

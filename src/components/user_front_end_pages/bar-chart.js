@@ -6,17 +6,14 @@ class BarChart extends Component {
         super(props);
         this.state = {
             chartData:{
-                labels:['Boston', 'worchester', 'springfield', 'lowell', 'cambridge','new bedford'],
+                labels:['Saved', 'Spent'],
                 datasets:[
                     {
-                        label:'population',
+                        label:'March',
                         data:[
-                            6175954,
-                            1843045,
-                            1545787,
-                            1056597,
-                            1024784,
-                            85247
+                            500,
+                            1600,
+                            
                         ],
                         backgroundColor:[
                             '#69848D',
@@ -36,7 +33,7 @@ class BarChart extends Component {
 
     render() {
         return (
-            <div className="chart pull-right">
+            <div className="chart">
                 <Bar
                     data={this.state.chartData}
                     width={100}
@@ -44,17 +41,15 @@ class BarChart extends Component {
                     options={{
                         title:{
                             display: true,
-                            text:'these are some cities',
+                            text:'Budget',
                             fontSize:25
                         },
                         legend:{
                             display: true,
                             position:'right'
                         },
-                         maintainAspectRatio: false
                     }}
                 />
-                this is BarChart
             </div>
         )
     }

@@ -11,30 +11,34 @@ import DataDashboard from '../data-dashboard';
 class JournalWeek extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            weekDateRange: '3-3-18 - 3-9-18',
+
+        }
     }
     render() {
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <Header />
-                    <p>Week of: date</p>
+                    <Header headerText="Week Of:" />
+                    <p>{this.state.weekDateRange}</p>
+
                 </div>
-                
+
                 <div className="row">
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
-                    <BoxLink />
+                    <BoxLink id="1" />
+                    <BoxLink id="2"/>
+                    <BoxLink id="3" />
+                    <BoxLink id="4" />
+                    <BoxLink id="5" />
+                    <BoxLink id="6"/>
+                    <BoxLink  id="7"/>
                 </div>
 
                 CHART COMPONENTS NEEDED HERE
                 <div className="row">
-                    <div>
-                        <DataDashboard/>
+                    <div className="col-md-12">
+                        <DataDashboard />
                     </div>
                 </div>
 

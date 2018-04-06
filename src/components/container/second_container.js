@@ -8,7 +8,7 @@ import UserMainPage from '../user_front_end_pages/user-main-page';
 import SettingsPage from '../user_front_end_pages/settings-page';
 import JournalDirectory from '../user_front_end_pages/journal_front_end/journal-directory';
 import PlannerDirectory from '../user_front_end_pages/planner_front_end_pages/planner-directory';
-import NewEntry from '../user_front_end_pages/new-entry';
+import NewEntry from '../user_front_end_pages/journal_front_end/new-entry';
 
 // USER FRONT END PAGES IMPORTS END //
 

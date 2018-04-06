@@ -2,6 +2,7 @@ import React from 'react';
 import Center from 'react-center';
 
 
+
 class SettingsPage extends React.Component {
     constructor(props) {
         super(props)
