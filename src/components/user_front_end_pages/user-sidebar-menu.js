@@ -7,6 +7,7 @@ import JournalDirectory from './journal_front_end/journal-directory';
 import NewEntry from './journal_front_end/new-entry';
 import PlannerToDo from './planner_front_end_pages/planner-to-do';
 
+
 class UserSideBarMenu extends Component {
     constructor(props) {
         super(props);
@@ -34,7 +35,7 @@ class UserSideBarMenu extends Component {
     render() {
         return (
             <div className="sidenav">
-                <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png" />
+                <img id="placeholderImg" src="./logo2.png" />
 
                 <a href="/user">Home</a>
                 <a href="/settings">Settings</a>

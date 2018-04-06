@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import Title from '../title';
+import Header from '../header';
 
 class NewEntry extends Component {
     constructor(props) {
@@ -20,8 +22,17 @@ class NewEntry extends Component {
 
     render() {
         return (
+            <div className="container">
+            <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
+                <Title titleText="Journal"/>
+            </div>
             <div className="row">
-                <div className="col-md-8 col-md-offset-2">
+                <div className="col-md-10 col-md-offset-2">
+                <div className="row">
+                 <Header headerText="Make a New Entry"/>
+                 </div>
+                <div className="row">
+                <div className="col-md-10 col-md-offset-1">
                     <div className="row">
                         <div className="card col-md-3 newEntryCard">
                             <h3>Water</h3>
@@ -64,7 +75,7 @@ class NewEntry extends Component {
 
                     <div className="row">
 
-                        <div className="card col-md-3 newEntryCard">
+                        <div className="card col-md-3 newBudgetCard">
                             <h3>Budget</h3>
                             <p>How much did you save today? </p>
                             <input onChange={(e) => { this.setState({ savedInput: e.target.value }) }} value={this.state.savedInput} type="number" className="form-control" />
@@ -75,17 +86,28 @@ class NewEntry extends Component {
                         <div className="card col-md-7 col-md-offset-1 newPositivityCard">
                             <h3>Positivity</h3>
                             <p>List a positive thing that happend today.</p>
-                            <textarea onChange={(e) => { this.setState({ positivityInput: e.target.value }) }} value={this.state.positivityInput} className="form-control" placeholder="Write here..." ></textarea>
+                            <textarea onChange={(e) => { this.setState({ positivityInput: e.target.value }) }} value={this.state.positivityInput} className="form-control" rows="6"  placeholder="Write here..." ></textarea>
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-md-10" style={{ margin: 15 }}>
-                            <button onClick={this.submitEntry.bind(this)} className="btn pull-right" type="submit"> Submit </button>
+                        <div className="col-md-12 col-md-offset-1" style={{ margin: 15 }}>
+                            <button onClick={this.submitEntry.bind(this)} className="btn entryBtn pull-right" type="submit"> Submit </button>
                         </div>
                     </div>
                 </div >
             </div >
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
         )
     }
 

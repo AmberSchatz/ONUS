@@ -81,7 +81,7 @@
   
   .dropdown-container {
     display: none;
-  background-color:#434042;
+    background-color:#434042;
     padding-left: 8px;
   }
   
@@ -89,15 +89,17 @@
     float: right;
     padding-right: 8px;
   }
+
   #placeholderImg{
-    width: 100px;
-    height: 100px;
-    margin-left: 45px;
+    width: 170px;
+    height: 170px;
+    margin-left: 13px;
     margin-bottom: 30px;
     margin-top: 15px;
   }
+  /* box component styles */
+
   #boxLinkStyle{
-    /* border: 2px solid black; */
     margin: 20px;
     width: 250px;
     height: 150px;
@@ -109,6 +111,8 @@
     width: 200px;
     height: 50px;
   }
+
+  /* title and header components style */
   #title{
     font-family: 'Volkhov', serif;
     font-weight: bold;
@@ -119,6 +123,7 @@
     font-size: 25px;
   }
 
+  /* card styles */
 .entryCard{
   width:300px;
   height: 150px;
@@ -136,6 +141,14 @@
 
 .newEntryCard{
   width:400px;
+  height: 180px;
+  margin:10px;
+  padding-top: 7px;
+  border-radius: 25px;
+}
+
+.newBudgetCard{
+  width:400px;
   height: 250px;
   margin:10px;
   padding-top: 7px;
@@ -147,6 +160,9 @@
   margin:10px;
   padding-top: 7px;
   border-radius: 25px;
+}
+.entryBtn{
+  width: 100px;
 }
 
 .card {

@@ -23,10 +23,8 @@ class JournalDirectory extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
-                        {/* <JournalMain /> */}
-                        {/* <JournalMonth /> */}
-                        <JournalWeek />
-                        {/* <JournalDay /> */}
+                        {/* <JournalWeek /> */}
+                        <JournalDay />
                         {/* <NewEntry/> */}
                     </div>
                 </div>
