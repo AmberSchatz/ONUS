@@ -42,6 +42,8 @@ class JournalDay extends Component {
                 </div>
             </div>
 
+        <div className="col-md-10 col-md-offset-2">
+
             <div className="row">
                 <div className="card col-md-3 entryCard" >
                     <div>
@@ -109,6 +111,8 @@ class JournalDay extends Component {
                     </div>
                 </div>
             </div >
+            </div >
+
 
             < div className="row" >
                 <div className="col-md-12">
