@@ -25,7 +25,7 @@ class SignIn extends React.Component {
     render() {
 
         if (this.state.redirect) {
-            return <Redirect to="/user" component={UserMainPage} />;
+            return <Redirect to="/user" />;
         }
 
         return (
@@ -66,7 +66,7 @@ class SignIn extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://10.0.1.164:5000/api/users')
+        axios.get('http://localhost:5000/api/users')
             .then(response => {
                 var users = response.data
                 this.setState({ users: users });
@@ -77,17 +77,24 @@ class SignIn extends React.Component {
     logIn() {
         console.log(this.state.password);
         console.log(this.state.email);
+
+        let found = false;
+
         for ( var i = 0 ; i < this.state.users.length ; i++) {
             if ( this.state.users[i].email == this.state.email && this.state.users[i].password == this.state.password ) {
                 console.log("yay!");
                 console.log(this.state.users[i].id);
-
                 this.props.sendStateToRedux(this.state.users[i].id)
-                
                 this.setState({redirect: true})
-            }                   
+                found = true
 
+                break;
+            }
         }
+
+        if (!found) {
+            console.log("failed atempt")
+        }        
     }
 }
 

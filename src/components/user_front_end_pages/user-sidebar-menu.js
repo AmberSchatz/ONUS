@@ -38,7 +38,7 @@ class UserSideBarMenu extends Component {
                 </button>
                 <div className="dropdown-container">
                     <a href="/journal_directory">View Directory</a>
-                    <a href="#">Make New Entry</a>                   
+                    <a href="/new_entry">Make New Entry</a>                   
                 </div>
                 <button className="dropdown-btn" onClick={this.dropdownClick}>Planner
                 <i className="fa fa-caret-down"></i>

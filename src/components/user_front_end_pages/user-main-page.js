@@ -5,12 +5,13 @@ import axios from 'axios';
 
 import { userDetails } from '../redux/actions';
 
-import axios from 'axios';
 
 
 class UserMainPage extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+
+
     }
 
     render() {
@@ -18,8 +19,8 @@ class UserMainPage extends React.Component {
             <Center>
                 <div className="container-fluid" style={{ paddingTop: 20, paddingLeft: 100 }} >
                     <Center>
-                        <div style={{ paddingBottom: 275 }} >
-                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >WELCOME NAME</h1>
+                        <div style={{ paddingBottom: 125 }} >
+                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >Welcome { this.props.user.name }</h1>
                         </div>
                     </Center>
 
@@ -27,9 +28,9 @@ class UserMainPage extends React.Component {
                         <div>
                             <form className="form-inline" >
                                 <div className="form-group">
-                                    <img src="./journal.jpg" alt="Journal" id="user-image" className="img-circle" />
+                                    <img src= {this.props.user.image_url} id="user-image" className="img-circle" />
                                     <div className="form-group" style={{ paddingLeft: 40 }}  >
-                                        <textarea className="form-control" rows="4" style={{ height: 150, width: 350 }}> </textarea>
+                                        <textarea className="form-control" rows="4" style={{ height: 150, width: 350 }} defaultValue=""></textarea>
                                     </div>
                                 </div>
                             </form>
@@ -45,7 +46,7 @@ class UserMainPage extends React.Component {
                                     <h3> JOURNAL </h3>
                                 </div>
                                 <br />
-                                <textarea id="user-journal-text" cols="35" rows="7"></textarea>
+                                <textarea id="user-journal-text" cols="35" rows="7" defaultValue=""></textarea>
                             </div>
 
                             <div className="col-sm-6"   style={{ paddingLeft:30 }} >
@@ -53,7 +54,7 @@ class UserMainPage extends React.Component {
                                     <h3> PLANNER </h3>
                                 </div>
                                 <br />
-                                <textarea id="user-journal-text" cols="35" rows="7"></textarea>
+                                <textarea id="user-journal-text" cols="35" rows="7" defaultValue=""></textarea>
                             </div>
 
                         </div>
@@ -64,38 +65,27 @@ class UserMainPage extends React.Component {
         )
     }
 
-<<<<<<< HEAD
-    // componentDidMount() {
-    //     axios.get('http://localhost:5000/api/users/' + userId)
-    //         .then(response => {
-    //             console.log (response.data);
-    //         })
-    // }
-=======
     componentDidMount() {
-        axios.get('http://localhost:5000/api/users/')
+        axios.get('http://localhost:5000/api/users/' + this.props.userId)
             .then(response => {
-                console.log (response.data);
+                this.props.sendLoggedInUser(response.data);
             })
     }
->>>>>>> 1277d601387f188677aeb2f58cb87d6e588eded2
 }
 
 
-// const mapStateToProps = state => {
-//     return {
-//         userId: state.userId
-//     }
+const mapStateToProps = state => {
+    return {
+        userId: state.userId,
+        user: state.user
+    }
+}
 
-//     console.log (userId)
-// }
 
+const mapDispatchToProps = dispatch => {
+    return {
+        sendLoggedInUser: object => dispatch(userDetails(object))
+    }
+}
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         sendLoggedInUser: object => dispatch(userDetails(object))
-//     }
-// }
-
-export default (UserMainPage);
-// export default connect(mapStateToProps, mapDispatchToProps)(UserMainPage);
+export default connect(mapStateToProps, mapDispatchToProps)(UserMainPage);

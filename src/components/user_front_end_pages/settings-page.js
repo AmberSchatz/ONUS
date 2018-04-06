@@ -10,10 +10,10 @@ class SettingsPage extends React.Component {
     render() {
         return (
             <Center>
-                <div style={{ marginBottom: 150 }}>
+                <div style={{ marginBottom: 50 }}>
                     <Center>
-                        <div style={{ paddingBottom: 170 }} >
-                            <h1 style={{ fontSize: 80 }} id="front-pageText"  >Settings</h1>
+                        <div style={{ paddingBottom: 80 }} >
+                            <h1 style={{ fontSize: 80 }} id="front-pageText"> Settings </h1>
                         </div>
                     </Center>
 
@@ -24,12 +24,11 @@ class SettingsPage extends React.Component {
                                 <form>
                                     <Center>
                                         <div className="form-group" style={{ paddingTop: 10 }}>
-
                                             <div className='form-inline' style={{ paddingTop: 10 }} >
                                                 <Center>
-                                                    <label htmlFor="" style={{ fontSize: 50 }} id="front-pageText"  >Name</label>
+                                                    <label style={{ fontSize: 50 }} id="front-pageText"> Name </label>
                                                 </Center>
-                                                <input type="text" className='form-control' placeholder="First Name" />
+                                                <input type="text" className='form-control' placeholder= "First Name" />
                                                 <input type="text" style={{ marginLeft: 20 }} className='form-control' placeholder="Last Name" />
                                             </div>
                                         </div>
@@ -40,51 +39,48 @@ class SettingsPage extends React.Component {
                                             <div className="col-md-6" >
                                                 <Center>
                                                     <div style={{ paddingBottom: 10 }}>
-                                                        <label htmlFor="" style={{ fontSize: 50 }} id="front-pageText"  >Age</label>
+                                                        <label style={{ fontSize: 50 }} id="front-pageText"> Age </label>
                                                     </div>
                                                 </Center>
-                                                <input type="date" name="Age" placeholder="Age" class="form-control" />
+                                                <input type="number" className="form-control" />
                                             </div>
+
                                             <div style={{ paddingLeft: 30 }} className="col-md-6" >
                                                 <Center>
                                                     <div style={{ paddingBottom: 10 }}>
-                                                        <label htmlFor="" style={{ fontSize: 50 }} id="front-pageText"  >Gender</label>
+                                                        <label style={{ fontSize: 50 }} id="front-pageText"> Gender </label>
                                                     </div>
                                                 </Center>
-                                                <select class="form-control" id="gender"  >
-                                                    <option>Select</option>
-                                                    <option>Female</option>
-                                                    <option>Male</option>
-                                                    <option>Transgender</option>
-                                                    <option>Prefer Not To Specify</option>
-                                                </select>
+                                                <input type="text" placeholder="Gender" className="form-control" />
                                             </div>
                                         </div>
                                     </Center>
+
                                     <Center>
                                         <div className="form-group" style={{ paddingTop: 50 }} >
                                             <Center>
                                                 <div style={{ paddingBottom: 10 }}>
-                                                    <label htmlFor="" style={{ fontSize: 50 }} id="front-pageText"  >Email Address</label>
+                                                    <label style={{ fontSize: 50 }} id="front-pageText"> Email Address </label>
                                                 </div>
                                             </Center>
-                                            <input type="email" name="Email Adress" className='form-control' placeholder='Email Address' required />
+                                            <input type="email" className='form-control' placeholder='Email Address' />
                                         </div>
                                     </Center>
+
                                     <div >
                                         <Center>
                                             <div style={{ paddingTop: 40 }}>
-                                                <label htmlFor="" style={{ fontSize: 50 }} id="front-pageText"  >Password</label>
+                                                <label style={{ fontSize: 50 }} id="front-pageText"> Password </label>
                                             </div>
                                         </Center>
                                         <div className="form-inline" style={{ paddingTop: 20 }} >
                                             <Center>
-                                                <input type="password" placeholder="Password" className='form-control' required />
+                                                <input type="password" placeholder="Password" className='form-control'/>
                                             </Center>
                                         </div>
                                         <div className="form-inline" style={{ paddingTop: 30 }} >
                                             <Center>
-                                                <input type="password" placeholder=" Confirm Password" className='form-control' required />
+                                                <input type="password" placeholder= "Confirm Password" className='form-control'/>
                                             </Center>
                                         </div>
                                         <Center>
@@ -95,8 +91,6 @@ class SettingsPage extends React.Component {
                                             </div>
                                         </Center>
                                     </div>
-
-
                                 </form>
                             </div>
                         </Center>

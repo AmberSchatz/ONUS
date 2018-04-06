@@ -5,16 +5,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import MainContainer from './components/container/main_container';
-<<<<<<< HEAD
-// import Container from './components/container/container';
-=======
->>>>>>> 1277d601387f188677aeb2f58cb87d6e588eded2
 import store from './components/redux/store';
 
 
-
 const app = document.getElementById('app');
-
 
 ReactDOM.render((
     <Provider store={store}>
@@ -22,7 +16,3 @@ ReactDOM.render((
     <MainContainer /> 
     </BrowserRouter>
     </Provider>), app);
-
-
-
-

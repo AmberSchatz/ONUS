@@ -1,12 +1,5 @@
 import React from 'react';
-
 import { Link, Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-
-import { axios } from 'axios';
-
-import Center from 'react-center';
-import SecondContainer from './second_container';
 
 
 // FRONT END PAGES IMPORTS //
@@ -37,8 +30,7 @@ class Container extends React.Component {
                             <Route path="/about" component={About} />
                             <Route path="/blog" component={Blog} />
                             <Route path="/sign_in" component={SignIn} />
-                            <Route path="/sign_up" component={SignUp} />
-                            <Route path = "/user" component={userMainPage} />
+                            <Route path="/sign_up" component={SignUP} />
                             
                         </Switch>
                     </div>

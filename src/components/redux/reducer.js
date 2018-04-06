@@ -1,6 +1,6 @@
 const initialState = {
-    userId: 0,
-    user: {}
+    userId: 1,
+    user: []
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -25,8 +25,7 @@ const rootReducer = (state = initialState, action) => {
 
 
     return state;
-
-    console.log(userId)        
+        
     console.log(user)        
 
 }

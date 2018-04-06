@@ -14,69 +14,74 @@ class MainContainer extends React.Component {
     constructor(props) {
         super(props)
 
-        var FirstCont = <Container />
-        var SecondCont = <SecondContainer />
+        this.FirstCont = <Container />
+        this.SecondCont = <SecondContainer />
 
     }
 
-    firstPageRender() {
 
-        if (location.pathname === "/") {
-            return (
-                this.FirstCont
-            )
-        }
-        else if (location.pathname === "/about") {
-            return (
-                this.FirstCont
-            )
-        }
-        else if (location.pathname === "/blog") {
-            return (
-                this.FirstCont
-            )
-        }
-        else if (location.pathname === "/sign_in") {
-            return (
-                this.FirstCont
-            )
-        }
-        else if (location.pathname === "/sign_up") {
-            return (
-                this.FirstCont
-            )
-        }
-        else if (location.pathname == "/user") {
-            return (
-                this.SecondCont
-            )
-        }
-        else if (location.pathname == "/settings") {
-            // return (
-            //     // <SecondContainer />
-            //     "Hello"
-                
-            // )
-            alert ("Hello")
+        firstPageRender() {
 
+            if (location.pathname === "/") {
+                return (
+                    this.FirstCont
+                )
+            }
+            else if (location.pathname === "/about") {
+                return (
+                    this.FirstCont
+                )
+            }
+            else if (location.pathname === "/blog") {
+                return (
+                    this.FirstCont
+                )
+            }
+            else if (location.pathname === "/sign_in") {
+                return (
+                    this.FirstCont
+                )
+            }
+            else if (location.pathname === "/sign_up") {
+                return (
+                    this.FirstCont
+                )
+            }
         }
-        else if (location.pathname == "/journal_directory") {
-            return (
-                this.SecondCont
-            )
-        }
-        else if (location.pathname == "/planner_directory") {
-            return (
-                this.SecondCont
-            )
+     
+        secondPageRender() {
+     
+            if (location.pathname === "/user") {
+                return (
+                    this.SecondCont
+                )
+            }
+            else if (location.pathname === "/settings") {
+                return (
+                    this.SecondCont
+                )
+            }
+            else if (location.pathname === "/journal_directory") {
+                return (
+                    this.SecondCont
+                )
+            }
+            else if (location.pathname === "/planner_directory") {
+                return (
+                    this.SecondCont
+                )
+            }
+            else if (location.pathname === "/new_entry") {
+                return (
+                    this.SecondCont
+                )
+            }
         }
 
-    }
 
     render() {
         return (
             <div>
-
                 {this.firstPageRender(this)}
                 {this.secondPageRender(this)}
                 
