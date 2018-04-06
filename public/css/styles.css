@@ -116,19 +116,11 @@
     font-size: 25px;
   }
 
-  /* cards */
 .entryCard{
-  width:300px;
-  height: 150px;
-  margin:10px;
-  padding-top: 7px;
-}
-
-.positivityCard{
-  width:300px;
-  height: 180px;
-  margin:10px;
-  padding-top: 7px;
+  width: 300px;
+  height: 230px;
+  margin: 10px;
+  padding-top: 15px;
 }
 
 .card {
@@ -143,3 +135,5 @@
 .container {
   padding: 2px 16px;
 }
+
+

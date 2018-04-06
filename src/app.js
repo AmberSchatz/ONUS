@@ -8,10 +8,7 @@ import MainContainer from './components/container/main_container';
 import store from './components/redux/store';
 
 
-
-
 const app = document.getElementById('app');
-
 
 ReactDOM.render((
     <Provider store={store}>
@@ -19,7 +16,3 @@ ReactDOM.render((
     <MainContainer /> 
     </BrowserRouter>
     </Provider>), app);
-
-
-
-

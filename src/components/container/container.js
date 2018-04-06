@@ -1,12 +1,5 @@
 import React from 'react';
-
 import { Link, Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-
-import { axios } from 'axios';
-
-import Center from 'react-center';
-import SecondContainer from './second_container';
 
 
 // FRONT END PAGES IMPORTS //
