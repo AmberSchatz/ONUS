@@ -8,8 +8,6 @@ import JournalWeek from './journal-week';
 import JournalDay from './journal-day';
 import NewEntry from '../new-entry';
 
-
-
 class JournalDirectory extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +18,7 @@ class JournalDirectory extends Component {
             <div>
                 <Center>
                     <div style={{ paddingBottom: 170 }} >
-                        <h1 style={{ fontSize: 80 }} id="front-pageText"  >Journal</h1>
+                        <h1 style={{ fontSize: 80 }} id="front-pageText"> Journal </h1>
                     </div>
                 </Center>
                 <div className="row">
