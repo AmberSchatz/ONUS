@@ -29,4 +29,4 @@ class PlannerDirectory extends Component {
     }
 }
 
-export default PlannerDirectory;
+export default PlannerDirectoryr
