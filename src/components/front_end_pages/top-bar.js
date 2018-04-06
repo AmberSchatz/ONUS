@@ -14,9 +14,10 @@ class TopBar extends React.Component {
 
         this.ArrowImg = <img src="https://image.flaticon.com/icons/svg/24/24567.svg" alt="down-arrow" style={{ height: '60px', width: '60px' }} />
 
-        this.Previous = <a  id="previous-text" onClick='' >Previous</a>
+        this.Previous = <a id="previous-text" href="javascript:history.back()"   >Previous</a>
 
     }
+
 
     pageName() {
 
@@ -88,22 +89,22 @@ class TopBar extends React.Component {
                 this.Previous
             )
         }
-        else {
-            return null
-        }
+        // else {
+        //     return null
+        // }
     }
 
     render() {
         return (
-            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 800 }}>
+            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 750 }}>
                 <Center>
                     <MenuBar />
                 </Center>
-                <Center>
-                    <div style={{ marginTop: 140 }}>
+                <Center style={{ marginTop: -15 }}>
+                    <div >
                         <h1 id="center-text">{this.pageName(this)}</h1>
                         <Center>
-                            <div style={{ paddingTop: 240 }} >
+                            <div style={{ paddingTop: 220 }} >
                                 {this.arrowImg(this)}
 
                             </div>
