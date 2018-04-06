@@ -14,7 +14,9 @@ class MenuBar extends React.Component {
                 <nav className="nav-primary"  >
                     <div className="container-fluid"  >
                         <div className="navbar-header" style={{ paddingRight: 650 }}  >
-                            <a className="navbar-brand" href="/user" id="menu-item" style={{ fontSize: 55, paddingTop: 35 }}>Onus</a>
+                            <a href="/user">
+                                <img id="placeholderImg" src="./logo2.png" />
+                            </a>
                         </div>
                         <ul className="nav navbar-nav">
                             <li> <a href="/" id="menu-item" > Home </a> </li>

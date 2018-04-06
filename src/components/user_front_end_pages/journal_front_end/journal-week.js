@@ -8,6 +8,8 @@ import Header from '../header';
 import DataDashboard from '../data-dashboard';
 
 
+
+
 class JournalWeek extends Component {
     constructor(props) {
         super(props);
@@ -26,6 +28,7 @@ class JournalWeek extends Component {
                 </div>
 
                 <div className="row">
+
                     <BoxLink id="1" />
                     <BoxLink id="2"/>
                     <BoxLink id="3" />

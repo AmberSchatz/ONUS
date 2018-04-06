@@ -76,6 +76,11 @@ class MainContainer extends React.Component {
                     this.SecondCont
                 )
             }
+            else if (location.pathname === "/day") {
+                return (
+                    this.SecondCont
+                )
+            }
         }
 
 

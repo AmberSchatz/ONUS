@@ -95,7 +95,7 @@ class TopBar extends React.Component {
 
     render() {
         return (
-            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 700 }}>
+            <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 800 }}>
                 <Center>
                     <MenuBar />
                 </Center>
