@@ -24,12 +24,12 @@ class UserSideBarMenu extends Component {
         }
     }
 
-    
+
 
     render() {
         return (
             <div className="sidenav">
-            <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"/>
+                <img id="placeholderImg" src="http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png" />
 
                 <a href="/user">Home</a>
                 <a href="/settings">Settings</a>
@@ -44,11 +44,12 @@ class UserSideBarMenu extends Component {
                 <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-container">
+                    <a href="/planner_directory">View Directory</a>
                     <a href="#">Todo List</a>
                     <a href="#">Add New Planner</a>
                 </div>
                 <a href="/">Main</a>
-                
+
             </div>
 
         )

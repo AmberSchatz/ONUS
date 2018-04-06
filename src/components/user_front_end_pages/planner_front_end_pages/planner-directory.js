@@ -14,14 +14,13 @@ class PlannerDirectory extends Component {
     render() {
         return (
             <div>
-                <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
+                {/* <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
                     <Title />
-                </div>
+                </div> */}
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2">
                         {/* <PlannerMain/> */}
                         <PlannerToDo/>
-
                     </div>
                 </div>
 
@@ -30,4 +29,4 @@ class PlannerDirectory extends Component {
     }
 }
 
-export default PlannerDirectory;
+export default PlannerDirectoryr
