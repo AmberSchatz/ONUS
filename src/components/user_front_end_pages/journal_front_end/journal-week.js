@@ -38,7 +38,6 @@ class JournalWeek extends Component {
                     <BoxLink  id="7"/>
                 </div>
 
-                CHART COMPONENTS NEEDED HERE
                 <div className="row">
                     <div className="col-md-12">
                         <DataDashboard />

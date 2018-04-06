@@ -33,88 +33,102 @@ class JournalDay extends Component {
     render() {
         return (
             <div className="container">
-            <div className="row" style={{ marginLeft: 140 }} >
-                <div className="col-md-12">
-                    <Header headerText={this.state.dayOfWeek} />
-                    <input type="date" className="input-group date" onChange={(e) => { this.setState({ date: e.target.value }) }} value={this.state.date} />
-                    <button style={{ border: " 1px solid black " }} onClick={this.dateSubmitted.bind(this)} className="btn"> Submit </button>
-                    <p>{this.state.date}</p>
-                </div>
-            </div>
+                <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
+                    <Title titleText="Journal" />
 
-            <div className="row">
-                <div className="card col-md-3 entryCard" >
-                    <div>
-                        <h3>Water</h3>
-                        <p> {this.state.userWater} </p>
+                </div>
+
+
+
+                <div className="row" style={{ marginLeft: 140 }} >
+                    <div className="col-md-12">
+                        <Header headerText='Daily Entry' />
+                        <Header headerText={this.state.date} />
+                        <br/>
+                        <div className="row">
+                            <input type="date" style={{ display: 'inline', paddingLeft: 10, }} className="input-group date" onChange={(e) => { this.setState({ date: e.target.value }) }} value={this.state.date} />
+                            <button style={{ paddingLeft: 10, display: 'inline' }} onClick={this.dateSubmitted.bind(this)} className="btn"> Submit </button>
+                        </div>
                     </div>
                 </div>
 
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Exercise</h3>
-                        <p> {this.state.userExercise} </p>
+                <div className="col-md-10 col-md-offset-2"style={{ paddingTop:40 }}>
+
+                    <div className="row">
+                        <div className="card col-md-3 entryCard" >
+                            <div>
+                                <h3>Water</h3>
+                                <p> {this.state.userWater} </p>
+                            </div>
+                        </div>
+
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Exercise</h3>
+                                <p> {this.state.userExercise} </p>
+                            </div>
+                        </div>
+
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Diet</h3>
+                                <p> {this.state.userDiet} </p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Diet</h3>
-                        <p> {this.state.userDiet} </p>
+                    <div className="row">
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Steps</h3>
+                                <p> {this.state.userSteps} </p>
+                            </div>
+                        </div>
+
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Sleep</h3>
+                                <p> {this.state.userSleep} </p>
+                            </div>
+                        </div>
+
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Meditation</h3>
+                                <p> {this.state.userMeditation} </p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-            </div>
+                    <div className="row">
+                        <div className="card col-md-3 entryCard">
+                            <div>
+                                <h3>Budget</h3>
+                                <p style={{ display: 'inline' }}>Saved:</p>
+                                <p style={{ display: 'inline' }}> {this.state.userSaved} </p>
+                                <br />
+                                <p style={{ display: 'inline', }}>Spent:</p>
+                                <p style={{ display: 'inline' }}> {this.state.userSpent} </p>
+                            </div>
+                        </div>
 
-            <div className="row">
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Steps</h3>
-                        <p> {this.state.userSteps} </p>
+                        <div className="card col-md-6 entryCard">
+                            <div>
+                                <h3>Positivity</h3>
+                                <p> {this.state.userPositivity} </p>
+                            </div>
+                        </div>
+                    </div >
+                </div >
+
+
+                < div className="row" >
+                    <div className="col-md-12">
+                        <DataDashboard />
                     </div>
-                </div>
-
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Sleep</h3>
-                        <p> {this.state.userSleep} </p>
-                    </div>
-                </div>
-
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Meditation</h3>
-                        <p> {this.state.userMeditation} </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div className="row">
-                <div className="card col-md-3 entryCard">
-                    <div>
-                        <h3>Budget</h3>
-                        <p style={{ display: 'inline' }}>Saved:</p>
-                        <p style={{ display: 'inline' }}> {this.state.userSaved} </p>
-                        <br />
-                        <p style={{ display: 'inline', }}>Spent:</p>
-                        <p style={{ display: 'inline' }}> {this.state.userSpent} </p>
-                    </div>
-                </div>
-
-                <div className="card col-md-6 entryCard">
-                    <div>
-                        <h3>Positivity</h3>
-                        <p> {this.state.userPositivity} </p>
-                    </div>
-                </div>
-            </div >
-
-            < div className="row" >
-                <div className="col-md-12">
-                    <DataDashboard />
-                </div>
-            </div >
+                </div >
 
 
             </div >

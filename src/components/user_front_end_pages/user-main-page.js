@@ -21,8 +21,7 @@ class UserMainPage extends React.Component {
             <div className="container">
                 <div className="col-md-3 col-md-offset-6" style={{ marginRight: 20, marginTop: 50 }}>
                     <div className="row" style={{ paddingBottom: 125 }} >
-                        <Title titleText='Welcome' />
-                        <Title titleText={this.props.user.name} />
+                        <Title titleText='Welcome' userName={this.props.user.name} />
                     </div>
                 </div>
                 <div className="row">
