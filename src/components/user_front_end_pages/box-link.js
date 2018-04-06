@@ -47,7 +47,7 @@ class BoxLink extends Component {
         return (
             <div className="col-md-2 card" id="boxLinkStyle">
                 <Center>
-                    <Link to='/day' >
+                    <Link to='/day' style={{color: "inherit"}} >
                         <p style={{ margin: 50, fontWeight: 'bold', textDecoration: 'underline' }}>{this.daysOfWeek()}</p>
                     </Link>
                 </Center>

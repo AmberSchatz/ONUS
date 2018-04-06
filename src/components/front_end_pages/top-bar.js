@@ -94,6 +94,8 @@ class TopBar extends React.Component {
         // }
     }
 
+    
+
     render() {
         return (
             <div style={{ backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 750 }}>
@@ -106,10 +108,10 @@ class TopBar extends React.Component {
                         <Center>
                             <div style={{ paddingTop: 220 }} >
                                 {this.arrowImg(this)}
-
                             </div>
                         </Center>
                     </div>
+
                 </Center>
                 <div id="prevDiv" >
                     {this.previousBtn()}

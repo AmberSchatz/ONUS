@@ -42,7 +42,6 @@ class SecondContainer extends React.Component {
                 </div>
             </div>
         )
-       
     }
 }
 
