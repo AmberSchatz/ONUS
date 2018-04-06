@@ -5302,6 +5302,120 @@ module.exports = {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Title = function (_Component) {
+    _inherits(Title, _Component);
+
+    function Title(props) {
+        _classCallCheck(this, Title);
+
+        var _this = _possibleConstructorReturn(this, (Title.__proto__ || Object.getPrototypeOf(Title)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(Title, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "p",
+                    { id: "title" },
+                    this.props.titleText
+                )
+            );
+        }
+    }]);
+
+    return Title;
+}(_react.Component);
+
+exports.default = Title;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+    _inherits(Header, _Component);
+
+    function Header(props) {
+        _classCallCheck(this, Header);
+
+        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(Header, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "p",
+                    { id: "header" },
+                    this.props.headerText
+                )
+            );
+        }
+    }]);
+
+    return Header;
+}(_react.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var color = __webpack_require__(99);
 var helpers = __webpack_require__(2);
 
@@ -5418,7 +5532,7 @@ module.exports = Element;
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5477,64 +5591,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Title = function (_Component) {
-    _inherits(Title, _Component);
-
-    function Title(props) {
-        _classCallCheck(this, Title);
-
-        var _this = _possibleConstructorReturn(this, (Title.__proto__ || Object.getPrototypeOf(Title)).call(this, props));
-
-        _this.state = {};
-        return _this;
-    }
-
-    _createClass(Title, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "p",
-                    { id: "title" },
-                    this.props.titleText
-                )
-            );
-        }
-    }]);
-
-    return Title;
-}(_react.Component);
-
-exports.default = Title;
-
-/***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var freeGlobal = __webpack_require__(229);
@@ -5549,7 +5606,7 @@ module.exports = root;
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 /**
@@ -5581,7 +5638,7 @@ module.exports = isArray;
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5623,7 +5680,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5640,63 +5697,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_Component) {
-    _inherits(Header, _Component);
-
-    function Header(props) {
-        _classCallCheck(this, Header);
-
-        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-
-        _this.state = {};
-        return _this;
-    }
-
-    _createClass(Header, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "p",
-                    { id: "header" },
-                    this.props.headerText
-                )
-            );
-        }
-    }]);
-
-    return Header;
-}(_react.Component);
-
-exports.default = Header;
 
 /***/ }),
 /* 18 */
@@ -5762,11 +5762,11 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5821,7 +5821,7 @@ var BoxLink = function (_Component) {
                     null,
                     _react2.default.createElement(
                         _reactRouterDom.Link,
-                        { to: '/day' },
+                        { to: '/day', style: { color: "inherit" } },
                         _react2.default.createElement(
                             'p',
                             { style: { margin: 50, fontWeight: 'bold', textDecoration: 'underline' } },
@@ -5859,7 +5859,7 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -6809,7 +6809,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -7354,7 +7354,7 @@ module.exports = assocIndexOf;
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(13);
+var root = __webpack_require__(14);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -8363,13 +8363,21 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _axios = __webpack_require__(20);
 
 var _axios2 = _interopRequireDefault(_axios);
 
 var _actions = __webpack_require__(56);
+
+var _title = __webpack_require__(10);
+
+var _title2 = _interopRequireDefault(_title);
+
+var _header = __webpack_require__(11);
+
+var _header2 = _interopRequireDefault(_header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8392,28 +8400,24 @@ var UserMainPage = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
+                'div',
+                { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container-fluid', style: { paddingTop: 20, paddingLeft: 100 } },
-                    _react2.default.createElement(
-                        _reactCenter2.default,
-                        null,
-                        _react2.default.createElement(
-                            'div',
-                            { style: { paddingBottom: 125 } },
-                            _react2.default.createElement(
-                                'h1',
-                                { style: { fontSize: 80 }, id: 'front-pageText' },
-                                'Welcome ',
-                                this.props.user.name
-                            )
-                        )
-                    ),
+                    { className: 'col-md-3 col-md-offset-6', style: { marginRight: 20, marginTop: 50 } },
                     _react2.default.createElement(
                         'div',
-                        null,
+                        { className: 'row', style: { paddingBottom: 125 } },
+                        _react2.default.createElement(_title2.default, { titleText: 'Welcome' }),
+                        _react2.default.createElement(_title2.default, { titleText: this.props.user.name })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-md-10 col-md-offset-2' },
                         _react2.default.createElement(
                             'div',
                             null,
@@ -8422,22 +8426,26 @@ var UserMainPage = function (_React$Component) {
                                 { className: 'form-inline' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'form-group' },
+                                    { className: 'form-group', style: { paddingLeft: 80 } },
                                     _react2.default.createElement('img', { src: this.props.user.image_url, id: 'user-image', className: 'img-circle' }),
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'form-group', style: { paddingLeft: 40 } },
-                                        _react2.default.createElement('textarea', { className: 'form-control', rows: '4', style: { height: 150, width: 350 }, defaultValue: '' })
+                                        _react2.default.createElement(
+                                            'h5',
+                                            { className: 'positivityCard card', style: { padding: 40, width: 400 } },
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem at! Harum libero a quaerat delectus excepturi culpa autem, explicabo vero iusto earum officiis tempora eos repellat! Dicta, iste ex.'
+                                        )
                                     )
                                 )
                             ),
                             _react2.default.createElement(
                                 'form',
-                                { style: { paddingLeft: 520 } },
+                                { style: { paddingLeft: 665 } },
                                 _react2.default.createElement(
                                     'button',
                                     { className: 'btn', id: 'edit-btn' },
-                                    ' EDIT '
+                                    ' Edit '
                                 )
                             )
                         ),
@@ -8449,30 +8457,26 @@ var UserMainPage = function (_React$Component) {
                                 { className: 'col-sm-6' },
                                 _react2.default.createElement(
                                     'div',
-                                    { style: { paddingLeft: 75 } },
+                                    { style: { paddingLeft: 100 } },
                                     _react2.default.createElement(
-                                        'h3',
-                                        null,
-                                        ' JOURNAL '
+                                        'a',
+                                        { href: '/journal_directory', style: { color: "inherit" } },
+                                        _react2.default.createElement(_header2.default, { headerText: 'JOURNAL' })
                                     )
-                                ),
-                                _react2.default.createElement('br', null),
-                                _react2.default.createElement('textarea', { id: 'user-journal-text', cols: '35', rows: '7', defaultValue: '' })
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'col-sm-6', style: { paddingLeft: 30 } },
+                                { className: 'col-sm-6', style: { paddingLeft: 100 } },
                                 _react2.default.createElement(
                                     'div',
                                     { style: { paddingLeft: 75 } },
                                     _react2.default.createElement(
-                                        'h3',
-                                        null,
-                                        ' PLANNER '
+                                        'a',
+                                        { href: '/planner_directory', style: { color: "inherit" } },
+                                        _react2.default.createElement(_header2.default, { headerText: 'PLANNER' })
                                     )
-                                ),
-                                _react2.default.createElement('br', null),
-                                _react2.default.createElement('textarea', { id: 'user-journal-text', cols: '35', rows: '7', defaultValue: '' })
+                                )
                             )
                         )
                     )
@@ -8484,7 +8488,7 @@ var UserMainPage = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            _axios2.default.get('http://localhost:5000/api/users/' + this.props.userId).then(function (response) {
+            _axios2.default.get('http://10.0.1.55:5000/api/users/' + this.props.userId).then(function (response) {
                 _this2.props.sendLoggedInUser(response.data);
             });
         }
@@ -9092,7 +9096,7 @@ module.exports = baseIsEqual;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(19),
-    root = __webpack_require__(13);
+    root = __webpack_require__(14);
 
 /* Built-in method references that are verified to be native. */
 var Map = getNative(root, 'Map');
@@ -9225,7 +9229,7 @@ module.exports = isArrayLike;
 var baseMatches = __webpack_require__(448),
     baseMatchesProperty = __webpack_require__(451),
     identity = __webpack_require__(462),
-    isArray = __webpack_require__(14),
+    isArray = __webpack_require__(15),
     property = __webpack_require__(463);
 
 /**
@@ -9259,7 +9263,7 @@ module.exports = baseIteratee;
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArray = __webpack_require__(14),
+var isArray = __webpack_require__(15),
     isSymbol = __webpack_require__(42);
 
 /** Used to match property names within property paths. */
@@ -9307,17 +9311,17 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _axios = __webpack_require__(20);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -9743,7 +9747,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -11681,6 +11685,14 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
+var _title = __webpack_require__(10);
+
+var _title2 = _interopRequireDefault(_title);
+
+var _header = __webpack_require__(11);
+
+var _header2 = _interopRequireDefault(_header);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11702,175 +11714,117 @@ var SettingsPage = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                _reactCenter2.default,
-                null,
+                'div',
+                { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { style: { marginBottom: 50 } },
-                    _react2.default.createElement(
-                        _reactCenter2.default,
-                        null,
-                        _react2.default.createElement(
-                            'div',
-                            { style: { paddingBottom: 80 } },
-                            _react2.default.createElement(
-                                'h1',
-                                { style: { fontSize: 80 }, id: 'front-pageText' },
-                                ' Settings '
-                            )
-                        )
-                    ),
+                    { className: 'col-md-3 col-md-offset-6', style: { marginRight: 20, marginTop: 50 } },
+                    _react2.default.createElement(_title2.default, { titleText: 'Settings' })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
                     _react2.default.createElement(
                         'div',
-                        null,
+                        { className: 'col-md-8 col-md-offset-4' },
                         _react2.default.createElement(
-                            _reactCenter2.default,
+                            'form',
                             null,
                             _react2.default.createElement(
                                 'div',
-                                { style: { paddingTop: 30 } },
+                                { className: 'form-group', style: { paddingTop: 10, paddingLeft: 10 } },
                                 _react2.default.createElement(
-                                    'form',
-                                    null,
+                                    'div',
+                                    { className: 'form-inline', style: { paddingTop: 10 } },
                                     _react2.default.createElement(
-                                        _reactCenter2.default,
+                                        'label',
                                         null,
+                                        ' ',
+                                        _react2.default.createElement(_header2.default, { headerText: 'Name : ' }),
+                                        ' '
+                                    ),
+                                    _react2.default.createElement('input', { type: 'text', style: { marginLeft: 20 }, className: 'form-control', placeholder: 'First Name' }),
+                                    _react2.default.createElement('input', { type: 'text', style: { marginLeft: 20 }, className: 'form-control', placeholder: 'Last Name' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-12', style: { paddingTop: 30 } },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-md-3 form-inline' },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'form-group', style: { paddingTop: 10 } },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'form-inline', style: { paddingTop: 10 } },
-                                                _react2.default.createElement(
-                                                    _reactCenter2.default,
-                                                    null,
-                                                    _react2.default.createElement(
-                                                        'label',
-                                                        { style: { fontSize: 50 }, id: 'front-pageText' },
-                                                        ' Name '
-                                                    )
-                                                ),
-                                                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'First Name' }),
-                                                _react2.default.createElement('input', { type: 'text', style: { marginLeft: 20 }, className: 'form-control', placeholder: 'Last Name' })
-                                            )
-                                        )
+                                            'label',
+                                            null,
+                                            ' ',
+                                            _react2.default.createElement(_header2.default, { headerText: 'Age : ' }),
+                                            ' '
+                                        ),
+                                        _react2.default.createElement('input', { type: 'number', className: 'form-control' })
                                     ),
                                     _react2.default.createElement(
-                                        _reactCenter2.default,
-                                        null,
+                                        'div',
+                                        { style: { paddingLeft: 40 }, className: 'col-md-3' },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-lg-12', style: { paddingTop: 30 } },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'col-md-6' },
-                                                _react2.default.createElement(
-                                                    _reactCenter2.default,
-                                                    null,
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { style: { paddingBottom: 10 } },
-                                                        _react2.default.createElement(
-                                                            'label',
-                                                            { style: { fontSize: 50 }, id: 'front-pageText' },
-                                                            ' Age '
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement('input', { type: 'number', className: 'form-control' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { style: { paddingLeft: 30 }, className: 'col-md-6' },
-                                                _react2.default.createElement(
-                                                    _reactCenter2.default,
-                                                    null,
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { style: { paddingBottom: 10 } },
-                                                        _react2.default.createElement(
-                                                            'label',
-                                                            { style: { fontSize: 50 }, id: 'front-pageText' },
-                                                            ' Gender '
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement('input', { type: 'text', placeholder: 'Gender', className: 'form-control' })
-                                            )
-                                        )
-                                    ),
+                                            'label',
+                                            null,
+                                            ' ',
+                                            _react2.default.createElement(_header2.default, { headerText: 'Gender : ' }),
+                                            ' '
+                                        ),
+                                        _react2.default.createElement('input', { type: 'text', placeholder: 'Gender', className: 'form-control' })
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'row' },
                                     _react2.default.createElement(
-                                        _reactCenter2.default,
-                                        null,
+                                        'div',
+                                        { className: 'form-group col-md-6', style: { paddingTop: 50 } },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'form-group', style: { paddingTop: 50 } },
-                                            _react2.default.createElement(
-                                                _reactCenter2.default,
-                                                null,
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { style: { paddingBottom: 10 } },
-                                                    _react2.default.createElement(
-                                                        'label',
-                                                        { style: { fontSize: 50 }, id: 'front-pageText' },
-                                                        ' Email Address '
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement('input', { type: 'email', className: 'form-control', placeholder: 'Email Address' })
+                                            'label',
+                                            null,
+                                            ' ',
+                                            _react2.default.createElement(_header2.default, { headerText: 'Email Address : ' }),
+                                            ' '
+                                        ),
+                                        _react2.default.createElement('input', { type: 'email', className: 'form-control', placeholder: 'Email Address' })
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'row', style: { paddingLeft: 10 } },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { style: { paddingTop: 40 } },
+                                        _react2.default.createElement(
+                                            'label',
+                                            null,
+                                            ' ',
+                                            _react2.default.createElement(_header2.default, { headerText: 'Password: ' }),
+                                            ' '
                                         )
                                     ),
                                     _react2.default.createElement(
                                         'div',
-                                        null,
+                                        { className: 'form-inline', style: { paddingTop: 20 } },
+                                        _react2.default.createElement('input', { type: 'password', placeholder: 'Password', className: 'form-control' }),
+                                        _react2.default.createElement('input', { type: 'password', style: { marginLeft: 20 }, placeholder: 'Confirm Password', className: 'form-control' })
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'pull-right', style: { marginTop: 40, marginRight: 150 } },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { href: '/user' },
                                         _react2.default.createElement(
-                                            _reactCenter2.default,
-                                            null,
-                                            _react2.default.createElement(
-                                                'div',
-                                                { style: { paddingTop: 40 } },
-                                                _react2.default.createElement(
-                                                    'label',
-                                                    { style: { fontSize: 50 }, id: 'front-pageText' },
-                                                    ' Password '
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'form-inline', style: { paddingTop: 20 } },
-                                            _react2.default.createElement(
-                                                _reactCenter2.default,
-                                                null,
-                                                _react2.default.createElement('input', { type: 'password', placeholder: 'Password', className: 'form-control' })
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'form-inline', style: { paddingTop: 30 } },
-                                            _react2.default.createElement(
-                                                _reactCenter2.default,
-                                                null,
-                                                _react2.default.createElement('input', { type: 'password', placeholder: 'Confirm Password', className: 'form-control' })
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            _reactCenter2.default,
-                                            null,
-                                            _react2.default.createElement(
-                                                'div',
-                                                { style: { marginTop: 80 } },
-                                                _react2.default.createElement(
-                                                    'a',
-                                                    { href: '/user' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { className: 'btn', style: { backgroundColor: 'black', fontSize: 25, width: 200 }, id: 'menu-item' },
-                                                        'E D I T'
-                                                    )
-                                                )
-                                            )
+                                            'button',
+                                            { className: 'btn entryBtn' },
+                                            'Edit'
                                         )
                                     )
                                 )
@@ -11908,7 +11862,7 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
@@ -25513,7 +25467,7 @@ module.exports = isArguments;
 /* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(13),
+/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(14),
     stubFalse = __webpack_require__(433);
 
 /** Detect free variable `exports`. */
@@ -25699,7 +25653,7 @@ module.exports = baseGet;
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArray = __webpack_require__(14),
+var isArray = __webpack_require__(15),
     isKey = __webpack_require__(66),
     stringToPath = __webpack_require__(453),
     toString = __webpack_require__(456);
@@ -25739,7 +25693,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _axios = __webpack_require__(20);
 
@@ -25759,11 +25713,11 @@ var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
 var _actions = __webpack_require__(56);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -25809,18 +25763,27 @@ var JournalDay = function (_Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'col-md-12' },
-                    _react2.default.createElement(_header2.default, { headerText: this.state.dayOfWeek }),
-                    _react2.default.createElement('input', { type: 'date', className: 'input-group date', onChange: function onChange(e) {
-                            _this2.setState({ date: e.target.value });
-                        }, value: this.state.date }),
+                    { className: 'row', style: { marginLeft: 140 } },
                     _react2.default.createElement(
-                        'button',
-                        { style: { border: " 1px solid black " }, onClick: this.dateSubmitted.bind(this), className: 'btn' },
-                        ' Submit '
+                        'div',
+                        { className: 'col-md-12' },
+                        _react2.default.createElement(_header2.default, { headerText: this.state.dayOfWeek }),
+                        _react2.default.createElement('input', { type: 'date', className: 'input-group date', onChange: function onChange(e) {
+                                _this2.setState({ date: e.target.value });
+                            }, value: this.state.date }),
+                        _react2.default.createElement(
+                            'button',
+                            { style: { border: " 1px solid black " }, onClick: this.dateSubmitted.bind(this), className: 'btn' },
+                            ' Submit '
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.date
+                        )
                     )
                 ),
                 _react2.default.createElement(
@@ -25885,140 +25848,141 @@ var JournalDay = function (_Component) {
                                 ' '
                             )
                         )
-                    ),
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: 'card col-md-3 entryCard' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'card col-md-3 entryCard' },
+                            null,
                             _react2.default.createElement(
-                                'div',
+                                'h3',
                                 null,
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Steps'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userSteps,
-                                    ' '
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card col-md-3 entryCard' },
+                                'Steps'
+                            ),
                             _react2.default.createElement(
-                                'div',
+                                'p',
                                 null,
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Sleep'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userSleep,
-                                    ' '
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card col-md-3 entryCard' },
-                            _react2.default.createElement(
-                                'div',
-                                null,
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Meditation'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userMeditation,
-                                    ' '
-                                )
+                                ' ',
+                                this.state.userSteps,
+                                ' '
                             )
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: 'card col-md-3 entryCard' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'card col-md-3 entryCard' },
+                            null,
                             _react2.default.createElement(
-                                'div',
+                                'h3',
                                 null,
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Budget'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    'Saved:'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userSaved,
-                                    ' '
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    'Spent:'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userSpent,
-                                    ' '
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card col-md-6 entryCard' },
+                                'Sleep'
+                            ),
                             _react2.default.createElement(
-                                'div',
+                                'p',
                                 null,
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Positivity'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    ' ',
-                                    this.state.userPositivity,
-                                    ' '
-                                )
+                                ' ',
+                                this.state.userSleep,
+                                ' '
                             )
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: 'card col-md-3 entryCard' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-md-12' },
-                            _react2.default.createElement(_dataDashboard2.default, null)
+                            null,
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Meditation'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                ' ',
+                                this.state.userMeditation,
+                                ' '
+                            )
                         )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'card col-md-3 entryCard' },
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Budget'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { style: { display: 'inline' } },
+                                'Saved:'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { style: { display: 'inline' } },
+                                ' ',
+                                this.state.userSaved,
+                                ' '
+                            ),
+                            _react2.default.createElement('br', null),
+                            _react2.default.createElement(
+                                'p',
+                                { style: { display: 'inline' } },
+                                'Spent:'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { style: { display: 'inline' } },
+                                ' ',
+                                this.state.userSpent,
+                                ' '
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'card col-md-6 entryCard' },
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Positivity'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                ' ',
+                                this.state.userPositivity,
+                                ' '
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-md-12' },
+                        _react2.default.createElement(_dataDashboard2.default, null)
                     )
                 )
             );
@@ -26207,11 +26171,11 @@ var _boxLinkSm = __webpack_require__(22);
 
 var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -26241,12 +26205,7 @@ var PlannerToDo = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'row' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-6' },
-                    _react2.default.createElement(_header2.default, null),
-                    'To do app needs to go here'
-                )
+                _react2.default.createElement('div', { className: 'col-md-6' })
             );
         }
     }]);
@@ -26271,9 +26230,9 @@ var _reactDom = __webpack_require__(245);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _main_container = __webpack_require__(304);
 
@@ -26311,7 +26270,7 @@ _reactDom2.default.render(_react2.default.createElement(
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(23),n=__webpack_require__(31),p=__webpack_require__(15),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(23),n=__webpack_require__(31),p=__webpack_require__(16),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -26351,7 +26310,7 @@ var _assign = __webpack_require__(23);
 var emptyObject = __webpack_require__(31);
 var invariant = __webpack_require__(24);
 var warning = __webpack_require__(32);
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 var checkPropTypes = __webpack_require__(44);
 
 // TODO: this is special because it gets imported during build.
@@ -27753,7 +27712,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),l=__webpack_require__(68),B=__webpack_require__(23),C=__webpack_require__(15),ba=__webpack_require__(69),da=__webpack_require__(70),ea=__webpack_require__(71),fa=__webpack_require__(72),ia=__webpack_require__(73),D=__webpack_require__(31);
+var aa=__webpack_require__(1),l=__webpack_require__(68),B=__webpack_require__(23),C=__webpack_require__(16),ba=__webpack_require__(69),da=__webpack_require__(70),ea=__webpack_require__(71),fa=__webpack_require__(72),ia=__webpack_require__(73),D=__webpack_require__(31);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -28055,7 +28014,7 @@ var invariant = __webpack_require__(24);
 var warning = __webpack_require__(32);
 var ExecutionEnvironment = __webpack_require__(68);
 var _assign = __webpack_require__(23);
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 var EventListener = __webpack_require__(69);
 var getActiveElement = __webpack_require__(70);
 var shallowEqual = __webpack_require__(71);
@@ -43667,7 +43626,7 @@ BrowserRouter.propTypes = {
 
 
 
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 var invariant = __webpack_require__(24);
 var warning = __webpack_require__(32);
 var assign = __webpack_require__(23);
@@ -44217,7 +44176,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(15);
+var emptyFunction = __webpack_require__(16);
 var invariant = __webpack_require__(24);
 var ReactPropTypesSecret = __webpack_require__(45);
 
@@ -48319,9 +48278,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _reactCenter = __webpack_require__(7);
 
@@ -48425,7 +48384,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 var _topBar = __webpack_require__(306);
 
@@ -48483,18 +48442,14 @@ var Container = function (_React$Component) {
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _topBar2.default }),
                 _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'container' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'container' },
-                        _react2.default.createElement(
-                            _reactRouterDom.Switch,
-                            null,
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/blog', component: _blog2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_in', component: _signIn2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_up', component: _signUp2.default })
-                        )
+                        _reactRouterDom.Switch,
+                        null,
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/blog', component: _blog2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_in', component: _signIn2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/sign_up', component: _signUp2.default })
                     )
                 )
             );
@@ -48527,7 +48482,7 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 var _menuBar = __webpack_require__(307);
 
@@ -48553,7 +48508,7 @@ var TopBar = function (_React$Component) {
 
         _this.Previous = _react2.default.createElement(
             'a',
-            { id: 'previous-text', onClick: '' },
+            { id: 'previous-text', href: 'javascript:history.back()' },
             'Previous'
         );
 
@@ -48604,16 +48559,17 @@ var TopBar = function (_React$Component) {
                 return this.Previous;
             } else if (location.pathname === "/sign_up") {
                 return this.Previous;
-            } else {
-                return null;
             }
+            // else {
+            //     return null
+            // }
         }
     }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { style: { backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 800 } },
+                { style: { backgroundImage: "url(' ./tea-image.jpg ')", backgroundSize: '100%, 100%', height: 750 } },
                 _react2.default.createElement(
                     _reactCenter2.default,
                     null,
@@ -48621,10 +48577,10 @@ var TopBar = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     _reactCenter2.default,
-                    null,
+                    { style: { marginTop: -15 } },
                     _react2.default.createElement(
                         'div',
-                        { style: { marginTop: 140 } },
+                        null,
                         _react2.default.createElement(
                             'h1',
                             { id: 'center-text' },
@@ -48635,7 +48591,7 @@ var TopBar = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 'div',
-                                { style: { paddingTop: 240 } },
+                                { style: { paddingTop: 220 } },
                                 this.arrowImg(this)
                             )
                         )
@@ -49994,9 +49950,9 @@ var _axios = __webpack_require__(20);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 var _actions = __webpack_require__(56);
 
@@ -50097,7 +50053,7 @@ var SignIn = function (_React$Component) {
         value: function componentDidMount() {
             var _this3 = this;
 
-            _axios2.default.get('http://localhost:5000/api/users').then(function (response) {
+            _axios2.default.get('http://10.0.1.55:5000/api/users').then(function (response) {
                 var users = response.data;
                 _this3.setState({ users: users });
                 console.log(_this3.state.users);
@@ -50161,13 +50117,13 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _axios = __webpack_require__(20);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50190,6 +50146,7 @@ var SignUP = function (_React$Component) {
             lastName: '',
             email: '',
             password: '',
+            password1: '',
             image_url: '',
             age: 0,
             gender: '',
@@ -50212,7 +50169,6 @@ var SignUP = function (_React$Component) {
             if (this.state.redirect) {
                 return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/sign_in' });
             }
-
             return _react2.default.createElement(
                 _reactCenter2.default,
                 null,
@@ -50232,10 +50188,10 @@ var SignUP = function (_React$Component) {
                             ),
                             _react2.default.createElement('input', { onChange: function onChange(e) {
                                     _this2.setState({ name: e.target.value });
-                                }, value: this.state.name, type: 'text', className: 'form-control', placeholder: 'First Name' }),
+                                }, value: this.state.name, type: 'text', className: 'form-control', placeholder: 'First Name', required: true }),
                             _react2.default.createElement('input', { onChange: function onChange(e) {
                                     _this2.setState({ lastName: e.target.value });
-                                }, value: this.state.lastName, type: 'text', style: { marginLeft: 20 }, className: 'form-control', placeholder: 'Last Name' })
+                                }, value: this.state.lastName, type: 'text', style: { marginLeft: 20 }, className: 'form-control', placeholder: 'Last Name', required: true })
                         ),
                         _react2.default.createElement(
                             'div',
@@ -50247,7 +50203,7 @@ var SignUP = function (_React$Component) {
                             ),
                             _react2.default.createElement('input', { onChange: function onChange(e) {
                                     _this2.setState({ email: e.target.value });
-                                }, value: this.state.email, type: 'email', className: 'form-control', placeholder: 'Email Address' })
+                                }, value: this.state.email, type: 'email', className: 'form-control', placeholder: 'Email Address', required: true })
                         ),
                         _react2.default.createElement(
                             'div',
@@ -50300,7 +50256,9 @@ var SignUP = function (_React$Component) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'form-inline', style: { paddingTop: 20 } },
-                                _react2.default.createElement('input', { type: 'password', placeholder: 'Password', className: 'form-control' })
+                                _react2.default.createElement('input', { onChange: function onChange(e) {
+                                        _this2.setState({ password1: e.target.value });
+                                    }, value: this.state.password1, type: 'password', placeholder: 'Password', className: 'form-control', required: true })
                             )
                         ),
                         _react2.default.createElement(
@@ -50320,7 +50278,7 @@ var SignUP = function (_React$Component) {
                                 { className: 'form-inline', style: { paddingTop: 20 } },
                                 _react2.default.createElement('input', { onChange: function onChange(e) {
                                         _this2.setState({ password: e.target.value });
-                                    }, value: this.state.password, type: 'password', placeholder: 'Confirm Password', className: 'form-control' })
+                                    }, value: this.state.password, type: 'password', placeholder: 'Confirm Password', className: 'form-control', required: true })
                             )
                         ),
                         _react2.default.createElement(
@@ -50460,24 +50418,27 @@ var SignUP = function (_React$Component) {
         key: 'postNewUser',
         value: function postNewUser() {
 
-            var user = {
-                name: this.state.name,
-                lastName: this.state.lastName,
-                email: this.state.email,
-                password: this.state.password,
-                image_url: this.state.url,
-                age: this.state.age,
-                gender: this.state.gender,
-                goalCalories: this.state.goalCalories,
-                goalExercise: this.state.goalExercise,
-                goalMeditationHours: this.state.goalMeditationHours,
-                goalSleepHours: this.state.goalSleepHours,
-                goalCupsOfWater: this.state.goalCupsOfWater,
-                goalSteps: this.state.goalSteps
-            };
-            _axios2.default.post('http://localhost:5000/api/users', user).then(console.log(user), this.setState({ redirect: true }));
-
-            alert("Account created. Please login");
+            if (this.state.password != this.state.password1) {
+                alert("Passwords do not match");
+            } else {
+                var user = {
+                    name: this.state.name,
+                    lastName: this.state.lastName,
+                    email: this.state.email,
+                    password: this.state.password,
+                    image_url: this.state.url,
+                    age: this.state.age,
+                    gender: this.state.gender,
+                    goalCalories: this.state.goalCalories,
+                    goalExercise: this.state.goalExercise,
+                    goalMeditationHours: this.state.goalMeditationHours,
+                    goalSleepHours: this.state.goalSleepHours,
+                    goalCupsOfWater: this.state.goalCupsOfWater,
+                    goalSteps: this.state.goalSteps
+                };
+                _axios2.default.post('http://localhost:5000/api/users', user).then(console.log(user), this.setState({ redirect: true }));
+                alert("Account created. Please login");
+            }
         }
     }]);
 
@@ -50503,7 +50464,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 var _userSidebarMenu = __webpack_require__(332);
 
@@ -50607,7 +50568,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(11);
+var _reactRouterDom = __webpack_require__(13);
 
 var _userMainPage = __webpack_require__(57);
 
@@ -50767,7 +50728,7 @@ var _boxLinkSm = __webpack_require__(22);
 
 var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
@@ -50868,11 +50829,11 @@ var _boxLinkSm = __webpack_require__(22);
 
 var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -50954,7 +50915,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
 var _boxLink = __webpack_require__(21);
 
@@ -50964,11 +50925,11 @@ var _boxLinkSm = __webpack_require__(22);
 
 var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -51072,7 +51033,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactChartjs = __webpack_require__(58);
 
-var _header = __webpack_require__(17);
+var _header = __webpack_require__(11);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -51154,7 +51115,7 @@ Chart.helpers = __webpack_require__(2);
 __webpack_require__(342)(Chart);
 
 Chart.defaults = __webpack_require__(3);
-Chart.Element = __webpack_require__(10);
+Chart.Element = __webpack_require__(12);
 Chart.elements = __webpack_require__(18);
 Chart.Interaction = __webpack_require__(100);
 Chart.layouts = __webpack_require__(27);
@@ -53717,7 +53678,7 @@ module.exports = {
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 
 defaults._set('global', {
@@ -53831,7 +53792,7 @@ module.exports = Element.extend({
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 
 var globalDefaults = defaults.global;
@@ -53929,7 +53890,7 @@ module.exports = Element.extend({
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 
 var defaultColor = defaults.global.defaultColor;
@@ -54042,7 +54003,7 @@ module.exports = Element.extend({
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 
 defaults._set('global', {
 	elements: {
@@ -54752,7 +54713,7 @@ helpers.removeEvent = removeEventListener;
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 
 defaults._set('global', {
@@ -56274,7 +56235,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 var Ticks = __webpack_require__(28);
 
@@ -57217,7 +57178,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 
 defaults._set('global', {
@@ -62908,7 +62869,7 @@ module.exports = {
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 var layouts = __webpack_require__(27);
 
@@ -63491,7 +63452,7 @@ module.exports = {
 
 
 var defaults = __webpack_require__(3);
-var Element = __webpack_require__(10);
+var Element = __webpack_require__(12);
 var helpers = __webpack_require__(2);
 var layouts = __webpack_require__(27);
 
@@ -63792,7 +63753,7 @@ var Stack = __webpack_require__(226),
     equalByTag = __webpack_require__(419),
     equalObjects = __webpack_require__(423),
     getTag = __webpack_require__(441),
-    isArray = __webpack_require__(14),
+    isArray = __webpack_require__(15),
     isBuffer = __webpack_require__(233),
     isTypedArray = __webpack_require__(235);
 
@@ -64299,7 +64260,7 @@ module.exports = isMasked;
 /* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(13);
+var root = __webpack_require__(14);
 
 /** Used to detect overreaching core-js shims. */
 var coreJsData = root['__core-js_shared__'];
@@ -64894,7 +64855,7 @@ module.exports = equalByTag;
 /* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(13);
+var root = __webpack_require__(14);
 
 /** Built-in value references. */
 var Uint8Array = root.Uint8Array;
@@ -65072,7 +65033,7 @@ module.exports = getAllKeys;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayPush = __webpack_require__(426),
-    isArray = __webpack_require__(14);
+    isArray = __webpack_require__(15);
 
 /**
  * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
@@ -65221,7 +65182,7 @@ module.exports = stubArray;
 
 var baseTimes = __webpack_require__(431),
     isArguments = __webpack_require__(232),
-    isArray = __webpack_require__(14),
+    isArray = __webpack_require__(15),
     isBuffer = __webpack_require__(233),
     isIndex = __webpack_require__(234),
     isTypedArray = __webpack_require__(235);
@@ -65621,7 +65582,7 @@ module.exports = getTag;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(19),
-    root = __webpack_require__(13);
+    root = __webpack_require__(14);
 
 /* Built-in method references that are verified to be native. */
 var DataView = getNative(root, 'DataView');
@@ -65634,7 +65595,7 @@ module.exports = DataView;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(19),
-    root = __webpack_require__(13);
+    root = __webpack_require__(14);
 
 /* Built-in method references that are verified to be native. */
 var Promise = getNative(root, 'Promise');
@@ -65647,7 +65608,7 @@ module.exports = Promise;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(19),
-    root = __webpack_require__(13);
+    root = __webpack_require__(14);
 
 /* Built-in method references that are verified to be native. */
 var Set = getNative(root, 'Set');
@@ -65660,7 +65621,7 @@ module.exports = Set;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(19),
-    root = __webpack_require__(13);
+    root = __webpack_require__(14);
 
 /* Built-in method references that are verified to be native. */
 var WeakMap = getNative(root, 'WeakMap');
@@ -66135,7 +66096,7 @@ module.exports = toString;
 
 var Symbol = __webpack_require__(37),
     arrayMap = __webpack_require__(458),
-    isArray = __webpack_require__(14),
+    isArray = __webpack_require__(15),
     isSymbol = __webpack_require__(42);
 
 /** Used as references for various `Number` constants. */
@@ -66264,7 +66225,7 @@ module.exports = baseHasIn;
 
 var castPath = __webpack_require__(239),
     isArguments = __webpack_require__(232),
-    isArray = __webpack_require__(14),
+    isArray = __webpack_require__(15),
     isIndex = __webpack_require__(234),
     isLength = __webpack_require__(63),
     toKey = __webpack_require__(43);
@@ -66760,7 +66721,7 @@ module.exports = defineProperty;
 var arrayAggregator = __webpack_require__(475),
     baseAggregator = __webpack_require__(476),
     baseIteratee = __webpack_require__(65),
-    isArray = __webpack_require__(14);
+    isArray = __webpack_require__(15);
 
 /**
  * Creates a function like `_.groupBy`.
@@ -67154,7 +67115,7 @@ var _reactCenter = __webpack_require__(7);
 
 var _reactCenter2 = _interopRequireDefault(_reactCenter);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 
@@ -67235,7 +67196,7 @@ var _boxLinkSm = __webpack_require__(22);
 
 var _boxLinkSm2 = _interopRequireDefault(_boxLinkSm);
 
-var _title = __webpack_require__(12);
+var _title = __webpack_require__(10);
 
 var _title2 = _interopRequireDefault(_title);
 

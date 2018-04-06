@@ -44,24 +44,23 @@ class UserMainPage extends React.Component {
                                 <button className="btn" id="edit-btn"> Edit </button>
                             </form>
                         </div>
-
                         <div style={{ paddingTop: 65 }} className="col-md-12" >
 
                             <div className="col-sm-6" >
                                 <div style={{ paddingLeft: 100 }}   >
-                                    <Header headerText='JOURNAL' />
+                                    <a href="/journal_directory" style={{color: "inherit"}} >
+                                        <Header headerText='JOURNAL' />
+                                    </a>
                                 </div>
                             </div>
-
                             <div className="col-sm-6" style={{ paddingLeft: 100 }} >
                                 <div style={{ paddingLeft: 75 }}   >
-                                    <Header headerText='PLANNER' />
+                                    <a href="/planner_directory" style={{color: "inherit"}} >
+                                        <Header headerText='PLANNER' />
+                                    </a>
                                 </div>
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
